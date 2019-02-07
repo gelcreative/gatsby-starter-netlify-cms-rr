@@ -6,6 +6,7 @@ import bulma from 'bulma'
 import initialVariables from 'bulma/sass/utilities/initial-variables.sass'
 
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const theme = {
   sansFont: 'IBM Plex Sans',
@@ -158,7 +159,8 @@ const TemplateWrapper = ({ children }) => (
         </Helmet>
         <GlobalStyle />
         <Navbar />
-        <div>{children}</div>
+        <main role="main">{children}</main>
+        <Footer />
       </>
     )}
   />

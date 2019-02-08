@@ -109,7 +109,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a:hover {
-    color: #f26339;
+    color: ${theme.red};
     text-decoration: underline;
   }
 

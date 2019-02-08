@@ -20,29 +20,62 @@ const StyledHeader = styled.nav`
   .retirerite-nav-bottom a {
     color: #ffffff;
     font-weight: 700;
-    height: 60px;
   }
 
-  .retirerite-navbar-start [aria-current] {
-    position: relative;
-  }
-
-  .retirerite-navbar-start [aria-current]:after {
-      content: '';
-      width: 0; 
-      height: 0; 
-      border-left: 7px solid transparent;
-      border-right: 7px solid transparent;
-      border-bottom: 12px solid #ffffff;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
+  .retirerite-nav-bottom a.navbar-item:hover {
+    color: ${props => props.theme.red};
   }
 
   .retirerite-navbar-start {
     display: flex;
     justify-content: space-around;
+    width: 100%;
+  }
+
+  .retirerite-navbar-menu .navbar-menu {
+    display: block;
+  }
+
+  .retirerite-navbar-burger.navbar-burger {
+    color: #ffffff;
+  }
+
+  @media(max-width: 1087px) {
+    .retirerite-navbar-start {
+        flex-direction: column;
+    }
+
+    .retirerite-nav-bottom a {
+        color: #000;
+    }
+
+    .navbar-brand {
+      padding: 2em 5%;
+    }
+  }
+
+  @media(min-width: 1088px) {
+
+    .retirerite-nav-bottom a {
+      height: 60px;
+    }
+
+    .retirerite-navbar-start [aria-current] {
+      position: relative;
+    }
+
+    .retirerite-navbar-start [aria-current]:after {
+        content: '';
+        width: 0; 
+        height: 0; 
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 12px solid #ffffff;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
   }
 `
 
@@ -84,7 +117,7 @@ const Navbar = class extends React.Component {
       </div>
       <div className="retirerite-nav-bottom">
         <div className="container">
-          <div id="navMenu" className="retirerite-navbar-menu">
+          <div id="navMenu" className="retirerite-navbar-menu navbar-menu">
             <div className="retirerite-navbar-start has-text-centered">
               <Link className="navbar-item" to="/about">
                 About
@@ -107,7 +140,7 @@ const Navbar = class extends React.Component {
             </div>
           </div>
           {/* Hamburger menu */}
-          <div className="navbar-burger burger" data-target="navMenu">
+          <div className="retirerite-navbar-burger navbar-burger burger" data-target="navMenu">
             <span></span>
             <span></span>
             <span></span>

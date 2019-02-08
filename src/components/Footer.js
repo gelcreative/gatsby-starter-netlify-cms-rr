@@ -23,6 +23,14 @@ const StyledFooter = styled.footer`
     max-width: 120px;
   }
 
+  .retirerite-footer-address-column a {
+    color: #434244;
+  }
+
+  .retirerite-footer-address-column a:hover {
+    color: ${props => props.theme.red};
+  }
+
   .retirerite-footer-navigation-outer h2 {
     font-family: ${props => props.theme.sansFont}, sans-serif;
     text-decoration: underline;
@@ -34,7 +42,7 @@ const StyledFooter = styled.footer`
 
   .retirerite-footer-bottom {
     background-color: ${props => props.theme.darkGrey};
-    padding: 2em 0;
+    padding: 2em 5%;
   }
 
   .retirerite-footer-social {
@@ -55,7 +63,6 @@ const StyledFooter = styled.footer`
     height: 27px;
   }
 
-
   @media(max-width: 769px) {
       .retirerite-footer-bottom .column {
           justify-content: center;
@@ -75,7 +82,7 @@ const Footer = () => (
                 <img src={squareLogo} title="RetireRite Logo" alt="RetireRite Logo" />
               </Link>
             </div>
-            <div className="column is-two-thirds">
+            <div className="column is-two-thirds retirerite-footer-address-column">
               <p>RetireRite Financial Strategies Inc.</p>
               <address>
                 Suite 307 - 126 Wellington Street West<br />

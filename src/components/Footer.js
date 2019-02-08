@@ -11,6 +11,14 @@ const StyledFooter = styled.footer`
   border-top: 5px solid ${props => props.theme.red};
   background-color: ${props => props.theme.lightGrey};
 
+  a {
+    color: #434244;
+  }
+
+  a:hover {
+    color: ${props => props.theme.red};
+  }
+
   .retirerite-footer-top {
     padding: 4em 5% 5em;
   }
@@ -21,14 +29,6 @@ const StyledFooter = styled.footer`
 
   .retirerite-footer-logo-column img {
     max-width: 120px;
-  }
-
-  .retirerite-footer-address-column a {
-    color: #434244;
-  }
-
-  .retirerite-footer-address-column a:hover {
-    color: ${props => props.theme.red};
   }
 
   .retirerite-footer-navigation-outer h2 {
@@ -101,12 +101,36 @@ const Footer = () => (
               <h2>Site Navigation</h2>
               <nav role="navigation">
                 <ul className="retirerite-footer-navigation">
-                  <li>About</li>
-                  <li>Services</li>
-                  <li>Blog</li>
-                  <li>FAQ</li>
-                  <li>Resources</li>
-                  <li>Contact</li>
+                  <li>
+                    <Link to="/about">
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/services">
+                      Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/blog">
+                      Blog
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/faq">
+                      FAQ
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/resources">
+                      Resources
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/contact">
+                      Contact
+                    </Link>
+                  </li>
                 </ul>
               </nav>
             </div>

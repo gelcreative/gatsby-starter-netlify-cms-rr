@@ -14,7 +14,7 @@ const StyledHeader = styled.nav`
   }
 
   .retirerite-nav-bottom {
-    background-color: #2e3440;
+    background-color: ${props => props.theme.darkBlue};
   }
 
   .retirerite-nav-bottom a {

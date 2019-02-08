@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import styled from 'styled-components'
+
 import github from '../img/github-icon.svg'
 import logo from '../img/retirerite-logo-hort.svg'
 

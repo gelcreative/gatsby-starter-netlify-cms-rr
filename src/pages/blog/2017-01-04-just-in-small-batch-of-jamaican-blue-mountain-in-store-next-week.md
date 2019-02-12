@@ -1,6 +1,9 @@
 ---
-templateKey: 'blog-post'
+templateKey: blog-post
 title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
+bannerImage:
+  alt: Home office with wooden desk and Apple workstation
+  image: /img/blog-post-banner-1.jpg
 date: 2017-01-04T15:04:10.000Z
 description: >-
   We’re proud to announce that we’ll be offering a small batch of Jamaica Blue

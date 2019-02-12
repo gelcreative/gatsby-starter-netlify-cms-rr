@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
+import SingleBlogPost from '../components/SingleBlogPost'
 import RetireRiteCta from '../components/RetireRiteCta'
 
 const StyledHomePage = styled.article`
@@ -38,7 +39,13 @@ export default class IndexPage extends React.Component {
                   <div
                     key={post.id}
                   >
-                    <p>
+                    <SingleBlogPost 
+                      title={post.frontmatter.title}
+                      date={post.frontmatter.date}
+                      excerpt={post.excerpt}
+                      tag={post.frontmatter.tags[0]}
+                    />
+                    {/* <p>
                       <Link className="has-text-primary" to={post.fields.slug}>
                         {post.frontmatter.title}
                       </Link>
@@ -52,7 +59,7 @@ export default class IndexPage extends React.Component {
                       <Link className="button is-small" to={post.fields.slug}>
                         Keep Reading →
                       </Link>
-                    </p>
+                    </p> */}
                   </div>
                 ))}
             </section>
@@ -83,7 +90,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 230)
           id
           fields {
             slug
@@ -92,6 +99,7 @@ export const pageQuery = graphql`
             title
             templateKey
             date(formatString: "MMMM DD, YYYY")
+            tags
           }
         }
       }

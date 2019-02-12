@@ -6,10 +6,13 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import SingleBlogPost from '../components/SingleBlogPost'
 import RetireRiteCta from '../components/RetireRiteCta'
+import curves from '../img/blue-curves.svg'
 
 const StyledHomePage = styled.article`
   background: #ffffff;
   margin-bottom: 200px;
+  background: top no-repeat url(${curves});
+  background-size: contain;
 `
 
 export default class IndexPage extends React.Component {

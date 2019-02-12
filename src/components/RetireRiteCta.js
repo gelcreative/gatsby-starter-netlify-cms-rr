@@ -11,7 +11,8 @@ const StyledCta = styled.div`
   @media(min-width: 1115px) {
     width: 90%;
     max-width: 1400px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 `
 

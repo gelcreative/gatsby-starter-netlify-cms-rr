@@ -25,7 +25,7 @@ export default class IndexPage extends React.Component {
         <StyledHomePage className="section">
           <div className="container">
             <section className="content has-text-centered">
-              <h1 className="has-text-weight-bold">RetireRite Financial Strategies Inc.</h1>
+              <h1>RetireRite Financial Strategies Inc.</h1>
               <p>A sound financial plan is crucial to living the life you want, on your terms. Whether it's for your business or your personal finances, together we can build the roadmap to success. And we'll stay with you every step of the way.</p>
               <p>Through comprehensive analysis, in-depth market research and the support of a team of highly-qualified tax and product specialists, we can create customized financial plans that will help you achieve your goals.</p>
             </section>

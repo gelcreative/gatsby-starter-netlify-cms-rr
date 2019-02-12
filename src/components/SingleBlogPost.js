@@ -9,7 +9,9 @@ const StyledSingleBlogPost = styled.article`
 
 const SingleBlogPost = (props) => {
   return (
-    <StyledSingleBlogPost>
+    <StyledSingleBlogPost 
+      
+    >
       <h3>{props.title}</h3>
       <p className="single-post-pub-date">Published: {props.date}</p>
       <p className="single-post-excerpt">{props.excerpt}</p>

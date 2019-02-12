@@ -41,7 +41,7 @@ const TemplateWrapper = ({ children }) => (
         </Helmet>
         <GlobalStyle />
         <Navbar />
-        <main role="main">{children}</main>
+        <main role="main" className="retirerite-main">{children}</main>
         <Footer />
       </>
     )}

@@ -26,12 +26,14 @@ export default class IndexPage extends React.Component {
               <p>A sound financial plan is crucial to living the life you want, on your terms. Whether it's for your business or your personal finances, together we can build the roadmap to success. And we'll stay with you every step of the way.</p>
               <p>Through comprehensive analysis, in-depth market research and the support of a team of highly-qualified tax and product specialists, we can create customized financial plans that will help you achieve your goals.</p>
             </section>
-            <section className="content columns">
-              <div className="column">
-                <h2>The value of financial planning</h2>
-                <p>Did you know that when it comes to your financial well-being, advice may be the difference between achieving your financial goals and falling short? Make the most of your money with the help of a financial security advisor.</p>
+            <section className="content">
+              <div className="columns">
+                <div className="column">
+                  <h2>The value of financial planning</h2>
+                  <p>Did you know that when it comes to your financial well-being, advice may be the difference between achieving your financial goals and falling short? Make the most of your money with the help of a financial security advisor.</p>
+                </div>
+                <div className="column"><img src="https://via.placeholder.com/600x300.pnp" alt=""/></div>
               </div>
-              <div className="column"><img src="https://via.placeholder.com/600x300.pnp" alt=""/></div>
             </section>
             <section className="content">
               <h2>Featured Blog Post</h2>

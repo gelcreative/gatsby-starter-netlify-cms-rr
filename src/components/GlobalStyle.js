@@ -21,6 +21,10 @@ const GlobalStyle = createGlobalStyle`
     box-shadow:none !important;
   }
 
+  .retirerite-main .content:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
   .content .taglist {
     list-style: none;
     margin-bottom: 0;

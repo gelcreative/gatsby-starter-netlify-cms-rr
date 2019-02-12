@@ -79,30 +79,33 @@ const GlobalStyle = createGlobalStyle`
     color: #434244;
   }
 
-  h1, h2 {
-    font-family: ${theme.serifFont}, serif;
-    font-weight: 400;
-  }
-
-  h3, h4 {
-    font-family: ${theme.sansFont}, sans-serif;
-    font-weight: 400;
-  }
-
-  h1 {
-    font-size: 3.2rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  h3 {
-    font-size: 2.5rem;
-  }
-
-  h4 {
-    font-size: 2rem;
+  .content {
+    
+      h1, h2 {
+        font-family: ${theme.serifFont}, serif;
+        font-weight: 400;
+      }
+    
+      h3, h4 {
+        font-family: ${theme.sansFont}, sans-serif;
+        font-weight: 400;
+      }
+    
+      h1 {
+        font-size: 3.2rem;
+      }
+    
+      h2 {
+        font-size: 2.5rem;
+      }
+    
+      h3 {
+        font-size: 2.5rem;
+      }
+    
+      h4 {
+        font-size: 2rem;
+      }
   }
 
   *, *::before, *::after {

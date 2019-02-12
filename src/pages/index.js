@@ -35,7 +35,7 @@ export default class IndexPage extends React.Component {
                   <h2>The value of financial planning</h2>
                   <p>Did you know that when it comes to your financial well-being, advice may be the difference between achieving your financial goals and falling short? Make the most of your money with the help of a financial security advisor.</p>
                 </div>
-                <div className="column"><img src="https://via.placeholder.com/600x300.pnp" alt=""/></div>
+                <div className="column"><img src="https://via.placeholder.com/600x300.png" alt=""/></div>
               </div>
             </section>
             <section className="content">

@@ -64,13 +64,14 @@ const GlobalStyle = createGlobalStyle`
 
   @import url(${bulma});
 
+  @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Serif:400,500");
+
   html {
     font-size: 10px;
     box-sizing: border-box;
   }
 
   body {
-    @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Serif:400,500");
     padding: 0;
     margin: 0;
     font-size: 1.8rem;

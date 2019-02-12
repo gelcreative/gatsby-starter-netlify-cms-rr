@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
+import RetireRiteCta from '../components/RetireRiteCta'
 
 const StyledHomePage = styled.article`
   background: #ffffff;
@@ -54,6 +55,7 @@ export default class IndexPage extends React.Component {
                   </p>
                 </div>
               ))}
+              <RetireRiteCta />
           </div>
         </StyledHomePage>
       </Layout>

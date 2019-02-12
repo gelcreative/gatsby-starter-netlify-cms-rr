@@ -1,7 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import styled from 'styled-components'
+
 import Layout from '../components/Layout'
+
+const StyledHomePage = styled.article`
+  background: #ffffff;
+`
 
 export default class IndexPage extends React.Component {
   render() {
@@ -10,10 +16,19 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <section className="section">
+        <StyledHomePage className="section">
           <div className="container">
-            <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+            <div className="content has-text-centered">
+              <h1 className="has-text-weight-bold is-size-2">RetireRite Financial Strategies Inc.</h1>
+              <p>A sound financial plan is crucial to living the life you want, on your terms. Whether it's for your business or your personal finances, together we can build the roadmap to success. And we'll stay with you every step of the way.</p>
+              <p>Through comprehensive analysis, in-depth market research and the support of a team of highly-qualified tax and product specialists, we can create customized financial plans that will help you achieve your goals.</p>
+            </div>
+            <div className="columns">
+              <div className="column">
+                <h2>The value of financial planning</h2>
+                <p>Did you know that when it comes to your financial well-being, advice may be the difference between achieving your financial goals and falling short? Make the most of your money with the help of a financial security advisor.</p>
+              </div>
+              <div className="column"><img src="https://via.placeholder.com/600x300.pnp" alt=""/></div>
             </div>
             {posts
               .map(({ node: post }) => (
@@ -40,7 +55,7 @@ export default class IndexPage extends React.Component {
                 </div>
               ))}
           </div>
-        </section>
+        </StyledHomePage>
       </Layout>
     )
   }
@@ -58,7 +73,8 @@ export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } }},
+      limit: 1
     ) {
       edges {
         node {

@@ -19,43 +19,46 @@ export default class IndexPage extends React.Component {
       <Layout>
         <StyledHomePage className="section">
           <div className="container">
-            <div className="content has-text-centered">
+            <section className="content has-text-centered">
               <h1 className="has-text-weight-bold is-size-2">RetireRite Financial Strategies Inc.</h1>
               <p>A sound financial plan is crucial to living the life you want, on your terms. Whether it's for your business or your personal finances, together we can build the roadmap to success. And we'll stay with you every step of the way.</p>
               <p>Through comprehensive analysis, in-depth market research and the support of a team of highly-qualified tax and product specialists, we can create customized financial plans that will help you achieve your goals.</p>
-            </div>
-            <div className="columns">
+            </section>
+            <section className="content columns">
               <div className="column">
                 <h2>The value of financial planning</h2>
                 <p>Did you know that when it comes to your financial well-being, advice may be the difference between achieving your financial goals and falling short? Make the most of your money with the help of a financial security advisor.</p>
               </div>
               <div className="column"><img src="https://via.placeholder.com/600x300.pnp" alt=""/></div>
-            </div>
-            {posts
-              .map(({ node: post }) => (
-                <div
-                  className="content"
-                  style={{ border: '1px solid #333', padding: '2em 4em' }}
-                  key={post.id}
-                >
-                  <p>
-                    <Link className="has-text-primary" to={post.fields.slug}>
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <small>{post.frontmatter.date}</small>
-                  </p>
-                  <p>
-                    {post.excerpt}
-                    <br />
-                    <br />
-                    <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
-                    </Link>
-                  </p>
-                </div>
-              ))}
+            </section>
+            <section className="content">
+              <h2>Featured Blog Post</h2>
+              {posts
+                .map(({ node: post }) => (
+                  <div
+                    key={post.id}
+                  >
+                    <p>
+                      <Link className="has-text-primary" to={post.fields.slug}>
+                        {post.frontmatter.title}
+                      </Link>
+                      <span> &bull; </span>
+                      <small>{post.frontmatter.date}</small>
+                    </p>
+                    <p>
+                      {post.excerpt}
+                      <br />
+                      <br />
+                      <Link className="button is-small" to={post.fields.slug}>
+                        Keep Reading →
+                      </Link>
+                    </p>
+                  </div>
+                ))}
+            </section>
+            <section className="content">
               <RetireRiteCta />
+            </section>
           </div>
         </StyledHomePage>
       </Layout>

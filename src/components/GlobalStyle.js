@@ -129,6 +129,19 @@ const GlobalStyle = createGlobalStyle`
     width: 1px !important ;
     overflow: hidden;
   }
+
+  .button.button-1 {
+    background-color: ${theme.middleBlue};
+    color: #ffffff;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  .button.button-1:hover {
+    border: 1px solid #1d60a2;
+    background-color: #ffffff;
+    color: #1d60a2;
+  }
 `
 
 export { theme, GlobalStyle }

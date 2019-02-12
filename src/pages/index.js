@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
@@ -9,6 +9,7 @@ import RetireRiteCta from '../components/RetireRiteCta'
 
 const StyledHomePage = styled.article`
   background: #ffffff;
+  margin-bottom: 200px;
 `
 
 export default class IndexPage extends React.Component {
@@ -44,15 +45,16 @@ export default class IndexPage extends React.Component {
                       date={post.frontmatter.date}
                       excerpt={post.excerpt}
                       tag={post.frontmatter.tags[0]}
-                      // bannerImage={post.frontmatter.bannerImage}
+                      bannerImage={post.frontmatter.bannerImage.image}
+                      slug={post.fields.slug}
                     />
                   </div>
                 ))}
             </section>
-            <section className="content">
-              <RetireRiteCta />
-            </section>
           </div>
+          <section className="content">
+            <RetireRiteCta />
+          </section>
         </StyledHomePage>
       </Layout>
     )
@@ -85,6 +87,15 @@ export const pageQuery = graphql`
             title
             templateKey
             date(formatString: "MMMM DD, YYYY")
+            bannerImage {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 2048, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
             tags
           }
         }

@@ -6,6 +6,12 @@ const StyledCta = styled.div`
   background-color: ${props => props.theme.lightGrey};
   padding: 2em;
   box-shadow: 7px 7px ${props => props.theme.lightBlue};
+  
+  @media(min-width: 1115px) {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 `
 
 const RetireRiteCta = () => (

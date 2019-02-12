@@ -7,7 +7,7 @@ const theme = {
   serifFont: 'IBM Plex Serif',
   red: '#ef4136',
   blue: '#262261',
-  darkBlue: '#2e3440',
+  darkBlue: '#29303e',
   middleBlue: '#1d60a2',
   lightBlue: '#bbdbea',
   lightGrey: '#f3f3f3',

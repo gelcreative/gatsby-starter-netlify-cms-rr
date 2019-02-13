@@ -122,7 +122,7 @@ const Footer = () => (
                     </Link>
                   </li>
                   <li>
-                    <Link to="/resources/">
+                    <Link to="/tools-resources/">
                       Resources
                     </Link>
                   </li>

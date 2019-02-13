@@ -16,10 +16,10 @@ export const ServicesPageTemplate = ({
   return (
     <section className="section section--gradient">
       <div className="container">
-        <div className="section">
+        <div className="section content">
           <div className="columns retirerite-page-intro">
             <div className="column has-text-centered is-10 is-offset-1">
-              <div className="content">
+              <div className="">
                 <h1>{title}</h1>
                 <p>{intro}</p>
               </div>
@@ -27,7 +27,7 @@ export const ServicesPageTemplate = ({
           </div>
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <div className="content">
+              <div className="">
                 <PageContent content={content} />
               </div>
             </div>

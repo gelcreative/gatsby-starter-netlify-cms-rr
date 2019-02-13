@@ -4,13 +4,17 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
+import markdownToHtml from '../util/markdownToHtml'
 
 export const ToolsResourcesPageTemplate = ({
   title,
   intro,
   heading,
   description,
-  content,
+  leftColumnContent,
+  rightColumnContent,
+  leftBottomColumnContent,
+  rightBottomColumnContent,
   contentComponent,
 }) => {
   const PageContent = contentComponent || Content
@@ -18,18 +22,18 @@ export const ToolsResourcesPageTemplate = ({
   return (
     <section className="section section--gradient">
       <div className="container">
-        <div className="section">
+        <div className="section content">
           <section className="columns retirerite-page-intro">
             <div className="column has-text-centered is-10 is-offset-1">
-              <div className="content">
+              <div>
                 <h1>{title}</h1>
                 <p>{intro}</p>
               </div>
             </div>
           </section>
-          <section className="columns">
+          <section className="columns" style={{ marginBottom: '2em' }}>
             <div className="column is-10 is-offset-1">
-              <div className="content">
+              <div>
                 <h2>{heading}</h2>
                 <p>{description}</p>
               </div>
@@ -38,8 +42,16 @@ export const ToolsResourcesPageTemplate = ({
           <section className="columns">
             <div className="column is-10 is-offset-1">
               <div className="columns">
-                <div className="column content">dookie</div>
-                <div className="column content">butt</div>
+                <div className="column"><PageContent content={markdownToHtml(leftColumnContent)}/></div>
+                <div className="column"><PageContent content={markdownToHtml(rightColumnContent)}/></div>
+              </div>
+            </div>
+          </section>
+          <section className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="columns">
+                <div className="column"><PageContent content={markdownToHtml(leftBottomColumnContent)}/></div>
+                <div className="column"><PageContent content={markdownToHtml(rightBottomColumnContent)}/></div>
               </div>
             </div>
           </section>
@@ -66,7 +78,10 @@ const ToolsResourcesPage = ({ data }) => {
         intro={page.frontmatter.intro}
         heading={page.frontmatter.heading}
         description={page.frontmatter.description}
-        content={page.html}
+        leftColumnContent={page.frontmatter.leftColumn}
+        rightColumnContent={page.frontmatter.rightColumn}
+        leftBottomColumnContent={page.frontmatter.leftBottomColumn}
+        rightBottomColumnContent={page.frontmatter.rightBottomColumn}
         contentComponent={HTMLContent}
       />
     </Layout>
@@ -86,12 +101,15 @@ export default ToolsResourcesPage
 export const ToolsResourcesPageQuery = graphql`
   query ToolsResourcesPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
       frontmatter {
         title
         intro
         heading
         description
+        leftColumn
+        rightColumn
+        leftBottomColumn
+        rightBottomColumn
       }
     }
   }

@@ -113,7 +113,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .columns.retirerite-page-intro {
-    margin-bottom: 4em;
+    margin-bottom: 3em !important;
   }
 `
 

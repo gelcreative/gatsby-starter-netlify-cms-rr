@@ -49,3 +49,5 @@ collections:
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Left Column", name: "leftColumn", widget: "markdown"}
           - {label: "Right Column", name: "rightColumn", widget: "markdown"}
+          - {label: "Left Bottom Column", name: "leftBottomColumn", widget: "markdown"}
+          - {label: "Right Bottom Column", name: "rightBottomColumn", widget: "markdown"}

@@ -36,5 +36,20 @@ rightColumn: |-
 
   * Household Cash Flow Statement
   * Net Worth Statement
+leftBottomColumn: |-
+  ## Links
+
+  * Canada Revenue Agency (CRA) My Account1
+  * Service Canada Online Services and Forms1
+  * GLC Asset Management Group1
+rightBottomColumn: |-
+  ## Client access
+
+  * London Life Personal Investment Products
+  * Quadrus Investment Summary
+  * Quadrus Client View
+  * Great West Life Groupnet
+  * Great West Life Group Retirement Services
+  * Mackenzie Financial Investor Access
 ---
 

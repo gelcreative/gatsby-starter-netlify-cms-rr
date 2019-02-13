@@ -38,8 +38,8 @@ export const ToolsResourcesPageTemplate = ({
           <section className="columns">
             <div className="column is-10 is-offset-1">
               <div className="columns">
-                <div className="column">dookie</div>
-                <div className="column">butt</div>
+                <div className="column content">dookie</div>
+                <div className="column content">butt</div>
               </div>
             </div>
           </section>

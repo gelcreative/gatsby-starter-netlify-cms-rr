@@ -17,15 +17,19 @@ export const ServicesPageTemplate = ({
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
-          <div className="columns">
-            <div className="column has-text-centered">
+          <div className="columns retirerite-page-intro">
+            <div className="column has-text-centered is-10 is-offset-1">
               <div className="content">
                 <h1>{title}</h1>
                 <p>{intro}</p>
               </div>
             </div>
-            <div className="column">
-              <PageContent content={content} />
+          </div>
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="content">
+                <PageContent content={content} />
+              </div>
             </div>
           </div>
         </div>

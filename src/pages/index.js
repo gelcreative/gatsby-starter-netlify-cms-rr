@@ -18,7 +18,8 @@ const StyledHomePage = styled.article`
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    const { edges: posts } = data.mainQuery
+    const grayscaleImage = data.grayscaleImageQuery.edges[0].node.frontmatter.bannerImage.image
 
     return (
       <Layout>
@@ -51,6 +52,7 @@ export default class IndexPage extends React.Component {
                       excerpt={post.excerpt}
                       tag={post.frontmatter.tags[0]}
                       bannerImage={post.frontmatter.bannerImage.image}
+                      grayscaleBannerImage={grayscaleImage}
                       slug={post.fields.slug}
                     />
                   </div>
@@ -75,36 +77,57 @@ IndexPage.propTypes = {
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }},
-      limit: 1
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 230)
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
-            bannerImage {
-              image {
-                childImageSharp {
-                  fluid(maxWidth: 2048, quality: 100) {
-                    ...GatsbyImageSharpFluid
-                  }
+query IndexQuery {
+  mainQuery: allMarkdownRemark(
+    sort: { order: DESC, fields: [frontmatter___date] },
+    filter: { frontmatter: { templateKey: { eq: "blog-post" } }},
+    limit: 1
+  ) {
+    edges {
+      node {
+        excerpt(pruneLength: 230)
+        id
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          templateKey
+          date(formatString: "MMMM DD, YYYY")
+          bannerImage {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
-            tags
+          }
+          tags
+        }
+      }
+    }
+  }
+  grayscaleImageQuery: allMarkdownRemark(
+    sort: { order: DESC, fields: [frontmatter___date] },
+    filter: { frontmatter: { templateKey: { eq: "blog-post" } }},
+    limit: 1
+  ) {
+    edges {
+      node {
+        frontmatter {
+          bannerImage {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100, grayscale: true) {
+                  ...GatsbyImageSharpFluid
+                } 
+              }
+            }
           }
         }
       }
     }
   }
+}
 `

@@ -104,12 +104,16 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  address {
+    font-style: normal;
+  }
+
   .retirerite-main .content:not(:last-child) {
     margin-bottom: 4rem;
   }
 
-  address {
-    font-style: normal;
+  .columns.retirerite-page-intro {
+    margin-bottom: 4em;
   }
 `
 

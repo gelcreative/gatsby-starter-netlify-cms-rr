@@ -14,6 +14,12 @@ const StyledSingleBlogPost = styled.article`
     padding: 1em;
   }
 
+  .single-post-date {
+    font-size: 1.6rem;
+    color: #515151;
+    font-style: italic;
+  }
+
   .single-post-tag {
     position: absolute;
     top: 0;
@@ -59,7 +65,7 @@ const SingleBlogPost = (props) => {
     >
       <div className="single-blog-post-info">
         <h3>{props.title}</h3>
-        <p className="single-post-pub-date">Published: {props.date}</p>
+        <p className="single-post-date">Published: {props.date}</p>
         <p className="single-post-excerpt">{props.excerpt}</p>
       </div>
       <p className="single-post-tag"><span className="visually-hidden">Post Category:</span> {props.tag}</p>

@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
-import bulma from 'bulma'
+// import bulmaUtilities from 'bulma/sass/utilities/_all.sass'
+// import bulmaBase from 'bulma/sass/base/_all.sass'
+// import bulmaGrid from 'bulma/sass/grid/_all.sass'
 import initialVariables from 'bulma/sass/utilities/initial-variables.sass'
+import bulma from 'bulma'
 
 const theme = {
   sansFont: 'IBM Plex Sans',
@@ -63,6 +66,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @import url(${bulma});
+
+  
+  
+  
 
   @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Serif:400,500");
 

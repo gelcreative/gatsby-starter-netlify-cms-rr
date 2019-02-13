@@ -20,10 +20,10 @@ const RetireRiteCta = () => (
   <StyledCta>
     <h2>Call to action</h2>
     <div className="columns">
-      <div className="column is-9">
+      <div className="column is-three-quarters">
         <p>Call us today to see how we can help you and your business put together the best plan for your employees.</p>
       </div>
-      <div className="column is-3">
+      <div className="column is-one-quarter has-text-centered">
         <Link className="button button-1" to="/contact/">Call Us</Link>
       </div>
     </div>

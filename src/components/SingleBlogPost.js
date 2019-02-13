@@ -28,6 +28,7 @@ const StyledSingleBlogPost = styled.article`
     padding: 0.5em 2%;
     background-color: #29303e;
     color: #ffffff;
+    margin: 0;
   }
 
   .single-post-link {

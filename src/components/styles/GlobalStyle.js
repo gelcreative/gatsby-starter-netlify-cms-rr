@@ -93,6 +93,8 @@ const GlobalStyle = createGlobalStyle`
     color: #ffffff;
     padding-right: 10%;
     padding-left: 10%;
+    font-size: 1.8rem;
+    text-decoration: none;
   }
 
   .button.button-1:hover {

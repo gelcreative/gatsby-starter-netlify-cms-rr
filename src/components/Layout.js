@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
-import { theme, GlobalStyle } from './GlobalStyle'
+import { theme, GlobalStyle } from './styles/GlobalStyle'
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery

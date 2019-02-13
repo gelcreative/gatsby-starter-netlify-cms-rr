@@ -102,32 +102,32 @@ const Footer = () => (
               <nav role="navigation">
                 <ul className="retirerite-footer-navigation">
                   <li>
-                    <Link to="/about">
+                    <Link to="/about/">
                       About
                     </Link>
                   </li>
                   <li>
-                    <Link to="/services">
+                    <Link to="/services/">
                       Services
                     </Link>
                   </li>
                   <li>
-                    <Link to="/blog">
+                    <Link to="/blog/">
                       Blog
                     </Link>
                   </li>
                   <li>
-                    <Link to="/faq">
+                    <Link to="/faq/">
                       FAQ
                     </Link>
                   </li>
                   <li>
-                    <Link to="/resources">
+                    <Link to="/resources/">
                       Resources
                     </Link>
                   </li>
                   <li>
-                    <Link to="/contact">
+                    <Link to="/contact/">
                       Contact
                     </Link>
                   </li>

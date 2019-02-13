@@ -6,7 +6,7 @@ const StyledCta = styled.div`
   background-color: ${props => props.theme.lightGrey};
   padding: 2em;
   box-shadow: 7px 7px ${props => props.theme.lightBlue};
-  margin-top: 3rem;
+  margin-top: 4rem;
   
   @media(min-width: 1115px) {
     width: 90%;

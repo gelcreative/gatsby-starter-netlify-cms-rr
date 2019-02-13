@@ -119,22 +119,22 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div id="navMenu" className="retirerite-navbar-menu navbar-menu">
             <div className="retirerite-navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
+              <Link className="navbar-item" to="/about/">
                 About
               </Link>
-              <Link className="navbar-item" to="/products">
+              <Link className="navbar-item" to="/services/">
                 Services
               </Link>
-              <Link className="navbar-item" to="/blog">
+              <Link className="navbar-item" to="/blog/">
                 Blog
               </Link>
-              <Link className="navbar-item" to="/faq">
+              <Link className="navbar-item" to="/faq/">
                 FAQ
               </Link>
               <Link className="navbar-item" to="/contact/examples">
                 Tools &amp; Resources
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link className="navbar-item" to="/contact/">
                 Contact
               </Link>
             </div>

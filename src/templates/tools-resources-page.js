@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
 
 import markdownToHtml from '../util/markdownToHtml'
 
@@ -15,9 +14,7 @@ export const ToolsResourcesPageTemplate = ({
   rightColumnContent,
   leftBottomColumnContent,
   rightBottomColumnContent,
-  contentComponent,
 }) => {
-  const PageContent = contentComponent || Content
 
   return (
     <section className="section section--gradient">
@@ -42,16 +39,24 @@ export const ToolsResourcesPageTemplate = ({
           <section className="columns">
             <div className="column is-10 is-offset-1">
               <div className="columns">
-                <div className="column"><PageContent content={markdownToHtml(leftColumnContent)}/></div>
-                <div className="column"><PageContent content={markdownToHtml(rightColumnContent)}/></div>
+                <div className="column">
+                  <div dangerouslySetInnerHTML={{__html: markdownToHtml(leftColumnContent)}} />
+                </div>
+                <div className="column">
+                  <div dangerouslySetInnerHTML={{__html: markdownToHtml(rightColumnContent)}} />
+                </div>
               </div>
             </div>
           </section>
           <section className="columns">
             <div className="column is-10 is-offset-1">
               <div className="columns">
-                <div className="column"><PageContent content={markdownToHtml(leftBottomColumnContent)}/></div>
-                <div className="column"><PageContent content={markdownToHtml(rightBottomColumnContent)}/></div>
+                <div className="column">
+                  <div dangerouslySetInnerHTML={{__html: markdownToHtml(leftBottomColumnContent)}} />
+                </div>
+                <div className="column">
+                  <div dangerouslySetInnerHTML={{__html: markdownToHtml(rightBottomColumnContent)}} />
+                </div>
               </div>
             </div>
           </section>
@@ -64,8 +69,12 @@ export const ToolsResourcesPageTemplate = ({
 ToolsResourcesPageTemplate.propTypes = {
   title: PropTypes.string,
   intro: PropTypes.string,
-  content: PropTypes.node.isRequired,
-  contentComponent: PropTypes.func,
+  heading: PropTypes.string,
+  description: PropTypes.string,
+  leftColumnContent: PropTypes.string,
+  rightColumnContent: PropTypes.string,
+  leftBottomColumnContent: PropTypes.string,
+  rightBottomColumnContent: PropTypes.string,
 }
 
 const ToolsResourcesPage = ({ data }) => {
@@ -82,7 +91,6 @@ const ToolsResourcesPage = ({ data }) => {
         rightColumnContent={page.frontmatter.rightColumn}
         leftBottomColumnContent={page.frontmatter.leftBottomColumn}
         rightBottomColumnContent={page.frontmatter.rightBottomColumn}
-        contentComponent={HTMLContent}
       />
     </Layout>
   )

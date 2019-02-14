@@ -1,0 +1,4 @@
+---
+templateKey: "faq"
+title: "FAQ"
+---

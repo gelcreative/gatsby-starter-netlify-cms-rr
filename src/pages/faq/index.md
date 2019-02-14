@@ -1,5 +1,5 @@
 ---
-templateKey: faq
+templateKey: faq-page
 title: FAQ
 questions:
   - answer: >-

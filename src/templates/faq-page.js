@@ -46,7 +46,7 @@ const StyledFaqPage = styled.article`
   }
 `
 
-const FaqPageTemplate = ({
+export const FaqPageTemplate = ({
   title,
   questions,
 }) => {

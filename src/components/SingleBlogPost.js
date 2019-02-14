@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import Img from 'gatsby-image'
 
 const StyledSingleBlogPost = styled.article`
   background: #ffffff;

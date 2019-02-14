@@ -10,6 +10,11 @@ const StyledBlogPage = styled.section`
   .columns.retirerite-blog-body {
     flex-wrap: wrap;
   }
+
+  .retirerite-blog-body-item:nth-child(2) .single-blog-post-info,
+  .retirerite-blog-body-item:nth-child(3) .single-blog-post-info {
+      width: 100%
+  }
 `
 
 export default class BlogPage extends React.Component {
@@ -46,7 +51,7 @@ export default class BlogPage extends React.Component {
                       }
 
                       return (
-                        <div className={`column${columnClass}`}>
+                        <div className={`column${columnClass} retirerite-blog-body-item`}>
                           <SingleBlogPost 
                             key={post.id}
                             title={post.frontmatter.title}

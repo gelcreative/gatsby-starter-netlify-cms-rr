@@ -8,6 +8,7 @@ const StyledSingleBlogPost = styled.article`
   padding-top: 150px;
   background: center no-repeat;
   background-size: cover;
+  min-height: 400px;
 
   &:hover {
     .single-post-color-bg {
@@ -41,10 +42,13 @@ const StyledSingleBlogPost = styled.article`
 
   .single-blog-post-info {
     position: relative;
+    bottom: 0;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 1em;
     transition: 500ms;
     z-index: 1;
+    /* max-height: 300px; */
+    overflow: hidden;
   }
 
   .single-blog-post-info * {

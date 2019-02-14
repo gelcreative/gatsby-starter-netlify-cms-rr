@@ -51,3 +51,10 @@ collections:
           - {label: "Right Column", name: "rightColumn", widget: "markdown"}
           - {label: "Left Bottom Column", name: "leftBottomColumn", widget: "markdown"}
           - {label: "Right Bottom Column", name: "rightBottomColumn", widget: "markdown"}
+      - file: "src/pages/faq/index.md"
+        label: "FAQ"
+        name: "faq"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "services-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Questions", name: "questions", widget: "list", fields: [{label: "Question", name: "question", widget: "string"}, {label: "Answer", name: "answer", widget: "markdown"}]}

@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Making sense of the SCAA’s new Flavor Wheel!
+title: Making sense of the SCAA’s new Flavor Wheel
 bannerImage:
   alt: Office with nice desk
   image: ''

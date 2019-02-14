@@ -6,8 +6,10 @@ import styled from 'styled-components'
 import Layout from '../../components/Layout'
 import SingleBlogPost from '../../components/SingleBlogPost'
 
-const StyledBlogPage = styled.article`
-  background: #ffffff;
+const StyledBlogPage = styled.section`
+  .columns.retirerite-blog-body {
+    flex-wrap: wrap;
+  }
 `
 
 export default class BlogPage extends React.Component {
@@ -17,10 +19,11 @@ export default class BlogPage extends React.Component {
     const { edges: posts } = mainQuery
     const { edges: grayScaleImages } = grayscaleImageQuery
 
+    let columnClass = ""
+
     return (
       <Layout>
         <StyledBlogPage>
-        <section className="section section--gradient">
           <div className="container">
             <div className="section content">
               <div className="columns retirerite-page-intro">
@@ -30,30 +33,37 @@ export default class BlogPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="columns">
-                <div className="column">
+              <div className="columns retirerite-blog-body">
                   {posts
                     .map(({ node: post }, i) => {
+
+                      switch(i) {
+                        case 1: columnClass = " is-7"
+                          break;
+                        case 2: columnClass = " is-5"
+                          break;
+                        default: columnClass = " is-12"
+                      }
+
                       return (
-                        <SingleBlogPost 
-                          key={post.id}
-                          title={post.frontmatter.title}
-                          date={post.frontmatter.date}
-                          excerpt={post.excerpt}
-                          tag={post.frontmatter.tags[0]}
-                          bannerImage={post.frontmatter.bannerImage.image}
-                          grayscaleBannerImage={grayScaleImages[i].node.frontmatter.bannerImage.image}
-                          slug={post.fields.slug}
-                        />
+                        <div className={`column${columnClass}`}>
+                          <SingleBlogPost 
+                            key={post.id}
+                            title={post.frontmatter.title}
+                            date={post.frontmatter.date}
+                            excerpt={post.excerpt}
+                            tag={post.frontmatter.tags[0]}
+                            bannerImage={post.frontmatter.bannerImage.image}
+                            grayscaleBannerImage={grayScaleImages[i].node.frontmatter.bannerImage.image}
+                            slug={post.fields.slug}
+                          />
+                        </div>
                       )
                     })  
                   }                  
-                </div>
               </div>
             </div>
           </div>
-        </section>
-
         </StyledBlogPage>
       </Layout>
     )

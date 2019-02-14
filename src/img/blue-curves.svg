@@ -1,1 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 677"><defs><style>.a,.b{fill:#bbdbea;}.a{opacity:0.25;}.b{opacity:0.5;}</style></defs><title>Asset 1</title><path class="a" d="M0,677C312.67,487.63,715.14,410.08,1366,555V0H0Z"/><path class="a" d="M0,461c482.27-189.19,1041-229.45,1366-4V0H0Z"/><path class="b" d="M0,365C312.67,175.63,715.14,97.08,1366,242V0H0Z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 530">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #bbdbea;
+      }
+
+      .cls-1 {
+        opacity: 0.25;
+      }
+
+      .cls-2 {
+        opacity: 0.5;
+      }
+    </style>
+  </defs>
+  <title>blue-curves</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <g>
+          <g>
+            <path class="cls-1" d="M0,314V530C312.67,340.63,715.14,263.08,1366,408V310C1041,84.55,482.27,124.81,0,314Z"/>
+            <path class="cls-1" d="M0,218v96c482.27-189.19,1041-229.45,1366-4V95C715.14-49.92,312.67,28.63,0,218Z"/>
+            <path class="cls-2" d="M0,218C312.67,28.63,715.14-49.92,1366,95V0H0Z"/>
+          </g>
+          <path class="cls-1" d="M0,218v96c482.27-189.19,1041-229.45,1366-4V95C715.14-49.92,312.67,28.63,0,218Z"/>
+        </g>
+        <path class="cls-1" d="M0,218C312.67,28.63,715.14-49.92,1366,95V0H0Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

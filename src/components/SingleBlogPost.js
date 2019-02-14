@@ -22,6 +22,10 @@ const StyledSingleBlogPost = styled.article`
     .single-blog-post-info * {
       color: #ffffff;
     }
+
+    .single-post-tag {
+      background-color: ${props => props.theme.red};
+    }
   }
 
   .single-post-color-bg {
@@ -63,6 +67,7 @@ const StyledSingleBlogPost = styled.article`
     background-color: #29303e;
     color: #ffffff;
     margin: 0;
+    transition: 500ms;
     z-index: 1;
   }
 
@@ -72,6 +77,7 @@ const StyledSingleBlogPost = styled.article`
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 2;
   }
 
   @media(max-width: 769px) {
@@ -98,8 +104,7 @@ const SingleBlogPost = (props) => (
       })`
     }}
   >
-    <p className="single-post-tag"><span className="visually-hidden">Post Category:</span> {props.tag}</p>
-    <div 
+      <div 
       className="single-post-color-bg"
       style={{
         backgroundImage: `url(${
@@ -109,13 +114,13 @@ const SingleBlogPost = (props) => (
         })`
       }}
     ></div>
+    <p className="single-post-tag"><span className="visually-hidden">Post Category:</span> {props.tag}</p>
     <div className="single-blog-post-info">
       <h3>{props.title}</h3>
       <p className="single-post-date">Published: {props.date}</p>
       <p className="single-post-excerpt">{props.excerpt}</p>
     </div>
     <Link to={props.slug} className="single-post-link"><span className="visually-hidden">Read blog post: {props.title}</span></Link>
-    <Img fluid={props.grayscaleBannerImage} />
   </StyledSingleBlogPost>
 )
 

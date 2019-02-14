@@ -75,17 +75,6 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: underline;
       }
 
-      .visually-hidden {
-        position: absolute !important;
-        clip: rect(1px 1px 1px 1px);
-        clip: rect(1px, 1px, 1px, 1px);
-        padding:0 !important;
-        border:0 !important;
-        height: 1px !important;
-        width: 1px !important ;
-        overflow: hidden;
-      }
-
       .button.button-1 {
         background-color: ${theme.middleBlue};
         color: #ffffff;
@@ -115,6 +104,18 @@ const GlobalStyle = createGlobalStyle`
   .columns.retirerite-page-intro {
     margin-bottom: 3em !important;
   }
+
+  .visually-hidden {
+        position: absolute !important;
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        padding:0 !important;
+        border:0 !important;
+        height: 1px !important;
+        width: 1px !important ;
+        overflow: hidden;
+      }
+
 `
 
 export { theme, GlobalStyle }

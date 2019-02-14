@@ -20,22 +20,40 @@ export default class BlogPage extends React.Component {
     return (
       <Layout>
         <StyledBlogPage>
-          {posts
-            .map(({ node: post }, i) => {
-              return (
-                <SingleBlogPost 
-                  key={post.id}
-                  title={post.frontmatter.title}
-                  date={post.frontmatter.date}
-                  excerpt={post.excerpt}
-                  tag={post.frontmatter.tags[0]}
-                  bannerImage={post.frontmatter.bannerImage.image}
-                  grayscaleBannerImage={grayScaleImages[i].node.frontmatter.bannerImage.image}
-                  slug={post.fields.slug}
-                />
-              )
-            })  
-          }
+        <section className="section section--gradient">
+          <div className="container">
+            <div className="section content">
+              <div className="columns retirerite-page-intro">
+                <div className="column has-text-centered">
+                  <div className="">
+                    <h1>Blog</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="columns">
+                <div className="column">
+                  {posts
+                    .map(({ node: post }, i) => {
+                      return (
+                        <SingleBlogPost 
+                          key={post.id}
+                          title={post.frontmatter.title}
+                          date={post.frontmatter.date}
+                          excerpt={post.excerpt}
+                          tag={post.frontmatter.tags[0]}
+                          bannerImage={post.frontmatter.bannerImage.image}
+                          grayscaleBannerImage={grayScaleImages[i].node.frontmatter.bannerImage.image}
+                          slug={post.fields.slug}
+                        />
+                      )
+                    })  
+                  }                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         </StyledBlogPage>
       </Layout>
     )

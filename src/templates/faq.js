@@ -53,7 +53,6 @@ export const faqPageQuery = graphql`
     markdownRemark(id: {eq: $id}) {
       frontmatter {
         title
-        questions
       }
     }
   }

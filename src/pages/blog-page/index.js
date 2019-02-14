@@ -12,28 +12,33 @@ const StyledBlogPage = styled.article`
 
 export default class BlogPage extends React.Component {
 
+  componentDidMount() {
+    console.log(this.props)
+  }
+
   render() {
-    const { mainQuery, grayscaleImageQuery } = this.props
-    const { edges: posts } = mainQuery.allMarkdownRemark
-    const { edges: grayScale } = grayscaleImageQuery.allMarkdownRemark
+    const { mainQuery, grayscaleImageQuery } = this.props.data
+    const { edges: posts } = mainQuery
+    const { edges: grayScaleImages } = grayscaleImageQuery
 
     return (
       <Layout>
         <StyledBlogPage>
           {posts
             .map(({ node: post }, i) => {
-              return (
-                <SingleBlogPost 
-                  key={post.id}
-                  title={post.frontmatter.title}
-                  date={post.frontmatter.date}
-                  excerpt={post.excerpt}
-                  tag={post.frontmatter.tags[0]}
-                  bannerImage={post.frontmatter.bannerImage.image}
-                  grayscaleBannerImage={grayScale[i].frontmatter.bannerImage.image}
-                  slug={post.fields.slug}
-                />
-              )
+              console.log(post.frontmatter.title, grayScaleImages[i].node.frontmatter.bannerImage.image)
+              // return (
+              //   <SingleBlogPost 
+              //     key={post.id}
+              //     title={post.frontmatter.title}
+              //     date={post.frontmatter.date}
+              //     excerpt={post.excerpt}
+              //     tag={post.frontmatter.tags[0]}
+              //     bannerImage={post.frontmatter.bannerImage.image}
+              //     grayscaleBannerImage={grayScaleImages[i].node.frontmatter.bannerImage.image}
+              //     slug={post.fields.slug}
+              //   />
+              // )
             })  
           }
         </StyledBlogPage>

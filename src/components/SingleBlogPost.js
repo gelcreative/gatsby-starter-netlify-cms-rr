@@ -11,8 +11,8 @@ const StyledSingleBlogPost = styled.article`
   min-height: 400px;
 
   &:hover {
-    .single-post-color-bg {
-      opacity: 0;
+    .single-post-bg-grayscale{
+      opacity: 1;
     }
 
     .single-blog-post-info {
@@ -28,7 +28,7 @@ const StyledSingleBlogPost = styled.article`
     }
   }
 
-  .single-post-color-bg {
+  .single-post-bg-color {
     background: center no-repeat;
     background-size: cover;
     position: absolute;
@@ -40,14 +40,27 @@ const StyledSingleBlogPost = styled.article`
     z-index: 0;
   }
 
+  .single-post-bg-grayscale {
+    background: center no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 300ms;
+    z-index: 1;
+  }
+
   .single-blog-post-info {
-    position: relative;
+    position: absolute;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 1em;
     transition: 500ms;
-    z-index: 1;
-    /* max-height: 300px; */
+    z-index: 2;
+    max-height: 80%;
     overflow: hidden;
   }
 
@@ -71,7 +84,7 @@ const StyledSingleBlogPost = styled.article`
     color: #ffffff;
     margin: 0;
     transition: 500ms;
-    z-index: 1;
+    z-index: 3;
   }
 
   .single-post-link {
@@ -80,7 +93,7 @@ const StyledSingleBlogPost = styled.article`
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 2;
+    z-index: 4;
   }
 
   @media(max-width: 769px) {
@@ -98,30 +111,32 @@ const StyledSingleBlogPost = styled.article`
 `
 
 const SingleBlogPost = (props) => (
-  <StyledSingleBlogPost 
-    style={{
-      backgroundImage: `url(${
-        !!props.grayscaleBannerImage.childImageSharp 
-        ? props.grayscaleBannerImage.childImageSharp.fluid.src 
-        : props.grayscaleBannerImage
-      })`
-    }}
-  >
+  <StyledSingleBlogPost>
       <div 
-      className="single-post-color-bg"
-      style={{
-        backgroundImage: `url(${
-          !!props.bannerImage.childImageSharp 
-          ? props.bannerImage.childImageSharp.fluid.src 
-          : props.bannerImage
-        })`
-      }}
-    ></div>
+        className="single-post-bg-color"
+        style={{
+          backgroundImage: `url(${
+            !!props.bannerImage.childImageSharp 
+            ? props.bannerImage.childImageSharp.fluid.src 
+            : props.bannerImage
+          })`
+        }}
+      ></div>
+      <div 
+        className="single-post-bg-grayscale"
+        style={{
+          backgroundImage: `url(${
+            !!props.grayscaleBannerImage.childImageSharp 
+            ? props.grayscaleBannerImage.childImageSharp.fluid.src 
+            : props.grayscaleBannerImage
+          })`
+        }}
+      ></div>
     <p className="single-post-tag"><span className="visually-hidden">Post Category:</span> {props.tag}</p>
     <div className="single-blog-post-info">
       <h3>{props.title}</h3>
       <p className="single-post-date">Published: {props.date}</p>
-      <p className="single-post-excerpt">{props.excerpt}</p>
+      <p className="single-post-excerpt">{props.description}</p>
     </div>
     <Link to={props.slug} className="single-post-link"><span className="visually-hidden">Read blog post: {props.title}</span></Link>
   </StyledSingleBlogPost>

@@ -15,6 +15,30 @@ const StyledBlogPage = styled.section`
   .retirerite-blog-body-item:nth-child(3) .single-blog-post-info {
       width: 100%
   }
+
+  @media(min-width: 769px) {
+    .retirerite-blog-body-item:nth-child(n+4) article {
+      padding-top: 0;
+      min-height: unset;
+    }
+
+    .retirerite-blog-body-item:nth-child(n+4) [class^="single-post-bg"] {
+      width: 20%;
+    }
+
+    .retirerite-blog-body-item:nth-child(n+4) .single-blog-post-info {
+      min-height: 200px;
+      max-height: unset;
+      position: relative;
+      width: 80%;
+      margin-left: auto;
+      background-color: ${props => props.theme.lightGrey}
+    }
+
+    .retirerite-blog-body-item:nth-child(n+4) article:hover .single-blog-post-info {
+      background-color: ${props => props.theme.middleBlue};
+    }
+  }
 `
 
 export default class BlogPage extends React.Component {
@@ -56,6 +80,7 @@ export default class BlogPage extends React.Component {
                             key={post.id}
                             title={post.frontmatter.title}
                             date={post.frontmatter.date}
+                            description={post.frontmatter.description}
                             excerpt={post.excerpt}
                             tag={post.frontmatter.tags[0]}
                             bannerImage={post.frontmatter.bannerImage.image}
@@ -100,6 +125,7 @@ export const blogPageQuery = graphql`
             title
             templateKey
             date(formatString: "MMMM DD, YYYY")
+            description
             bannerImage {
               image {
                 childImageSharp {

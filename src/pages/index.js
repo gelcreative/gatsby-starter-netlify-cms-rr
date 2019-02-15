@@ -49,6 +49,7 @@ export default class IndexPage extends React.Component {
                     <SingleBlogPost 
                       title={post.frontmatter.title}
                       date={post.frontmatter.date}
+                      description={post.frontmatter.description}
                       excerpt={post.excerpt}
                       tag={post.frontmatter.tags[0]}
                       bannerImage={post.frontmatter.bannerImage.image}
@@ -94,6 +95,7 @@ query IndexQuery {
           title
           templateKey
           date(formatString: "MMMM DD, YYYY")
+          description
           bannerImage {
             image {
               childImageSharp {

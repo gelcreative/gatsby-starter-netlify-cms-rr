@@ -46,7 +46,6 @@ export const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
-  tags,
   title,
   bannerImage,
   date,
@@ -122,7 +121,6 @@ const BlogPost = ({ data }) => {
             <meta name="description" content={`${post.frontmatter.description}`} />
           </Helmet>
         }
-        tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         bannerImage={post.frontmatter.bannerImage.image}
         date={post.frontmatter.date}

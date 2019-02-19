@@ -23,7 +23,8 @@ const StyledHeader = styled.nav`
   }
 
   .retirerite-nav-bottom a.navbar-item:hover {
-    color: ${props => props.theme.red};
+    color: #ffffff;
+    background-color: ${props => props.theme.red};
   }
 
   .retirerite-navbar-start {

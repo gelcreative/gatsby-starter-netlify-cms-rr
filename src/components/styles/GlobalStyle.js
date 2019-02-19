@@ -32,6 +32,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${theme.sansFont}, sans-serif;
     color: #434244;
   }
+
+  main {
+    margin-top: 5rem;
+  }
   
   .retirerite-main {
     .content {

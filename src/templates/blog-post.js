@@ -7,13 +7,39 @@ import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import RetireRiteCta from '../components/RetireRiteCta'
 
 const StyledBlogPost = styled.article`
   background: #ffff;
-  .retire-rite-blog-masthead {
-    height: 300px;
+  .retirerite-blog-masthead {
+    height: 400px;
     background: center no-repeat;
     background-size: cover;
+    border-bottom: 7px solid #acd4ef;
+  }
+
+  .retirerite-blog-date {
+    font-style: italic;
+    font-size: 1.6rem;
+    color: #515151;
+  }
+
+  .retirerite-blog-intro {
+      border-top: 2px solid #cbcbcb;
+      border-bottom: 2px solid #cbcbcb;
+      padding: 2em 0;
+  }
+
+  .retirerite-blog-heading-row {
+    margin-top: 2em;
+  }
+
+  .retirerite-blog-intro-row {
+      margin-top: 2em;
+  }
+
+  .retirerite-blog-content-row {
+      margin-top: 2em;
   }
 `
 
@@ -24,15 +50,16 @@ export const BlogPostTemplate = ({
   tags,
   title,
   bannerImage,
+  date,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
 
   return (
-    <StyledBlogPost className="section">
+    <StyledBlogPost>
       {helmet || ''}
       <div 
-        className="retire-rite-blog-masthead"
+        className="retirerite-blog-masthead"
         style={{
           backgroundImage: `url(${
             !!bannerImage.childImageSharp 
@@ -41,29 +68,31 @@ export const BlogPostTemplate = ({
           })`
         }}
       ></div>
-      <section className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
+      <article className="container section content">
+        <section className="columns retirerite-blog-heading-row">
+          <div className="column is-10 is-offset-1 has-text-centered">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+            <p className="retirerite-blog-date">Published: {date}</p>
           </div>
-        </div>
-      </section>
+        </section>
+        <section className="columns is-centered retirerite-blog-intro-row">
+          <div className="column has-text-centered is-narrow retirerite-blog-intro">
+            <p>{description}</p>
+          </div>
+        </section>
+        <section className="columns retirerite-blog-content-row">
+          <div className="column is-10 is-offset-1">
+            <PostContent content={content} />
+          </div>
+        </section>
+        <section className="columns">
+          <div className="column">
+            <RetireRiteCta />
+          </div>
+        </section>
+      </article>
     </StyledBlogPost>
   )
 }
@@ -74,6 +103,7 @@ BlogPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  date: PropTypes.string,
 }
 
 const BlogPost = ({ data }) => {
@@ -96,6 +126,7 @@ const BlogPost = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         bannerImage={post.frontmatter.bannerImage.image}
+        date={post.frontmatter.date}
       />
     </Layout>
   )

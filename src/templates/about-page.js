@@ -1,32 +1,46 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import styled from 'styled-components'
+
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+const StyledAboutPage = styled.article`
+  background: #ffffff;
+`
+
+export const AboutPageTemplate = ({ title, intro, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
+    <StyledAboutPage>
+      <section className="section content">
+        <div className="container">
+          <div className="columns retirerite-page-intro">
+            <div className="column is-10 is-offset-1 has-text-centered">
+              <div className="section">
+                <h1>
+                  {title}
+                </h1>
+                <p>{intro}</p>
+              </div>
+            </div>
+          </div>
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
               <PageContent className="content" content={content} />
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </StyledAboutPage>
   )
 }
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  intro: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -39,6 +53,7 @@ const AboutPage = ({ data }) => {
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        intro={post.frontmatter.intro}
         content={post.html}
       />
     </Layout>
@@ -57,6 +72,7 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        intro
       }
     }
   }

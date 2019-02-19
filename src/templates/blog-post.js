@@ -10,6 +10,7 @@ import RetireRiteCta from '../components/RetireRiteCta'
 
 const StyledBlogPost = styled.article`
   background: #ffff;
+  margin-bottom: 5rem;
   .retirerite-blog-masthead {
     height: 400px;
     background: center no-repeat;

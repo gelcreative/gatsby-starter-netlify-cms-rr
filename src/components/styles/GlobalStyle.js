@@ -85,9 +85,9 @@ const GlobalStyle = createGlobalStyle`
       }
 
       .button.button-1:hover {
-        border: 1px solid #1d60a2;
+        border: 1px solid ${theme.middleBlue};
         background-color: #ffffff;
-        color: #1d60a2;
+        color: ${theme.middleBlue};
       }
 
     }
@@ -95,6 +95,12 @@ const GlobalStyle = createGlobalStyle`
 
   address {
     font-style: normal;
+  }
+
+  blockquote {
+    background-color: ${theme.lightBlue};
+    margin: 0 0 1em 0;
+    padding: 1em 2em;
   }
 
   .retirerite-main .content:not(:last-child) {

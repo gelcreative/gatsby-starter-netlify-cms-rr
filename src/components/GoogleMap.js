@@ -13,3 +13,5 @@ class GoogleMap extends Component {
     return <div id="retirerite-map"></div>
   }
 }
+
+export default GoogleMap

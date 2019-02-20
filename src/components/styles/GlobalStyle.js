@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-size: 1.8rem !important;
     line-height: 2;
-    font-family: ${theme.sansFont}, sans-serif;
+    font-family: ${theme.sansFont}, sans-serif !important;
     color: #434244;
   }
 

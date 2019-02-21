@@ -10,6 +10,7 @@ import curves from '../img/blue-curves.svg'
 
 const StyledHomePage = styled.article`
   background: #ffffff;
+  margin-top: -50px;
   margin-bottom: 200px;
   background: top no-repeat url(${curves});
   background-size: contain;

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import mapPlaceholder from '../img/map-placeholder.jpg'
+import LeafletMap from '../components/LeafletMap'
 
 const StyledContactDetails = styled.div`
   background: #ffffff;
@@ -26,7 +27,7 @@ const ContactDetails = () => {
         </ul>
       </div>
       <div className="column">
-        <img src={mapPlaceholder} alt="Map" />
+        <LeafletMap />
       </div>
     </StyledContactDetails>
   )

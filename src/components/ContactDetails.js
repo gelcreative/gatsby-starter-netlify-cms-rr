@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import mapPlaceholder from '../img/map-placeholder.jpg'
 import LeafletMap from '../components/LeafletMap'
 
 const StyledContactDetails = styled.div`

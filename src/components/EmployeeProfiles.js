@@ -28,7 +28,7 @@ const StyledEmployee = styled.article`
   }
 `
 
-const EmployeeProfile = () => (
+const EmployeeProfiles = () => (
   <StaticQuery 
     query={graphql`
       query EmployeesQuery {
@@ -66,4 +66,4 @@ const EmployeeProfile = () => (
   />
 )
 
-export default EmployeeProfile;
+export default EmployeeProfiles;

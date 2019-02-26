@@ -6,10 +6,12 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import ContactDetails from '../components/ContactDetails'
-import EmployeeProfile from '../components/EmployeeProfile'
+import EmployeeProfiles from '../components/EmployeeProfiles'
 
 const StyledAboutPage = styled.article`
-  background: #ffffff;
+  .retirerite-team-section {
+    margin-top: 4rem;
+  }
 `
 
 export const AboutPageTemplate = ({ title, intro, content, contentComponent }) => {
@@ -35,8 +37,8 @@ export const AboutPageTemplate = ({ title, intro, content, contentComponent }) =
             </div>
           </div>
           <div className="columns retirerite-team-section">
-            <div className="column is-10 is-offset-1">
-              <EmployeeProfile />
+            <div className="column is-10 is-offset-1 retirerite-team-section-inner">
+              <EmployeeProfiles />
             </div>
           </div>
           <div className="columns">

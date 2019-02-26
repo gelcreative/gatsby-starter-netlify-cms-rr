@@ -11,6 +11,8 @@ class LeafletMap extends Component {
       id: 'mapbox.streets',
       accessToken: 'pk.eyJ1IjoiZ2VsYWdlbmN5IiwiYSI6ImNqc2YyMHdvNjAyeXM0NHFwanl5cDdwbzQifQ.DBHeFeHLQ9cMeJXBs1-R1w'
     }).addTo(retireriteMap);
+
+    Leaflet.marker([44.390092, -79.704469]).addTo(retireriteMap);
   }
 
   componentDidMount() {

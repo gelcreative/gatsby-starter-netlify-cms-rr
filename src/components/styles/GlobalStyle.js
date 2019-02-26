@@ -35,6 +35,7 @@ const GlobalStyle = createGlobalStyle`
 
   main {
     margin-top: 5rem;
+    margin-bottom: 5rem;
   }
   
   .retirerite-main {

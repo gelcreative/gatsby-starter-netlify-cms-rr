@@ -47,6 +47,7 @@ const EmployeeProfiles = () => (
         ) {
           edges {
             node {
+              id
               name
               credentials
               profileImage {
@@ -64,7 +65,7 @@ const EmployeeProfiles = () => (
       return (
         <>
           {employees.map(({ node: employee }) => (
-            <StyledEmployee className="retirerite-employee">
+            <StyledEmployee className="retirerite-employee" key={employee.id}>
               <div className="retirerite-employee-intro">
                 <div className="retirerite-employee-image-container">
                   <img src={employee.profileImage.image} alt={employee.profileImage.alt} />

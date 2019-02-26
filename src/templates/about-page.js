@@ -11,6 +11,10 @@ import EmployeeProfiles from '../components/EmployeeProfiles'
 const StyledAboutPage = styled.article`
   .retirerite-team-section {
     margin-top: 4rem;
+    .retirerite-team-section-inner {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 `
 

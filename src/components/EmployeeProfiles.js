@@ -4,10 +4,22 @@ import styled from 'styled-components'
 
 const StyledEmployee = styled.article`
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+
+  &:nth-child(n+2) {
+    /* flex-grow: 1;
+    flex-shrink: 1; */
+    width: 520px;
+    margin-right: 2em;
+  }
 
   .retirerite-employee-intro {
     min-width: 25%;
     flex-grow: 1;
+    .retirerite-employee-image-container {
+      max-width: 200px;
+    }
     .retirerite-employee-name {
       font-size: 2.2rem;
       .retirerite-employee-credentials {
@@ -23,7 +35,7 @@ const StyledEmployee = styled.article`
   }
 
   .retirerite-employee-bio {
-    margin: 1em;
+    margin: 1em 0;
     flex-grow: 2;
   }
 `
@@ -52,11 +64,13 @@ const EmployeeProfiles = () => (
       return (
         <>
           {employees.map(({ node: employee }) => (
-            <StyledEmployee>
+            <StyledEmployee className="retirerite-employee">
               <div className="retirerite-employee-intro">
+                <div className="retirerite-employee-image-container">
                   <img src={employee.profileImage.image} alt={employee.profileImage.alt} />
-                  <p className="retirerite-employee-name">{employee.name}<span className="visually-hidden">, </span><span className="retirerite-employee-credentials">{employee.credentials}</span></p>
                 </div>
+                  <p className="retirerite-employee-name">{employee.name}<span className="visually-hidden">, </span><span className="retirerite-employee-credentials">{employee.credentials}</span></p>
+              </div>
                 <p className="retirerite-employee-bio">{employee.bio}</p>
             </StyledEmployee>
           ))}

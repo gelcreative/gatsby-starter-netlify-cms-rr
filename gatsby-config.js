@@ -28,13 +28,14 @@ module.exports = {
         name: 'images',
       },
     },
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     path: `${__dirname}/src/employees`,
-    //     name: 'employees',
-    //   },
-    // },
+    `gatsby-transformer-yaml`,
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/employees`,
+        name: 'employees',
+      },
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {

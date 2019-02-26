@@ -8,10 +8,8 @@ const StyledEmployee = styled.article`
   margin-bottom: 3rem;
 
   &:nth-child(n+2) {
-    /* flex-grow: 1;
-    flex-shrink: 1; */
-    width: 520px;
-    margin-right: 2em;
+    flex: 1 1 300px;
+    margin-right: 5%;
   }
 
   .retirerite-employee-intro {
@@ -44,7 +42,9 @@ const EmployeeProfiles = () => (
   <StaticQuery 
     query={graphql`
       query EmployeesQuery {
-        allEmployeesYaml {
+        allEmployeesYaml (
+          sort: {order: ASC, fields: [date]}
+        ) {
           edges {
             node {
               name

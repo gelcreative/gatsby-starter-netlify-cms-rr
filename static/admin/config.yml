@@ -32,7 +32,7 @@ collections:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Credentials", name: "credentials", widget: "string"}
       - {label: "Profile Image", name: "profileImage", widget: "object", fields: [{label: "Image", name: "image", widget: "image"}, {label: "Alt", name: "alt", widget: "string"}]}
-      - {label: "Publish Date (Team members will be displayed according to date, in descending order)", name: "date", widget: "datetime"}
+      - {label: "Publish Date (Team members will be displayed according to date, in ascending order)", name: "date", widget: "datetime"}
       - {label: "Bio", name: "bio", widget: "text"}
   - name: "pages"
     label: "Pages"

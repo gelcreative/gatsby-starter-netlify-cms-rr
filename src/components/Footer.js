@@ -9,10 +9,11 @@ import linkedin from '../img/linkedin-logo.svg'
 
 const StyledFooter = styled.footer`
   border-top: 5px solid ${props => props.theme.red};
-  background-color: ${props => props.theme.lightGrey};
+  background-color: ${props => props.theme.blue};
+  color: #ffffff;
 
   a {
-    color: #434244;
+    color: #ffffff;
   }
 
   a:hover {
@@ -24,10 +25,10 @@ const StyledFooter = styled.footer`
   }
 
   .retirerite-gray-border-right {
-    border-right: 2px solid #cacaca;
+    border-right: 2px solid #ffffff;
   }
 
-  .retirerite-footer-logo-column img {
+  .retirerite-footer-address-column img {
     max-width: 120px;
   }
 
@@ -73,16 +74,20 @@ const StyledFooter = styled.footer`
 
 const Footer = () => (
   <StyledFooter>
+    <section className="container retirerite-footer-logo-row">
+      <div className="columns">
+        <div className="column">        
+          <Link to="/">
+            <img src={squareLogo} className="retirerite-footer-logo" title="RetireRite Logo" alt="RetireRite Logo" />
+          </Link>
+        </div>
+      </div>
+    </section>
     <section className="container retirerite-footer-top">
       <div className="columns">
         <div className="column is-5-desktop is-half-tablet retirerite-gray-border-right">
           <div className="columns">
-            <div className="column is-one-third retirerite-footer-logo-column">
-              <Link to="/">
-                <img src={squareLogo} title="RetireRite Logo" alt="RetireRite Logo" />
-              </Link>
-            </div>
-            <div className="column is-two-thirds retirerite-footer-address-column">
+            <div className="column retirerite-footer-address-column">
               <p>RetireRite Financial Strategies Inc.</p>
               <address>
                 Suite 307 - 126 Wellington Street West<br />

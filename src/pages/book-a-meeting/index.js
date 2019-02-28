@@ -1,7 +1,6 @@
 import React from "react";
 import { navigate } from "gatsby-link";
 import Layout from '../../components/Layout'
-import ContactDetails from '../../components/ContactDetails'
 
 function encode(data) {
   return Object.keys(data)
@@ -45,47 +44,89 @@ export default class Index extends React.Component {
                   <h1>Book a Meeting</h1>
                 </div>
               </section>
-              <ContactDetails />
-        <form
-          name="contact"
-          method="post"
-          action="/contact/thanks/"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={this.handleSubmit}
-        >
-          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-          <input type="hidden" name="form-name" value="contact" />
-          <div hidden>
-            <label>
-              Don’t fill this out:{" "}
-              <input name="bot-field" onChange={this.handleChange} />
-            </label>
-          </div>
-          <div className="field">
-            <label className="label" htmlFor={"name"} >Your name</label>
-            <div className="control">
-              <input className="input" type={"text"} name={"name"} onChange={this.handleChange} id={"name"} required={true} />
+              <section className="retirerite-booking-form columns">
+                <div className="column is-10 is-offset-1">
+                  <form
+                    name="contact"
+                    method="post"
+                    action="/book-a-meeting/thanks/"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
+                    onSubmit={this.handleSubmit}
+                  >
+                    {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+                    <input type="hidden" name="form-name" value="contact" />
+                    <div hidden>
+                      <label>
+                        Don’t fill this out:{" "}
+                        <input name="bot-field" onChange={this.handleChange} />
+                      </label>
+                    </div>
+                    <div className="columns">
+                      <div className="column">
+                        <div className="field">
+                          <label className="label" htmlFor={"first-name"} >First name</label>
+                          <div className="control">
+                            <input className="input" type={"text"} name={"first-name"} onChange={this.handleChange} id={"first-name"} required={true} />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="column">
+                        <div className="field">
+                          <label className="label" htmlFor={"last-name"} >Last name</label>
+                          <div className="control">
+                            <input className="input" type={"text"} name={"last-name"} onChange={this.handleChange} id={"last-name"} required={true} />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="columns">
+                      <div className="column">
+                        <div className="field">
+                          <label className="label" htmlFor={"telephone"}>Telephone</label>
+                            <div className="control">
+                              <input className="input" type={"tel"} name={"telephone"} onChange={this.handleChange} id={"telephone"} required={true} />
+                            </div>
+                        </div>
+                      </div>
+                      <div className="column">
+                        <div className="field">
+                          <label className="label" htmlFor={"email"}>Email</label>
+                            <div className="control">
+                              <input className="input" type={"email"} name={"email"} onChange={this.handleChange} id={"email"} required={true} />
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="columns">
+                      <div className="column">
+                        <div className="field">
+                          <div className="select is-multiple">
+                            <label htmlFor={"looking-for"} className="label">Looking for:</label>
+                            <select multiple name={"looking-for"} id={"looking-for"} onChange={this.handleChange}>
+                              <option value="Insurance information">Insurance information</option>
+                              <option value="Investment information">Investment information</option>
+                              <option value="Group benefits information">Group benefits information</option>
+                              <option value="General information">General information</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="field">
+                      <label className="label" htmlFor={"message"}>Message</label>
+                      <div className="control">
+                        <textarea className="textarea" name={"message"} onChange={this.handleChange} id={"message"} required={true} />
+                      </div>
+                    </div>
+                    <div className="field">
+                      <button className="button is-link" type="submit">Send</button>
+                    </div>
+                  </form>
+                </div>
+              </section>
             </div>
           </div>
-          <div className="field">
-            <label className="label" htmlFor={"email"}>Email</label>
-              <div className="control">
-                <input className="input" type={"email"} name={"email"} onChange={this.handleChange} id={"email"} required={true} />
-              </div>
-          </div>
-          <div className="field">
-            <label className="label" htmlFor={"message"}>Message</label>
-            <div className="control">
-              <textarea className="textarea" name={"message"} onChange={this.handleChange} id={"message"} required={true} />
-            </div>
-          </div>
-          <div className="field">
-            <button className="button is-link" type="submit">Send</button>
-          </div>
-        </form>
-        </div>
-        </div>
         </article>
       </Layout>
     );

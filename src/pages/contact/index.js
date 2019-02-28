@@ -1,5 +1,4 @@
 import React from "react";
-import { navigate } from "gatsby-link";
 import Layout from '../../components/Layout'
 import ContactDetails from '../../components/ContactDetails'
 import RetireRiteCta from '../../components/RetireRiteCta'

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import LeafletMap from '../components/LeafletMap'
+import RetireRiteMap from '../components/RetireRiteMap'
 
 const StyledContactDetails = styled.div`
   background: #ffffff;
@@ -26,7 +26,7 @@ const ContactDetails = () => {
         </ul>
       </div>
       <div className="column">
-        <LeafletMap />
+        <RetireRiteMap />
       </div>
     </StyledContactDetails>
   )

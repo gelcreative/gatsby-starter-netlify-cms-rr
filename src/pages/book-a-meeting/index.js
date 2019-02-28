@@ -7,6 +7,7 @@ const StyledBookingPage = styled.article`
   label,
   input,
   select,
+  textarea,
   button {
     font-size: 1.8rem;
   }

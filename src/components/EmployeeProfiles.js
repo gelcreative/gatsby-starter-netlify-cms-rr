@@ -13,8 +13,9 @@ const StyledEmployee = styled.article`
   }
 
   .retirerite-employee-intro {
-    min-width: 25%;
-    flex-grow: 1;
+    flex: 1 1 300px;
+    margin-right: 5%;
+    max-width: 200px;
     .retirerite-employee-image-container {
       max-width: 200px;
     }
@@ -34,7 +35,7 @@ const StyledEmployee = styled.article`
 
   .retirerite-employee-bio {
     margin: 1em 0;
-    flex-grow: 2;
+    flex: 3 3 300px;
   }
 `
 

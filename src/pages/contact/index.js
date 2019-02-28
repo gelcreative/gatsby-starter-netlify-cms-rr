@@ -40,11 +40,12 @@ export default class Index extends React.Component {
         <article className="section">
           <div className="container">
             <div className="content">
-            <section className="retirerite-page-title columns is-centered">
-              <div className="column has-text-centered">
-                <h1>Contact</h1>
-              </div>
-            </section>
+              <section className="retirerite-page-title retirerite-page-intro columns is-centered">
+                <div className="column has-text-centered">
+                  <h1>Contact</h1>
+                </div>
+              </section>
+              <ContactDetails />
         <form
           name="contact"
           method="post"

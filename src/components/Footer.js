@@ -54,6 +54,10 @@ const StyledFooter = styled.footer`
     padding: 2em 5%;
   }
 
+  .retirerite-footer-bottom p {
+    color: #363636;
+  }
+
   .retirerite-footer-social {
     display: flex;
     align-items: center;

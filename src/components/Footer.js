@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
-import squareLogo from '../img/retirerite-logo-square.svg'
+import footerLogo from '../img/retirerite-logo-04-hort-light.svg'
 import twitter from '../img/twitter-logo.svg'
 import facebook from '../img/facebook-logo.svg'
 import linkedin from '../img/linkedin-logo.svg'
@@ -18,6 +18,10 @@ const StyledFooter = styled.footer`
 
   a:hover {
     color: ${props => props.theme.red};
+  }
+
+  .retirerite-footer-logo {
+    max-width: 300px;
   }
 
   .retirerite-footer-top {
@@ -78,7 +82,7 @@ const Footer = () => (
       <div className="columns">
         <div className="column">        
           <Link to="/">
-            <img src={squareLogo} className="retirerite-footer-logo" title="RetireRite Logo" alt="RetireRite Logo" />
+            <img src={footerLogo} className="retirerite-footer-logo" title="RetireRite Logo" alt="RetireRite Logo" />
           </Link>
         </div>
       </div>

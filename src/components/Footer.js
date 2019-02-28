@@ -21,7 +21,7 @@ const StyledFooter = styled.footer`
   }
 
   .retirerite-footer-logo-row {
-    padding-top: 3rem;
+    padding: 3rem;
   }
 
   .retirerite-footer-logo {
@@ -29,7 +29,7 @@ const StyledFooter = styled.footer`
   }
 
   .retirerite-footer-top {
-    padding: 1em 5% 5em;
+    padding: 0 5% 5em;
   }
 
   .retirerite-gray-border-right {

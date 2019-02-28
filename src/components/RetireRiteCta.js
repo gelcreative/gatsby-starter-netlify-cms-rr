@@ -18,13 +18,13 @@ const StyledCta = styled.div`
 
 const RetireRiteCta = () => (
   <StyledCta>
-    <h2>Call to action</h2>
+    <h2>Book a meeting</h2>
     <div className="columns">
       <div className="column is-three-quarters">
-        <p>Call us today to see how we can help you and your business put together the best plan for your employees.</p>
+        <p>Get in touch with us today to see how we can help you and your business put together the best plan for your employees.</p>
       </div>
       <div className="column is-one-quarter has-text-centered">
-        <Link className="button button-1" to="/contact/">Call Us</Link>
+        <Link className="button button-1" to="/contact/">Contact Us</Link>
       </div>
     </div>
   </StyledCta>

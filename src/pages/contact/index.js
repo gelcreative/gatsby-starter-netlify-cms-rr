@@ -1,6 +1,7 @@
 import React from "react";
 import { navigate } from "gatsby-link";
 import Layout from '../../components/Layout'
+import ContactDetails from '../../components/ContactDetails'
 
 function encode(data) {
   return Object.keys(data)
@@ -36,10 +37,14 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="section">
+        <article className="section">
           <div className="container">
             <div className="content">
-        <h1>Contact</h1>
+            <section className="retirerite-page-title columns is-centered">
+              <div className="column has-text-centered">
+                <h1>Contact</h1>
+              </div>
+            </section>
         <form
           name="contact"
           method="post"
@@ -80,7 +85,7 @@ export default class Index extends React.Component {
         </form>
         </div>
         </div>
-        </section>
+        </article>
       </Layout>
     );
   }

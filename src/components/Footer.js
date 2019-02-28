@@ -20,12 +20,16 @@ const StyledFooter = styled.footer`
     color: ${props => props.theme.red};
   }
 
+  .retirerite-footer-logo-row {
+    padding-top: 3rem;
+  }
+
   .retirerite-footer-logo {
     max-width: 300px;
   }
 
   .retirerite-footer-top {
-    padding: 4em 5% 5em;
+    padding: 1em 5% 5em;
   }
 
   .retirerite-gray-border-right {

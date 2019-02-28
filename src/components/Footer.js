@@ -32,10 +32,6 @@ const StyledFooter = styled.footer`
     padding: 0 5% 5em;
   }
 
-  .retirerite-gray-border-right {
-    border-right: 2px solid #ffffff;
-  }
-
   .retirerite-footer-address-column img {
     max-width: 120px;
   }
@@ -74,6 +70,12 @@ const StyledFooter = styled.footer`
 
   .retirerite-twitter img {
     height: 27px;
+  }
+
+  @media(min-width: 769px) {
+    .retirerite-gray-border-right {
+      border-right: 2px solid #ffffff;
+    }
   }
 
   @media(max-width: 769px) {

@@ -24,7 +24,7 @@ const RetireRiteCta = () => (
         <p>Get in touch with us today to see how we can help you and your business put together the best plan for your employees.</p>
       </div>
       <div className="column is-one-quarter has-text-centered">
-        <Link className="button button-1" to="/contact/">Contact Us</Link>
+        <Link className="button button-1" to="/book-a-meeting/">Contact Us</Link>
       </div>
     </div>
   </StyledCta>

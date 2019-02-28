@@ -1,6 +1,16 @@
 import React from "react";
 import { navigate } from "gatsby-link";
 import Layout from '../../components/Layout'
+import styled from 'styled-components'
+
+const StyledBookingPage = styled.article`
+  label,
+  input,
+  select,
+  button {
+    font-size: 1.8rem;
+  }
+`
 
 function encode(data) {
   return Object.keys(data)
@@ -36,7 +46,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <article className="section">
+        <StyledBookingPage className="section">
           <div className="container">
             <div className="content">
               <section className="retirerite-page-title retirerite-page-intro columns is-centered">
@@ -113,21 +123,34 @@ export default class Index extends React.Component {
                         </div>
                       </div>
                     </div>
-                    <div className="field">
-                      <label className="label" htmlFor={"message"}>Message</label>
-                      <div className="control">
-                        <textarea className="textarea" name={"message"} onChange={this.handleChange} id={"message"} required={true} />
+                    <div className="columns">
+                      <div className="column">
+                        <div className="field">
+                          <label className="label" htmlFor={"message"}>Message</label>
+                          <div className="control">
+                            <textarea className="textarea" name={"message"} onChange={this.handleChange} id={"message"} required={true} />
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div className="field">
-                      <button className="button is-link" type="submit">Send</button>
+                    <div className="columns">
+                      <div className="column">
+                        <div className="field">
+                          <button className="button is-link" type="submit">Send</button>
+                        </div>
+                      </div>
                     </div>
                   </form>
+                  <div className="columns">
+                    <div className="column">
+                      <small>By clicking on the "Send" button your information will be sent through email to RetireRite Financial Strategies Inc. <br />The use of email is not a secure medium and personal information should be transmitted by more secure means.</small>
+                    </div>
+                  </div>
                 </div>
               </section>
             </div>
           </div>
-        </article>
+        </StyledBookingPage>
       </Layout>
     );
   }

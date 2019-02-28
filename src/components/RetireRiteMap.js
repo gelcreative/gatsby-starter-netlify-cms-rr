@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Map as LeafletMap, Marker, TileLayer } from 'react-leaflet'
+import { Map as LeafletMap, Marker, TileLayer, Popup } from 'react-leaflet'
 
 class RetireRiteMap extends Component {
 
@@ -24,6 +24,11 @@ class RetireRiteMap extends Component {
             <Marker
               position={position}
             >
+              <Popup>
+                Suite 307 - 126 Wellington Street West <br />
+                Barrie, ON  <br />
+                L4N 1K9 
+              </Popup>
             </Marker>
         </LeafletMap>
       )

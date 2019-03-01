@@ -107,7 +107,7 @@ const Footer = () => (
                 <ul className="retirerite-footer-navigation">
                   <li>
                     <Link to="/about/">
-                      About
+                      The Team
                     </Link>
                   </li>
                   <li>

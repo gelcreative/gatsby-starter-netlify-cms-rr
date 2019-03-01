@@ -3,9 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 import footerLogo from '../img/retirerite-logo-04-hort-light.svg'
-import twitter from '../img/twitter-logo.svg'
-import facebook from '../img/facebook-logo.svg'
-import linkedin from '../img/linkedin-logo.svg'
+import SocialIcons from '../components/SocialIcons'
 
 const StyledFooter = styled.footer`
   border-top: 5px solid ${props => props.theme.red};
@@ -52,24 +50,6 @@ const StyledFooter = styled.footer`
 
   .retirerite-footer-bottom p {
     color: #363636;
-  }
-
-  .retirerite-footer-social {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  .retirerite-footer-social li {
-      margin-right: 10px;
-  }
-
-  .retirerite-footer-social img {
-      height: 30px;
-  }
-
-  .retirerite-twitter img {
-    height: 27px;
   }
 
   @media(min-width: 769px) {
@@ -165,25 +145,7 @@ const Footer = () => (
               &copy; { new Date().getFullYear() } RetireRite Strategies Inc.
             </p>
           </div>
-          <div className="column retirerite-footer-social">
-            <ul className="retirerite-footer-social">
-              <li className="retirerite-twitter">
-                <a href="https://twitter.com/retirerite_inc" title="RetireRite on Twitter" target="_blank" rel="noopener noreferrer">
-                  <img src={twitter} alt="Twitter" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/company/retirerite/" title="RetireRite on LinkedIn" target="_blank" rel="noopener noreferrer">
-                  <img src={linkedin} alt="LinkedIn" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/retireritefinancial/" title="RetireRite on Facebook" target="_blank" rel="noopener noreferrer">
-                  <img src={facebook} alt="Facebook" />
-                </a>
-              </li>
-            </ul>
-          </div>
+          <SocialIcons className="column" />
         </div>
       </div>
     </section>

@@ -152,7 +152,7 @@ const Navbar = class extends React.Component {
           <div id="navMenu" className="retirerite-navbar-menu navbar-menu">
             <div className="retirerite-navbar-start has-text-centered">
               <Link className="navbar-item" to="/about/">
-                About
+                The Team
               </Link>
               <Link className="navbar-item" to="/services/">
                 Services

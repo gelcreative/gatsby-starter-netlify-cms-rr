@@ -60,8 +60,8 @@ const StyledFooter = styled.footer`
 
   @media(max-width: 769px) {
       .retirerite-footer-bottom .column {
-          justify-content: center;
-          text-align: center;
+        justify-content: center;
+        text-align: center;
       }
   }
 `

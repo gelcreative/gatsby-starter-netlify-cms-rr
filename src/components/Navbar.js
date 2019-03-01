@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import logo from '../img/retirerite-logo-hort.svg'
+import SocialIcons from '../components/SocialIcons'
 
 const StyledHeader = styled.nav`
   .navbar-brand {
@@ -52,6 +53,11 @@ const StyledHeader = styled.nav`
 
     .navbar-brand {
       padding: 2em 5%;
+    }
+
+    .retirerite-nav-social {
+      justify-content: center;
+      text-align: center;
     }
   }
 
@@ -138,6 +144,9 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/contact/">
                 Contact
               </Link>
+              <div className="navbar-item">
+                <SocialIcons className="retirerite-nav-social" />
+              </div>
             </div>
           </div>
           {/* Hamburger menu */}

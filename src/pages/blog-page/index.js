@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../../components/Layout'
-import SingleBlogPost from '../../components/SingleBlogPost'
+import BlogList from '../../components/BlogList'
 import RetireRiteCta from '../../components/RetireRiteCta'
 
 const StyledBlogPage = styled.article`
@@ -45,11 +45,7 @@ const StyledBlogPage = styled.article`
 export default class BlogPage extends React.Component {
 
   render() {
-    const { mainQuery, grayscaleImageQuery } = this.props.data
-    const { edges: posts } = mainQuery
-    const { edges: grayScaleImages } = grayscaleImageQuery
-
-    let columnClass = ""
+    const blogListQuery = this.props.data
 
     return (
       <Layout>
@@ -63,36 +59,7 @@ export default class BlogPage extends React.Component {
                   </div>
                 </div>
               </section>
-              <div className="columns retirerite-blog-body">
-                  {posts
-                    .map(({ node: post }, i) => {
-
-                      switch(i) {
-                        case 1: columnClass = " is-7"
-                          break;
-                        case 2: columnClass = " is-5"
-                          break;
-                        default: columnClass = " is-12"
-                      }
-
-                      return (
-                        <div className={`column${columnClass} retirerite-blog-body-item`}>
-                          <SingleBlogPost 
-                            key={post.id}
-                            title={post.frontmatter.title}
-                            date={post.frontmatter.date}
-                            description={post.frontmatter.description}
-                            excerpt={post.excerpt}
-                            tag={post.frontmatter.tags[0]}
-                            bannerImage={post.frontmatter.bannerImage.image}
-                            grayscaleBannerImage={grayScaleImages[i].node.frontmatter.bannerImage.image}
-                            slug={post.fields.slug}
-                          />
-                        </div>
-                      )
-                    })  
-                  }                  
-              </div>
+              <BlogList className="columns retirerite-blog-body" blogListQuery={blogListQuery} />
             </div>
           </div>
           <section className="content">

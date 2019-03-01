@@ -23,7 +23,7 @@ const StyledHeader = styled.nav`
     font-weight: 700;
   }
 
-  .retirerite-nav-bottom .navbar-item:hover {
+  .retirerite-nav-bottom a.navbar-item:hover {
     color: #ffffff;
     background-color: ${props => props.theme.red};
   }
@@ -42,6 +42,10 @@ const StyledHeader = styled.nav`
     color: #ffffff;
   }
 
+  .retirerite-nav-social svg {
+    height: 20px;
+  }
+
   @media(max-width: 1087px) {
     .retirerite-navbar-start {
         flex-direction: column;
@@ -55,19 +59,26 @@ const StyledHeader = styled.nav`
       padding: 2em 5%;
     }
 
+    .retirerite-nav-bottom .navbar-item:hover {
+      color: #ffffff;
+      background-color: ${props => props.theme.red};
+    }
+
     .retirerite-nav-social {
       justify-content: center;
       text-align: center;
-      li {
-        margin: 0 10%;
-        svg {
-          height: 20px;
-          path {
-            fill: #000000;
+      ul {
+        width: 200px;
+        max-width: 90%;
+        li {
+          margin: 0 10%;
+          svg {
+            path {
+              fill: #000000;
+            }
           }
         }
       }
-      
     }
 
     .retirerite-nav-bottom .navbar-item:hover svg path {

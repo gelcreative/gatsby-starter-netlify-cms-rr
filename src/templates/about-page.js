@@ -5,7 +5,6 @@ import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import ContactDetails from '../components/ContactDetails'
 import EmployeeProfiles from '../components/EmployeeProfiles'
 
 const StyledAboutPage = styled.article`
@@ -33,11 +32,6 @@ export const AboutPageTemplate = ({ title, intro, content, contentComponent }) =
                 </h1>
                 <p>{intro}</p>
               </div>
-            </div>
-          </div>
-          <div className="columns retirerite-contact-details">
-            <div className="column is-10 is-offset-1">
-              <ContactDetails />
             </div>
           </div>
           <div className="columns retirerite-team-section">

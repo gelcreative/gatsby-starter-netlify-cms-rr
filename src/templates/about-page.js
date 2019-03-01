@@ -34,9 +34,16 @@ export const AboutPageTemplate = ({ title, intro, content, contentComponent }) =
               </div>
             </div>
           </div>
-          <div className="columns retirerite-team-section">
-            <div className="column is-10 is-offset-1 retirerite-team-section-inner">
-              <EmployeeProfiles />
+          <div className="retirerite-team-section">
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
+                <h2>The Team</h2>
+              </div>
+            </div>
+            <div className="columns">
+              <div className="column is-10 is-offset-1 retirerite-team-section-inner">
+                <EmployeeProfiles />
+              </div>
             </div>
           </div>
           <div className="columns">

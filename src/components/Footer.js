@@ -56,6 +56,10 @@ const StyledFooter = styled.footer`
     .retirerite-gray-border-right {
       border-right: 2px solid #ffffff;
     }
+
+    .retirerite-footer-social ul {
+      justify-content: flex-end;
+    }
   }
 
   @media(max-width: 769px) {
@@ -145,7 +149,7 @@ const Footer = () => (
               &copy; { new Date().getFullYear() } RetireRite Strategies Inc.
             </p>
           </div>
-          <SocialIcons className="column" />
+          <SocialIcons className="column retirerite-footer-social" />
         </div>
       </div>
     </section>

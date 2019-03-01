@@ -10,7 +10,7 @@ const StyledSocialIcons = styled.div`
   ul {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
   }
 
   li {

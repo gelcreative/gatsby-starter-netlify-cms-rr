@@ -58,12 +58,16 @@ const StyledHeader = styled.nav`
     .retirerite-nav-social {
       justify-content: center;
       text-align: center;
-      svg {
-        height: 20px;
-        path {
-          fill: #000000;
+      li {
+        margin: 0 10%;
+        svg {
+          height: 20px;
+          path {
+            fill: #000000;
+          }
         }
       }
+      
     }
 
     .retirerite-nav-bottom .navbar-item:hover svg path {

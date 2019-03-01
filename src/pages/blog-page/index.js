@@ -7,7 +7,7 @@ import Layout from '../../components/Layout'
 import SingleBlogPost from '../../components/SingleBlogPost'
 import RetireRiteCta from '../../components/RetireRiteCta'
 
-const StyledBlogPage = styled.section`
+const StyledBlogPage = styled.article`
   .columns.retirerite-blog-body {
     flex-wrap: wrap;
   }
@@ -56,13 +56,13 @@ export default class BlogPage extends React.Component {
         <StyledBlogPage className="section">
           <div className="container">
             <div className="section content">
-              <div className="columns retirerite-page-intro">
+              <section className="columns retirerite-page-intro">
                 <div className="column has-text-centered">
                   <div className="">
                     <h1>Blog</h1>
                   </div>
                 </div>
-              </div>
+              </section>
               <div className="columns retirerite-blog-body">
                   {posts
                     .map(({ node: post }, i) => {

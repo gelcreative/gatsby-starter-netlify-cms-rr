@@ -5,6 +5,7 @@ import styled from 'styled-components'
 
 import Layout from '../../components/Layout'
 import SingleBlogPost from '../../components/SingleBlogPost'
+import RetireRiteCta from '../../components/RetireRiteCta'
 
 const StyledBlogPage = styled.section`
   .columns.retirerite-blog-body {
@@ -52,7 +53,7 @@ export default class BlogPage extends React.Component {
 
     return (
       <Layout>
-        <StyledBlogPage>
+        <StyledBlogPage className="section">
           <div className="container">
             <div className="section content">
               <div className="columns retirerite-page-intro">
@@ -94,6 +95,9 @@ export default class BlogPage extends React.Component {
               </div>
             </div>
           </div>
+          <section className="content">
+            <RetireRiteCta />
+          </section>
         </StyledBlogPage>
       </Layout>
     )

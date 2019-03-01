@@ -24,7 +24,7 @@ const RetireRiteCta = () => (
         <p>Whether it's about personal insurance coverage, building a financial plan, or business insurance solutions, we can help.</p>
       </div>
       <div className="column is-one-quarter has-text-centered">
-        <Link className="button button-1" to="/book-a-meeting/">Start a <br />Conversation</Link>
+        <Link className="button button-1" to="/book-a-meeting/">Start a Conversation</Link>
       </div>
     </div>
   </StyledCta>

@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import twitter from '../img/twitter-logo.svg'
-import facebook from '../img/facebook-logo.svg'
-import linkedin from '../img/linkedin-logo.svg'
+import Twitter from './svg/Twitter'
+import LinkedIn from './svg/LinkedIn'
+import Facebook from './svg/Facebook'
 
 const StyledSocialIcons = styled.div`
   display: flex;
@@ -19,6 +19,10 @@ const StyledSocialIcons = styled.div`
 
   img {
       height: 30px;
+  }
+
+  svg {
+    height: 30px;
   }
 
   .retirerite-twitter img {
@@ -40,17 +44,17 @@ const SocialIcons = (props) => {
       <ul className="retirerite-social">
         <li className="retirerite-twitter">
           <a href="https://twitter.com/retirerite_inc" title="RetireRite on Twitter" target="_blank" rel="noopener noreferrer">
-            <img src={twitter} alt="Twitter" />
+            <Twitter />
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/company/retirerite/" title="RetireRite on LinkedIn" target="_blank" rel="noopener noreferrer">
-            <img src={linkedin} alt="LinkedIn" />
+            <LinkedIn />
           </a>
         </li>
         <li>
           <a href="https://www.facebook.com/retireritefinancial/" title="RetireRite on Facebook" target="_blank" rel="noopener noreferrer">
-            <img src={facebook} alt="Facebook" />
+            <Facebook />
           </a>
         </li>
       </ul>

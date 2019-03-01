@@ -39,7 +39,7 @@ export default class IndexPage extends React.Component {
               </div>
             </section>
             <section className="content">
-              <h2>Featured Blog Post</h2>
+              <h2>Featured Blog Posts</h2>
               <BlogList blogListQuery={data} />
             </section>
           </div>

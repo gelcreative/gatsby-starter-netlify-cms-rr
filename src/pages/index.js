@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
-import SingleBlogPost from '../components/SingleBlogPost'
+import BlogList from '../components/BlogList'
 import RetireRiteCta from '../components/RetireRiteCta'
 import curves from '../img/blue-curves.svg'
 
@@ -18,9 +18,7 @@ const StyledHomePage = styled.article`
 
 export default class IndexPage extends React.Component {
   render() {
-    const { data } = this.props
-    const { edges: posts } = data.mainQuery
-    const grayscaleImage = data.grayscaleImageQuery.edges[0].node.frontmatter.bannerImage.image
+    const {data} = this.props
 
     return (
       <Layout>
@@ -42,23 +40,7 @@ export default class IndexPage extends React.Component {
             </section>
             <section className="content">
               <h2>Featured Blog Post</h2>
-              {posts
-                .map(({ node: post }) => (
-                  <div
-                    key={post.id}
-                  >
-                    <SingleBlogPost 
-                      title={post.frontmatter.title}
-                      date={post.frontmatter.date}
-                      description={post.frontmatter.description}
-                      excerpt={post.excerpt}
-                      tag={post.frontmatter.tags[0]}
-                      bannerImage={post.frontmatter.bannerImage.image}
-                      grayscaleBannerImage={grayscaleImage}
-                      slug={post.fields.slug}
-                    />
-                  </div>
-                ))}
+              <BlogList blogListQuery={data} />
             </section>
           </div>
           <section className="content">
@@ -83,7 +65,7 @@ query IndexQuery {
   mainQuery: allMarkdownRemark(
     sort: { order: DESC, fields: [frontmatter___date] },
     filter: { frontmatter: { templateKey: { eq: "blog-post" } }},
-    limit: 1
+    limit: 3
   ) {
     edges {
       node {
@@ -114,7 +96,7 @@ query IndexQuery {
   grayscaleImageQuery: allMarkdownRemark(
     sort: { order: DESC, fields: [frontmatter___date] },
     filter: { frontmatter: { templateKey: { eq: "blog-post" } }},
-    limit: 1
+    limit: 3
   ) {
     edges {
       node {

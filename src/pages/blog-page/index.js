@@ -1,46 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import styled from 'styled-components'
 
 import Layout from '../../components/Layout'
 import BlogList from '../../components/BlogList'
 import RetireRiteCta from '../../components/RetireRiteCta'
-
-const StyledBlogPage = styled.article`
-  .columns.retirerite-blog-body {
-    flex-wrap: wrap;
-  }
-
-  .retirerite-blog-body-item:nth-child(2) .single-blog-post-info,
-  .retirerite-blog-body-item:nth-child(3) .single-blog-post-info {
-      width: 100%
-  }
-
-  @media(min-width: 769px) {
-    .retirerite-blog-body-item:nth-child(n+4) article {
-      padding-top: 0;
-      min-height: unset;
-    }
-
-    .retirerite-blog-body-item:nth-child(n+4) [class^="single-post-bg"] {
-      width: 20%;
-    }
-
-    .retirerite-blog-body-item:nth-child(n+4) .single-blog-post-info {
-      min-height: 200px;
-      max-height: unset;
-      position: relative;
-      width: 80%;
-      margin-left: auto;
-      background-color: ${props => props.theme.lightGrey}
-    }
-
-    .retirerite-blog-body-item:nth-child(n+4) article:hover .single-blog-post-info {
-      background-color: ${props => props.theme.middleBlue};
-    }
-  }
-`
 
 export default class BlogPage extends React.Component {
 
@@ -49,7 +13,7 @@ export default class BlogPage extends React.Component {
 
     return (
       <Layout>
-        <StyledBlogPage className="section">
+        <article className="section">
           <div className="container">
             <div className="section content">
               <section className="columns retirerite-page-intro">
@@ -59,13 +23,13 @@ export default class BlogPage extends React.Component {
                   </div>
                 </div>
               </section>
-              <BlogList className="columns retirerite-blog-body" blogListQuery={blogListQuery} />
+              <BlogList blogListQuery={blogListQuery} />
             </div>
           </div>
           <section className="content">
             <RetireRiteCta />
           </section>
-        </StyledBlogPage>
+        </article>
       </Layout>
     )
   }

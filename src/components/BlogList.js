@@ -4,9 +4,7 @@ import styled from 'styled-components'
 import SingleBlogPost from './SingleBlogPost'
 
 const StyledBlogList = styled.section`
-  .columns.retirerite-blog-body {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
 
   .retirerite-blog-body-item:nth-child(2) .single-blog-post-info,
   .retirerite-blog-body-item:nth-child(3) .single-blog-post-info {
@@ -43,11 +41,10 @@ const BlogList = (props) => {
   const { mainQuery, grayscaleImageQuery } = props.blogListQuery
   const { edges: posts } = mainQuery
   const { edges: grayScaleImages } = grayscaleImageQuery
-  const className = props.className
   let columnClass = ""
 
   return (
-    <StyledBlogList className={className}>
+    <StyledBlogList className="columns retirerite-blog-body">
       {posts
         .map(({ node: post }, i) => {
 

@@ -5,6 +5,7 @@ import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import markdownToHtml from '../util/markdownToHtml'
+import RetireRiteCta from '../components/RetireRiteCta'
 
 const StyledFaqPage = styled.article`
   .retirerite-page-intro {
@@ -51,8 +52,8 @@ export const FaqPageTemplate = ({
   questions,
 }) => {
   return (
-    <StyledFaqPage>
-      <section className="section content">
+    <StyledFaqPage className="section">
+      <section className="content">
         <div className="columns retirerite-page-intro">
             <div className="column has-text-centered is-10 is-offset-1">
               <h1>{title}</h1>
@@ -78,6 +79,9 @@ export const FaqPageTemplate = ({
               </ul>
             </div>
         </div>
+      </section>
+      <section className="content">
+        <RetireRiteCta />
       </section>
     </StyledFaqPage>
   )

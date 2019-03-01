@@ -96,7 +96,7 @@ export default class Index extends React.Component {
                         <div className="field">
                           <label className="label" htmlFor={"telephone"}>Telephone</label>
                             <div className="control">
-                              <input className="input" type={"tel"} name={"telephone"} onChange={this.handleChange} id={"telephone"} required={true} />
+                              <input className="input" type={"tel"} name={"telephone"} onChange={this.handleChange} id={"telephone"} required={false} />
                             </div>
                         </div>
                       </div>
@@ -129,7 +129,7 @@ export default class Index extends React.Component {
                         <div className="field">
                           <label className="label" htmlFor={"message"}>Message</label>
                           <div className="control">
-                            <textarea className="textarea" name={"message"} onChange={this.handleChange} id={"message"} required={true} />
+                            <textarea className="textarea" name={"message"} onChange={this.handleChange} id={"message"} required={false} />
                           </div>
                         </div>
                       </div>
@@ -144,7 +144,7 @@ export default class Index extends React.Component {
                   </form>
                   <div className="columns">
                     <div className="column">
-                      <small>By clicking on the "Send" button your information will be sent through email to RetireRite Financial Strategies Inc. <br />The use of email is not a secure medium and personal information should be transmitted by more secure means.</small>
+                      <small>By clicking on the "Send" button your information will be sent through email to RetireRite Financial Strategies Inc. <br />Email is not necessarily a secure medium and personal information should be transmitted by more secure means.</small>
                     </div>
                   </div>
                 </div>

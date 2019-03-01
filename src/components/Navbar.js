@@ -23,7 +23,7 @@ const StyledHeader = styled.nav`
     font-weight: 700;
   }
 
-  .retirerite-nav-bottom a.navbar-item:hover {
+  .retirerite-nav-bottom .navbar-item:hover {
     color: #ffffff;
     background-color: ${props => props.theme.red};
   }
@@ -58,6 +58,16 @@ const StyledHeader = styled.nav`
     .retirerite-nav-social {
       justify-content: center;
       text-align: center;
+      svg {
+        height: 20px;
+        path {
+          fill: #000000;
+        }
+      }
+    }
+
+    .retirerite-nav-bottom .navbar-item:hover svg path {
+      fill: #ffffff;
     }
   }
 

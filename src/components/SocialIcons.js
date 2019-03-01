@@ -17,15 +17,11 @@ const StyledSocialIcons = styled.div`
       margin-right: 10px;
   }
 
-  img {
-      height: 30px;
-  }
-
   svg {
     height: 30px;
   }
 
-  .retirerite-twitter img {
+  .retirerite-twitter svg {
     height: 27px;
   }
 

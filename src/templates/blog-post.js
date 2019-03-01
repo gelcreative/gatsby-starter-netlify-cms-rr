@@ -29,6 +29,7 @@ const StyledBlogPost = styled.article`
       border-top: 2px solid #cbcbcb;
       border-bottom: 2px solid #cbcbcb;
       padding: 2em 0;
+      max-width: 900px;
   }
 
   .retirerite-blog-heading-row {

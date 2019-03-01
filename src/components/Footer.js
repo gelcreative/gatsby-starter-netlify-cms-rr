@@ -57,7 +57,7 @@ const StyledFooter = styled.footer`
       border-right: 2px solid #ffffff;
     }
 
-    .retire-rite-footer-social,
+    .retirerite-footer-social,
     .retirerite-footer-social ul {
       justify-content: flex-end;
     }

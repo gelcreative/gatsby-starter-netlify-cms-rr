@@ -14,7 +14,21 @@ const StyledSocialIcons = styled.div`
   }
 
   li {
-      margin-right: 10px;
+    margin-right: 20px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  svg path {
+    transition: fill 300ms;
+  }
+
+  a:hover svg path {
+      fill: #ef4136;
   }
 
   svg {

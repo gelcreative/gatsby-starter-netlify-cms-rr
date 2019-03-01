@@ -31,6 +31,7 @@ const StyledHeader = styled.nav`
   .retirerite-navbar-start {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
   }
 
@@ -48,11 +49,12 @@ const StyledHeader = styled.nav`
 
   @media(max-width: 1087px) {
     .retirerite-navbar-start {
-        flex-direction: column;
+      flex-direction: column;
     }
 
-    .retirerite-nav-bottom a {
-        color: #000;
+    .retirerite-nav-bottom .navbar-item {
+      color: #000;
+      width: 100%;
     }
 
     .navbar-brand {
@@ -89,7 +91,8 @@ const StyledHeader = styled.nav`
   @media(min-width: 1088px) {
 
     .retirerite-nav-bottom a {
-      height: 60px;
+      min-height: 60px;
+      height: 100%;
     }
 
     .retirerite-navbar-start [aria-current] {

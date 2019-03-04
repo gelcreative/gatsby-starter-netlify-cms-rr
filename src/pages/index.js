@@ -14,6 +14,9 @@ const StyledHomePage = styled.article`
   margin-bottom: 200px;
   background: top no-repeat url(${curves});
   background-size: contain;
+  &>.container {
+    margin-top: 5rem;
+  }
 `
 
 export default class IndexPage extends React.Component {
@@ -25,19 +28,19 @@ export default class IndexPage extends React.Component {
         <StyledHomePage className="section">
           <div className="container">
             <section className="content">
-            <div className="columns">
-              <div className="column">
-                <h1 className="has-text-centered">RetireRite Financial Strategies Inc.</h1>
-                <p>Everyone’s needs, and dreams are different. The time to start making them happen is right now, and it all starts with having a financial plan. Studies show that Canadians backed by a comprehensive financial plan feel:</p>
-                <ul>
-                  <li>more on track with their financial goals and retirement plans;</li>
-                  <li>they have improved their ability to save in the past five years;</li>
-                  <li>equipped to deal with unexpected financial emergencies and to weather tough economic times;</li>
-                  <li>able to indulge in their discretionary spending goals.</li>
-                </ul>
-                <p>Furthermore, regardless of net worth, Canadians working with a financial advisor hold more assets, save at a higher rate, and report significantly higher levels of financial and emotional well-being than non-advised Canadians. </p>
+              <div className="columns">
+                <div className="column">
+                  <h1 className="has-text-centered">RetireRite Financial Strategies Inc.</h1>
+                  <p>Everyone’s needs, and dreams are different. The time to start making them happen is right now, and it all starts with having a financial plan. Studies show that Canadians backed by a comprehensive financial plan feel:</p>
+                  <ul>
+                    <li>more on track with their financial goals and retirement plans;</li>
+                    <li>they have improved their ability to save in the past five years;</li>
+                    <li>equipped to deal with unexpected financial emergencies and to weather tough economic times;</li>
+                    <li>able to indulge in their discretionary spending goals.</li>
+                  </ul>
+                  <p>Furthermore, regardless of net worth, Canadians working with a financial advisor hold more assets, save at a higher rate, and report significantly higher levels of financial and emotional well-being than non-advised Canadians. </p>
+                </div>
               </div>
-            </div>
             </section>
             <section className="content">
               <div className="columns">

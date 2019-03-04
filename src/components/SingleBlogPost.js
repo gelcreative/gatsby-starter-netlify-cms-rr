@@ -87,10 +87,15 @@ const StyledSingleBlogPost = styled.article`
     display: inline-block;
     padding: 0.5em 2%;
     background-color: #29303e;
-    color: #ffffff;
     margin: 0;
     transition: 500ms;
-    z-index: 3;
+    z-index: 4;
+    a {
+      color: #ffffff;
+      &:hover {
+        color: #ffffff;
+      }
+    }
   }
 
   .single-post-link {
@@ -99,7 +104,7 @@ const StyledSingleBlogPost = styled.article`
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 4;
+    z-index: 3;
   }
 
   @media(max-width: 769px) {
@@ -138,7 +143,7 @@ const SingleBlogPost = (props) => (
           })`
         }}
       ></div>
-    <p className="single-post-tag"><span className="visually-hidden">Post Category:</span> {props.tag}</p>
+    <p className="single-post-tag"><Link to={`/tags/${props.tag}`}><span className="visually-hidden">Post Category:</span> {props.tag}</Link></p>
     <div className="single-blog-post-info">
       <h3 className="single-post-title">{props.title}</h3>
       <p className="single-post-date">Published: {props.date}</p>

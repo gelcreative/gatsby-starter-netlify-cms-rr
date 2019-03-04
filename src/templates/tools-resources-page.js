@@ -8,8 +8,6 @@ import Content, { HTMLContent } from '../components/Content'
 export const ToolsResourcesPageTemplate = ({
   title,
   intro,
-  heading,
-  description,
   content,
   contentComponent,
 }) => {
@@ -29,14 +27,6 @@ export const ToolsResourcesPageTemplate = ({
           </section>
           <section className="columns" style={{ marginBottom: '2em' }}>
             <div className="column is-10 is-offset-1">
-              <div>
-                <h2>{heading}</h2>
-                <p>{description}</p>
-              </div>
-            </div>
-          </section>
-          <section className="columns">
-            <div className="column is-10 is-offset-1">
               <PageContent content={content} />
             </div>
           </section>
@@ -49,8 +39,6 @@ export const ToolsResourcesPageTemplate = ({
 ToolsResourcesPageTemplate.propTypes = {
   title: PropTypes.string,
   intro: PropTypes.string,
-  heading: PropTypes.string,
-  description: PropTypes.string,
   content: PropTypes.node,
   contentComponent: PropTypes.func,
 }
@@ -63,8 +51,6 @@ const ToolsResourcesPage = ({ data }) => {
       <ToolsResourcesPageTemplate
         title={page.frontmatter.title}
         intro={page.frontmatter.intro}
-        heading={page.frontmatter.heading}
-        description={page.frontmatter.description}
         content={page.html}
         contentComponent={HTMLContent}
       />
@@ -89,8 +75,6 @@ export const ToolsResourcesPageQuery = graphql`
       frontmatter {
         title
         intro
-        heading
-        description
       }
     }
   }

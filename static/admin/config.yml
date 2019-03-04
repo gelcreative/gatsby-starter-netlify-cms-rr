@@ -60,10 +60,7 @@ collections:
           - {label: "Intro", name: "intro", widget: "text"}
           - {label: "Heading", name: "heading", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
-          - {label: "Left Column", name: "leftColumn", widget: "markdown"}
-          - {label: "Right Column", name: "rightColumn", widget: "markdown"}
-          - {label: "Left Bottom Column", name: "leftBottomColumn", widget: "markdown"}
-          - {label: "Right Bottom Column", name: "rightBottomColumn", widget: "markdown"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/faq/index.md"
         label: "FAQ"
         name: "faq"

@@ -3,18 +3,16 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
-import markdownToHtml from '../util/markdownToHtml'
+import Content, { HTMLContent } from '../components/Content'
 
 export const ToolsResourcesPageTemplate = ({
   title,
   intro,
   heading,
   description,
-  leftColumnContent,
-  rightColumnContent,
-  leftBottomColumnContent,
-  rightBottomColumnContent,
+  content,
 }) => {
+  const PageContent = contentComponent || Content
 
   return (
     <section className="section section--gradient">
@@ -38,26 +36,7 @@ export const ToolsResourcesPageTemplate = ({
           </section>
           <section className="columns">
             <div className="column is-10 is-offset-1">
-              <div className="columns">
-                <div className="column">
-                  <div dangerouslySetInnerHTML={{__html: markdownToHtml(leftColumnContent)}} />
-                </div>
-                <div className="column">
-                  <div dangerouslySetInnerHTML={{__html: markdownToHtml(rightColumnContent)}} />
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="columns">
-                <div className="column">
-                  <div dangerouslySetInnerHTML={{__html: markdownToHtml(leftBottomColumnContent)}} />
-                </div>
-                <div className="column">
-                  <div dangerouslySetInnerHTML={{__html: markdownToHtml(rightBottomColumnContent)}} />
-                </div>
-              </div>
+              <PageContent content={content} />
             </div>
           </section>
         </div>
@@ -87,10 +66,7 @@ const ToolsResourcesPage = ({ data }) => {
         intro={page.frontmatter.intro}
         heading={page.frontmatter.heading}
         description={page.frontmatter.description}
-        leftColumnContent={page.frontmatter.leftColumn}
-        rightColumnContent={page.frontmatter.rightColumn}
-        leftBottomColumnContent={page.frontmatter.leftBottomColumn}
-        rightBottomColumnContent={page.frontmatter.rightBottomColumn}
+        content={page.html}
       />
     </Layout>
   )
@@ -109,15 +85,12 @@ export default ToolsResourcesPage
 export const ToolsResourcesPageQuery = graphql`
   query ToolsResourcesPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
+      html
       frontmatter {
         title
         intro
         heading
         description
-        leftColumn
-        rightColumn
-        leftBottomColumn
-        rightBottomColumn
       }
     }
   }

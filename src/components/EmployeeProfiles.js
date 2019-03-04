@@ -2,6 +2,8 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
+import markdownToHtml from '../util/markdownToHtml'
+
 const StyledEmployee = styled.article`
   display: flex;
   flex-wrap: wrap;

@@ -26,8 +26,14 @@ export default class IndexPage extends React.Component {
           <div className="container">
             <section className="content has-text-centered">
               <h1>RetireRite Financial Strategies Inc.</h1>
-              <p>A sound financial plan is crucial to living the life you want, on your terms. Whether it's for your business or your personal finances, together we can build the roadmap to success. And we'll stay with you every step of the way.</p>
-              <p>Through comprehensive analysis, in-depth market research and the support of a team of highly-qualified tax and product specialists, we can create customized financial plans that will help you achieve your goals.</p>
+              <p>Everyone’s needs, and dreams are different. The time to start making them happen is right now, and it all starts with having a financial plan. Studies show that Canadians backed by a comprehensive financial plan feel:</p>
+              <ul>
+                <li>more on track with their financial goals and retirement plans;</li>
+                <li>they have improved their ability to save in the past five years;</li>
+                <li>equipped to deal with unexpected financial emergencies and to weather tough economic times;</li>
+                <li>able to indulge in their discretionary spending goals.</li>
+              </ul>
+              <p>Furthermore, regardless of net worth, Canadians working with a financial advisor hold more assets, save at a higher rate, and report significantly higher levels of financial and emotional well-being than non-advised Canadians. </p>
             </section>
             <section className="content">
               <div className="columns">
@@ -35,7 +41,7 @@ export default class IndexPage extends React.Component {
                   <h2>The value of financial planning</h2>
                   <p>Did you know that when it comes to your financial well-being, advice may be the difference between achieving your financial goals and falling short? Make the most of your money with the help of a financial security advisor.</p>
                 </div>
-                <div className="column"><img src="https://via.placeholder.com/600x300.png" alt=""/></div>
+                <div className="column"><iframe title="Value of Advice Video" width="518" height="292" src="https://www.youtube.com/embed/hmpDOd7efO0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
               </div>
             </section>
             <section className="content">

@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import markdownToHtml from '../util/markdownToHtml'
 
 
 export const ServicesPageTemplate = ({
@@ -18,10 +20,10 @@ export const ServicesPageTemplate = ({
       <div className="container">
         <div className="section content">
           <div className="columns retirerite-page-intro">
-            <div className="column has-text-centered is-10 is-offset-1">
+            <div className="column is-10 is-offset-1">
               <div className="">
-                <h1>{title}</h1>
-                <p>{intro}</p>
+                <h1 className="has-text-centered">{title}</h1>
+                <p dangerouslySetInnerHTML={{__html: markdownToHtml(intro)}} />
               </div>
             </div>
           </div>

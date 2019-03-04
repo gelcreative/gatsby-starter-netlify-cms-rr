@@ -17,6 +17,9 @@ const StyledSingleBlogPost = styled.article`
 
     .single-blog-post-info {
       background-color: ${props => props.theme.middleBlue};
+      .single-post-date {
+        color: #ffffff;
+      }
     }
 
     .single-blog-post-info * {
@@ -62,16 +65,19 @@ const StyledSingleBlogPost = styled.article`
     z-index: 2;
     max-height: 80%;
     overflow: hidden;
+    h3.single-post-title {
+      margin-bottom: 0.3em;
+    }
+    .single-post-date {
+      font-size: 1.6rem;
+      color: #515151;
+      font-style: italic;
+      margin-bottom: 0.5em;
+    }
   }
 
   .single-blog-post-info * {
     transition: 500ms;
-  }
-
-  .single-post-date {
-    font-size: 1.6rem;
-    color: #515151;
-    font-style: italic;
   }
 
   .single-post-tag {
@@ -134,7 +140,7 @@ const SingleBlogPost = (props) => (
       ></div>
     <p className="single-post-tag"><span className="visually-hidden">Post Category:</span> {props.tag}</p>
     <div className="single-blog-post-info">
-      <h3>{props.title}</h3>
+      <h3 className="single-post-title">{props.title}</h3>
       <p className="single-post-date">Published: {props.date}</p>
       <p className="single-post-excerpt">{props.description}</p>
     </div>

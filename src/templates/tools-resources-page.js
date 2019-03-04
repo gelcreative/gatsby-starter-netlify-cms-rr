@@ -11,6 +11,7 @@ export const ToolsResourcesPageTemplate = ({
   heading,
   description,
   content,
+  contentComponent,
 }) => {
   const PageContent = contentComponent || Content
 
@@ -50,10 +51,8 @@ ToolsResourcesPageTemplate.propTypes = {
   intro: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
-  leftColumnContent: PropTypes.string,
-  rightColumnContent: PropTypes.string,
-  leftBottomColumnContent: PropTypes.string,
-  rightBottomColumnContent: PropTypes.string,
+  content: PropTypes.node,
+  contentComponent: PropTypes.func,
 }
 
 const ToolsResourcesPage = ({ data }) => {
@@ -67,6 +66,7 @@ const ToolsResourcesPage = ({ data }) => {
         heading={page.frontmatter.heading}
         description={page.frontmatter.description}
         content={page.html}
+        contentComponent={HTMLContent}
       />
     </Layout>
   )

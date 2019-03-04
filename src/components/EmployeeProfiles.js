@@ -75,7 +75,7 @@ const EmployeeProfiles = () => (
                 </div>
                   <p className="retirerite-employee-name">{employee.name}<span className="visually-hidden">, </span><span className="retirerite-employee-credentials">{employee.credentials}</span></p>
               </div>
-                <p className="retirerite-employee-bio">{employee.bio}</p>
+                <p className="retirerite-employee-bio" dangerouslySetInnerHTML={{__html: markdownToHtml(employee.bio)}}/>
             </StyledEmployee>
           ))}
         </>

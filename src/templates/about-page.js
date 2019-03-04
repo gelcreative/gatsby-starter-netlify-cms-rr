@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import EmployeeProfiles from '../components/EmployeeProfiles'
+import markdownToHtml from '../util/markdownToHtml'
 
 const StyledAboutPage = styled.article`
   .retirerite-team-section {
@@ -30,7 +31,7 @@ export const AboutPageTemplate = ({ title, intro, content, contentComponent }) =
                 <h1>
                   {title}
                 </h1>
-                <p>{intro}</p>
+                <p dangerouslySetInnerHTML={{__html: markdownToHtml(intro)}} />
               </div>
             </div>
           </div>

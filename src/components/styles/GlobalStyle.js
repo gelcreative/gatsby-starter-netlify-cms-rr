@@ -16,7 +16,6 @@ const theme = {
 const GlobalStyle = createGlobalStyle`
 
   @import url(${all});
- 
   @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Serif:400,500");
 
   html {
@@ -106,6 +105,20 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${theme.lightBlue};
     margin: 0 0 1em 0;
     padding: 1em 2em;
+  }
+
+  .content table {
+    margin-bottom: 3em;
+    td {
+      border: 1px solid #dbdbdb;
+      border-top-width: 1px;
+      border-right-width: 1px;
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+      border-width: 0 0 1px;
+      padding: 0.5em 0.75em;
+      vertical-align: top;
+    }
   }
 
   .retirerite-main .content:not(:last-child) {

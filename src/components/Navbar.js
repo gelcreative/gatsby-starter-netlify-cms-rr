@@ -95,6 +95,11 @@ const StyledHeader = styled.nav`
       height: 100%;
     }
 
+    .navbar-item {
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+
     .retirerite-navbar-start [aria-current] {
       position: relative;
     }

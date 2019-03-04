@@ -45,7 +45,7 @@ const StyledFooter = styled.footer`
 
   .retirerite-footer-bottom {
     background-color: ${props => props.theme.darkGrey};
-    padding: 2em 5%;
+    padding: 1em 5%;
   }
 
   .retirerite-footer-bottom p {

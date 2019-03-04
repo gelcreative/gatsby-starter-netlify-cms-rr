@@ -28,7 +28,7 @@ collections:
     create: true
     fields:
       - {label: "Name", name: "name", widget: "string"}
-      - {label: "Credentials", name: "credentials", widget: "string"}
+      - {label: "Credentials", name: "credentials", widget: "string", required: false}
       - {label: "Profile Image", name: "profileImage", widget: "object", fields: [{label: "Image", name: "image", widget: "image"}, {label: "Alt", name: "alt", widget: "string"}]}
       - {label: "Publish Date (Team members will be displayed according to date, in ascending order)", name: "date", widget: "datetime"}
       - {label: "Bio", name: "bio", widget: "markdown"}

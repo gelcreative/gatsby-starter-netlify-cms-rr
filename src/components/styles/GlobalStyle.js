@@ -72,6 +72,7 @@ const GlobalStyle = createGlobalStyle`
       a {
         color: #434244;
         transition: 300ms;
+        text-decoration: underline;
       }
 
       a:hover {

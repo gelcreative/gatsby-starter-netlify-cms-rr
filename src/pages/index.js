@@ -17,6 +17,10 @@ const StyledHomePage = styled.article`
   &>.container {
     margin-top: 5rem;
   }
+
+  iframe {
+    height: 292px;
+  }
 `
 
 export default class IndexPage extends React.Component {

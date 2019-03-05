@@ -15,6 +15,7 @@ const StyledToolsResourcesPage = styled.article`
     border-radius: 4px;
     transition: 300ms;
     font-weight: 500;
+    text-decoration: none !important;
   }
 
   strong > a:hover {

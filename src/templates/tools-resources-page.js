@@ -7,7 +7,23 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 const StyledToolsResourcesPage = styled.article`
-  background: #fff;
+  a:hover {}
+  a > em {
+    background-color: ${props => props.theme.middleBlue};
+    color: #ffffff;
+    padding-right: 10%;
+    padding-left: 10%;
+    text-decoration: none;
+    font-size: 1.8rem;
+    border-radius: 4px;
+    transition: 300ms;
+  }
+
+  a:hover > em {
+    border: 1px solid ${props => props.theme.middleBlue};
+    background-color: #ffffff;
+    color: ${props => props.theme.middleBlue};
+  }
 `
 
 export const ToolsResourcesPageTemplate = ({

@@ -1,9 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
+import styled from 'styled-components'
 
+import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+
+const StyledToolsResourcesPage = styled.article`
+  background: #fff;
+`
 
 export const ToolsResourcesPageTemplate = ({
   title,
@@ -14,7 +19,7 @@ export const ToolsResourcesPageTemplate = ({
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
+    <StyledToolsResourcesPage className="section section--gradient">
       <div className="container">
         <div className="section content">
           <section className="columns retirerite-page-intro">
@@ -32,7 +37,7 @@ export const ToolsResourcesPageTemplate = ({
           </section>
         </div>
       </div>
-    </section>
+    </StyledToolsResourcesPage>
   )
 }
 

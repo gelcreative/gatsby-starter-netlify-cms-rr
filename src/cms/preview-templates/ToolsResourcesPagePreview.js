@@ -8,12 +8,7 @@ const ToolsResourcesPagePreview = ({ entry, widgetFor }) => {
     <ToolsResourcesPageTemplate
       title={entry.getIn(['data', 'title'])}
       intro={entry.getIn(['data', 'intro'])}
-      heading={entry.getIn(['data', 'heading'])}
-      description={entry.getIn(['data', 'description'])}
-      leftColumnContent={entry.getIn(['data', 'leftColumn'])}
-      rightColumnContent={entry.getIn(['data', 'rightColumn'])}
-      leftBottomColumnContent={entry.getIn(['data', 'leftBottomColumn'])}
-      rightBottomColumnContent={entry.getIn(['data', 'rightBottomColumn'])}
+      content={widgetFor('body')}
     />
   )
 }

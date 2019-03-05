@@ -52,7 +52,7 @@ export default class Index extends React.Component {
             <div className="content">
               <section className="retirerite-page-title retirerite-page-intro columns is-centered">
                 <div className="column has-text-centered">
-                  <h1>Book a Meeting</h1>
+                  <h1>Contact RetireRite</h1>
                 </div>
               </section>
               <section className="retirerite-booking-form columns">

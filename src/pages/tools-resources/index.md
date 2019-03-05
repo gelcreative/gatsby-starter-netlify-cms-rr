@@ -22,24 +22,29 @@ You may be left to pay for expenses such as:
 Enhanced healthcare plans can help protect you against these and other unexpected health and dental expenses
 
 ### Sonata Health
+
 Sonata Health™ is a health and dental benefit plan designed for individuals who are looking for insurance coverage for themselves and their families.
 
-GET A QUOTE	OBTENEZ UNE SOUMISSION (links from current page)
+_GET A QUOTE	OBTENEZ UNE SOUMISSION (links from current page)_
 
 ### Plan Direct
+
 Enhanced coverage for individuals - PlanDirect can help fill the gap between your provincial plan coverage and what you pay.
 
 GET A QUOTE	OBTENEZ UNE SOUMISSION (links from current page)
 
 ### Retirement Income Planning – Say hello to “Hello Life”! 
+
 HelloLife is a personalized retirement income planner designed to create a steady stream of income for as long as you need it, as well as flexible investment options to allow for portfolio growth. 
 
 <button> Start your HelloLife Plan (https://hellolife.londonlife.com/application/en/home/) </button>
 
 ### What’s your Investment Personality?
+
 Risk tolerance, investment goals and timelines make up your investment personality, which helps us customize your investment portfolio to suit your financial plan. Take our quiz to discover your Investment Personality.
 
 ### Long Term Care Insurance
+
  Long term care insurance can provide coverage if you become unable to care for yourself and need assistance to manage daily living activities. Long term care isn't just for seniors; it can also cover some of the costs of a care facility or a caregiver in your own home following an accident or illness. 
 
 <button> More Information (can we get a button that generates an email form to be sent to Elizabeth?) </button>

@@ -25,19 +25,19 @@ Enhanced healthcare plans can help protect you against these and other unexpecte
 
 Sonata Health™ is a health and dental benefit plan designed for individuals who are looking for insurance coverage for themselves and their families.
 
-_GET A QUOTE	OBTENEZ UNE SOUMISSION (links from current page)_
+__[_Get a quote_](#)__
 
 ### Plan Direct
 
 Enhanced coverage for individuals - PlanDirect can help fill the gap between your provincial plan coverage and what you pay.
 
-GET A QUOTE	OBTENEZ UNE SOUMISSION (links from current page)
+__[_Get a quote_](#)__
 
 ### Retirement Income Planning – Say hello to “Hello Life”! 
 
 HelloLife is a personalized retirement income planner designed to create a steady stream of income for as long as you need it, as well as flexible investment options to allow for portfolio growth. 
 
-<button> Start your HelloLife Plan (https://hellolife.londonlife.com/application/en/home/) </button>
+__[_Start your HelloLife Plan_](https://hellolife.londonlife.com/application/en/home/)__
 
 ### What’s your Investment Personality?
 
@@ -47,13 +47,13 @@ Risk tolerance, investment goals and timelines make up your investment personali
 
  Long term care insurance can provide coverage if you become unable to care for yourself and need assistance to manage daily living activities. Long term care isn't just for seniors; it can also cover some of the costs of a care facility or a caregiver in your own home following an accident or illness. 
 
-<button> More Information (can we get a button that generates an email form to be sent to Elizabeth?) </button>
+__[_More Information_](/book-a-meeting/)__
 
 ### Travel Insurance
 
 Travel insurance protects you from unexpected medical expenses that occur while you are travelling out of province. There are a variety of plans available — let us help you find the right coverage.
 
-<button> More Information (https://www.securiglobe.com/en/?aff=WEB210) </button>
+__[_More Information_](https://www.securiglobe.com/en/?aff=WEB210)__
 
 ## RESOURCES
 

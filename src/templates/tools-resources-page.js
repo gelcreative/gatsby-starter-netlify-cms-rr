@@ -7,22 +7,29 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 const StyledToolsResourcesPage = styled.article`
-  a:hover {}
-  a > em {
+  strong > a {
     background-color: ${props => props.theme.middleBlue};
-    color: #ffffff;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding: calc(0.375em - 1px) 10%;
     text-decoration: none;
     font-size: 1.8rem;
     border-radius: 4px;
     transition: 300ms;
+    font-weight: 500;
   }
 
-  a:hover > em {
+  strong > a:hover {
     border: 1px solid ${props => props.theme.middleBlue};
     background-color: #ffffff;
-    color: ${props => props.theme.middleBlue};
+    text-decoration: none !important;
+  }
+
+  strong > a:hover > em {
+    color: ${props => props.theme.middleBlue} !important;
+  }
+
+  strong > a > em {
+    font-style: normal;
+    color: #ffffff;
   }
 `
 

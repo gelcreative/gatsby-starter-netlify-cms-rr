@@ -2,8 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
-import footerLogo from '../img/retirerite-logo-04-hort-light.svg'
 import SocialIcons from '../components/SocialIcons'
+import footerLogo from '../img/retirerite-logo-04-hort-light.svg'
+import tmLogo from '../img/RetireRite-logo-03-monochrome.svg'
 
 const StyledFooter = styled.footer`
   border-top: 5px solid ${props => props.theme.red};
@@ -46,6 +47,15 @@ const StyledFooter = styled.footer`
   .retirerite-footer-bottom {
     background-color: ${props => props.theme.darkGrey};
     padding: 1em 5%;
+  }
+
+  .retirerite-footer-bottom .column {
+    align-items: center;
+    display: flex;
+  }
+
+  .retirerite-footer-bottom-logo {
+    width: 50px;
   }
 
   .retirerite-footer-bottom p {
@@ -145,6 +155,9 @@ const Footer = () => (
     <section className="retirerite-footer-bottom">
       <div className="container">
         <div className="columns">
+          <div className="column is-narrow">
+            <img src={tmLogo} className="retirerite-footer-bottom-logo" alt="RetireRite"/>
+          </div>
           <div className="column">
             <p>
               &copy; { new Date().getFullYear() } RetireRite Financial Strategies Inc.

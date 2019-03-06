@@ -66,7 +66,7 @@ const StyledSingleBlogPost = styled.article`
     max-height: 80%;
     overflow: hidden;
     h3.single-post-title {
-      margin-bottom: 0.3em;
+      margin-bottom: 0;
     }
     .single-post-date {
       font-size: 1.6rem;
@@ -74,6 +74,10 @@ const StyledSingleBlogPost = styled.article`
       font-style: italic;
       margin-bottom: 0.5em;
     }
+  }
+
+  .single-post-excerpt {
+    line-height: 1.3;
   }
 
   .single-blog-post-info * {

@@ -147,7 +147,7 @@ const Footer = () => (
         <div className="columns">
           <div className="column">
             <p>
-              &copy; { new Date().getFullYear() } RetireRite Strategies Inc.
+              &copy; { new Date().getFullYear() } RetireRite Financial Strategies Inc.
             </p>
           </div>
           <SocialIcons className="column retirerite-footer-social" />

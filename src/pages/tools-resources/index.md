@@ -37,9 +37,7 @@ Enhanced coverage for individuals - PlanDirect can help fill the gap between you
 
 HelloLife is a personalized retirement income planner designed to create a steady stream of income for as long as you need it, as well as flexible investment options to allow for portfolio growth.
 
-<a href="https://hellolife.londonlife.com/application/en/home/" target="_blank">Start your HelloLife Plan</a>
-
-**[**_Start your HelloLife Plan_**](https://hellolife.londonlife.com/application/en/home/)**
+<a href="https://hellolife.londonlife.com/application/en/home/" target="_blank" class="button button-1">Start your HelloLife Plan</a>
 
 ### What’s your Investment Personality?
 
@@ -49,36 +47,28 @@ Risk tolerance, investment goals and timelines make up your investment personali
 
  Long term care insurance can provide coverage if you become unable to care for yourself and need assistance to manage daily living activities. Long term care isn't just for seniors; it can also cover some of the costs of a care facility or a caregiver in your own home following an accident or illness. 
 
-**[_More Information_](/book-a-meeting/)**
+<a href="/book-a-meeting/" target="_blank" class="button button-1">More Information</a>
 
 ### Travel Insurance
 
 Travel insurance protects you from unexpected medical expenses that occur while you are travelling out of province. There are a variety of plans available — let us help you find the right coverage.
 
-**[_More Information_](https://www.securiglobe.com/en/?aff=WEB210)**
+<a href="https://www.securiglobe.com/en/?aff=WEB210" target="_blank" class="button button-1">More Information</a>
 
 ## RESOURCES
 
 ### Links
 
-* [Canada Revenue Agency (CRA) My
-  Account](http://www.cra-arc.gc.ca/esrvc-srvce/tx/ndvdls/myccnt/menu-eng.html)
-* [Service Canada Online Services and
-  Forms](http://www.servicecanada.gc.ca/eng/online/index.shtml)
-* [GLC Asset Management
-  Group](http://glc-amgroup.com/04-00_Individual_investors.html)
+* <a href="http://www.cra-arc.gc.ca/esrvc-srvce/tx/ndvdls/myccnt/menu-eng.html" target="_blank">Canada Revenue Agency (CRA) My Account</a>
+* <a href="http://www.servicecanada.gc.ca/eng/online/index.shtml" target="_blank">Service Canada Online Services and Forms</a>
+* <a href="http://glc-amgroup.com/04-00_Individual_investors.html" target="_blank">GLC Asset Management Group</a>
+
 
 ### Client access
 
-* [London Life Personal Investment
-  Products](https://iiipclient.londonlife.com/selfcare/IiipClientSiteLoginSelfCare/)
-* [Quadrus Investment
-  Summary](https://www.investments.quadrus.londonlife.com/iconnect/u/login.page)
-* [Quadrus Client
-  View](https://www.quadrusinvestments.com/uiw/Login.html?cppt=0&&)
-* [Great West Life
-  Groupnet](https://groupnet.greatwestlife.com/public/signin/login.public?brand=pm)
-* [Great West Life Group Retirement
-  Services](https://ssl.grsaccess.com/information/english/logon/english_login.asp)
-* [Mackenzie Financial Investor
-  Access](https://access.mackenziefinancial.com/investor/en/logon.do)
+* <a href="https://iiipclient.londonlife.com/selfcare/IiipClientSiteLoginSelfCare/" target="_blank">London Life Personal Investment Products</a>
+* <a href="https://www.investments.quadrus.londonlife.com/iconnect/u/login.page" target="_blank">Quadrus Investment Summary</a>
+* <a href="https://www.quadrusinvestments.com/uiw/Login.html?cppt=0&amp;&amp;" target="_blank">Quadrus Client View</a>
+* <a href="https://groupnet.greatwestlife.com/public/signin/login.public?brand=pm" target="_blank">Great West Life Groupnet</a>
+* <a href="https://ssl.grsaccess.com/information/english/logon/english_login.asp" target="_blank">Great West Life Group Retirement Services</a>
+* <a href="https://access.mackenziefinancial.com/investor/en/logon.do" target="_blank">Mackenzie Financial Investor Access</a>

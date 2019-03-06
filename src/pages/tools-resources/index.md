@@ -35,7 +35,9 @@ __[_Get a quote_](#)__
 
 ### Retirement Income Planning – Say hello to “Hello Life”! 
 
-HelloLife is a personalized retirement income planner designed to create a steady stream of income for as long as you need it, as well as flexible investment options to allow for portfolio growth. 
+HelloLife is a personalized retirement income planner designed to create a steady stream of income for as long as you need it, as well as flexible investment options to allow for portfolio growth.
+
+<a href="https://hellolife.londonlife.com/application/en/home/" target="_blank">Start your HelloLife Plan</a>
 
 __[_Start your HelloLife Plan_](https://hellolife.londonlife.com/application/en/home/)__
 

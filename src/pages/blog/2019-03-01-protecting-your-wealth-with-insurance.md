@@ -6,14 +6,14 @@ bannerImage:
   image: /img/blog-post-banner-1.jpg
 date: 2019-03-01T19:57:57.984Z
 description: >-
-  As your wealth grows, so does the level of financial risk you inherently take
-  on. The higher your income, the more you have to lose if you were to be
-  diagnosed with a serious illness, become disabled or are otherwise be unable
-  to work.
+  Your ability to earn income is a valuable asset, and just like you would
+  insure your home or vehicle, it should be protected.
 tags:
   - insurance
   - video
 ---
+As your wealth grows, so does the level of financial risk you inherently take on. The higher your income, the more you have to lose if you were to be diagnosed with a serious illness, become disabled or are otherwise be unable to work.
+
 Your ability to earn income is a valuable asset, and just like you would insure your home or vehicle, it should be protected. Let’s work together to curb the risk in your financial plan by implementing strategic elements such as insurance.
 
 <iframe class="FlexEmbed-content" src="https://player.vimeo.com/video/206323999" allowfullscreen="" frameborder="0"></iframe>

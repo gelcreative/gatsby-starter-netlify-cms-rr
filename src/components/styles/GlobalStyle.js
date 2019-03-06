@@ -109,7 +109,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .content table {
-    margin-bottom: 3em;
+    margin-bottom: 3em !important;
     thead {
       th {
         border-bottom: 2px solid ${theme.darkGrey}

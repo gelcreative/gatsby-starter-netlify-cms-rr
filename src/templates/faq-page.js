@@ -53,33 +53,35 @@ export const FaqPageTemplate = ({
 }) => {
   return (
     <StyledFaqPage className="section">
-      <section className="content">
-        <div className="columns retirerite-page-intro">
-            <div className="column has-text-centered is-10 is-offset-1">
-              <h1>{title}</h1>
-            </div>
-        </div>
-        <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <ul className="retirerite-faq-list">
-                {questions.map(question => {
-                  return (
-                    <li key={question.question} className="retirerite-faq-item">
-                      <ul>
-                        <li>
-                          <h2>{question.question}</h2>
-                        </li>
-                        <li>
-                          <p dangerouslySetInnerHTML={{ __html: markdownToHtml(question.answer) }} />
-                        </li>
-                      </ul>
-                    </li>
-                  )
-                })}
-              </ul>
-            </div>
-        </div>
-      </section>
+      <div className="container">
+        <section className="content">
+          <div className="columns retirerite-page-intro">
+              <div className="column has-text-centered is-10 is-offset-1">
+                <h1>{title}</h1>
+              </div>
+          </div>
+          <div className="columns">
+              <div className="column is-10 is-offset-1">
+                <ul className="retirerite-faq-list">
+                  {questions.map(question => {
+                    return (
+                      <li key={question.question} className="retirerite-faq-item">
+                        <ul>
+                          <li>
+                            <h2>{question.question}</h2>
+                          </li>
+                          <li>
+                            <p dangerouslySetInnerHTML={{ __html: markdownToHtml(question.answer) }} />
+                          </li>
+                        </ul>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
+          </div>
+        </section>
+      </div>
       <section className="content">
         <RetireRiteCta />
       </section>

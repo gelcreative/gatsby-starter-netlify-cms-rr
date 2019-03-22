@@ -7,7 +7,7 @@ import markdownToHtml from '../util/markdownToHtml'
 const StyledEmployee = styled.article`
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 
   &:nth-child(n+2) {
     flex: 1 1 300px;

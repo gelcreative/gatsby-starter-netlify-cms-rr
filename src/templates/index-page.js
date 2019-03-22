@@ -68,9 +68,11 @@ IndexPageTemplate.propTypes = {
 
 }
 
-export default const IndexPage = ({data}) => {
+const IndexPage = ({data}) => {
   return (
-
+    <Layout>
+      <IndexPageTemplate />
+    </Layout>
   )
 }
 
@@ -81,6 +83,8 @@ IndexPage.propTypes = {
     }),
   }),
 }
+
+export default IndexPage
 
 export const pageQuery = graphql`
 query IndexQuery($id: String!) {

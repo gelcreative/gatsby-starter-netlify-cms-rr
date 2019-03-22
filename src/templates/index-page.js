@@ -78,8 +78,8 @@ IndexPage.propTypes = {
 }
 
 export const pageQuery = graphql`
-query IndexQuery {
-  mainQuery: allMarkdownRemark(
+query IndexQuery($id: String!) {
+  mainBlogQuery: allMarkdownRemark(
     sort: { order: DESC, fields: [frontmatter___date] },
     filter: { frontmatter: { templateKey: { eq: "blog-post" } }},
     limit: 3

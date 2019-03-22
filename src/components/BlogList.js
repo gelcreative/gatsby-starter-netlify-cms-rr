@@ -56,9 +56,11 @@ const BlogList = (props) => {
           }
 
           return (
-            <div className={`column${columnClass} retirerite-blog-body-item`}>
+            <div 
+              key={post.id}
+              className={`column${columnClass} retirerite-blog-body-item`}
+            >
               <SingleBlogPost 
-                key={post.id}
                 title={post.frontmatter.title}
                 date={post.frontmatter.date}
                 description={post.frontmatter.description}

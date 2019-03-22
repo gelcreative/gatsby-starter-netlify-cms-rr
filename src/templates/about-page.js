@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
@@ -18,11 +19,12 @@ const StyledAboutPage = styled.article`
   }
 `
 
-export const AboutPageTemplate = ({ title, intro, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, intro, content, contentComponent, helmet, }) => {
   const PageContent = contentComponent || Content
 
   return (
     <StyledAboutPage>
+      { helmet || ''}
       <section className="section content">
         <div className="container">
           <div className="columns retirerite-page-intro">
@@ -63,6 +65,7 @@ AboutPageTemplate.propTypes = {
   intro: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
+  helmet: PropTypes.object,
 }
 
 const AboutPage = ({ data }) => {
@@ -75,6 +78,14 @@ const AboutPage = ({ data }) => {
         title={post.frontmatter.title}
         intro={post.frontmatter.intro}
         content={post.html}
+        helmet={
+          <Helmet
+            titleTemplate="%s | RetireRite"
+          >
+            <title>{`${post.frontmatter.title}`}</title>
+            <meta name="description" content={`${post.frontmatter.intro}`} />
+          </Helmet>
+        }
       />
     </Layout>
   )

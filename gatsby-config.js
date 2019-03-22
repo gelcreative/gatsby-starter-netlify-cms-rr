@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'RetireRite Financial Strategies Inc.',
-    description: 'RetireRite is your trusted financial strategist, with decades of experience.',
+    description: 'Tony Caron is a Financial Planner and Investment Representative with RetireRite Financial Strategies and Quadrus Investment Services Ltd. He offers information on insurance, investments, mutual funds, and financial planning.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -71,6 +71,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-styled-components',
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-16552311-32`,
+      },
+    },
     {
       resolve:'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
       options: {

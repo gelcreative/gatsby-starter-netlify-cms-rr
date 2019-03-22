@@ -19,7 +19,13 @@ const StyledAboutPage = styled.article`
   }
 `
 
-export const AboutPageTemplate = ({ title, intro, content, contentComponent, helmet, }) => {
+export const AboutPageTemplate = ({ 
+  title, 
+  intro, 
+  content, 
+  contentComponent, 
+  helmet, 
+}) => {
   const PageContent = contentComponent || Content
 
   return (

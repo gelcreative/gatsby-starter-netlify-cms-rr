@@ -68,7 +68,7 @@ IndexPageTemplate.propTypes = {
 }
 
 const IndexPage = ({data}) => {
-  const { frontmatter: pageQuery } = data.allMarkdownRemark
+  const { frontmatter: pageQuery } = data.markdownRemark
   return (
     <Layout>
       <IndexPageTemplate
@@ -94,7 +94,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
 query IndexQuery($id: String!) {
-  allMarkdownRemark(id: { eq: $id}) {
+  markdownRemark(id: { eq: $id}) {
     frontmatter {
       title
       intro

@@ -24,30 +24,29 @@ const StyledHomePage = styled.article`
   }
 `
 
-export const IndexPageTemplate = ({}) => {
+export const IndexPageTemplate = ({
+  title,
+  intro,
+  heading,
+  text,
+  data,
+}) => {
   return (
     <StyledHomePage className="section">
       <div className="container">
         <section className="content">
           <div className="columns">
             <div className="column">
-              <h1 className="has-text-centered">RetireRite Financial Strategies Inc.</h1>
-              <p>Everyone’s needs, and dreams are different. The time to start making them happen is right now, and it all starts with having a financial plan. Studies show that Canadians backed by a comprehensive financial plan feel:</p>
-              <ul>
-                <li>more on track with their financial goals and retirement plans;</li>
-                <li>they have improved their ability to save in the past five years;</li>
-                <li>equipped to deal with unexpected financial emergencies and to weather tough economic times;</li>
-                <li>able to indulge in their discretionary spending goals.</li>
-              </ul>
-              <p>Furthermore, regardless of net worth, Canadians working with a financial advisor hold more assets, save at a higher rate, and report significantly higher levels of financial and emotional well-being than non-advised Canadians. </p>
+              <h1 className="has-text-centered">{ title }</h1>
+              <div dangerouslySetInnerHTML={{ __html: markdownToHtml(intro) }} />
             </div>
           </div>
         </section>
         <section className="content">
           <div className="columns">
             <div className="column">
-              <h2>The value of financial planning</h2>
-              <p>Did you know that when it comes to your financial well-being, advice may be the difference between achieving your financial goals and falling short? Make the most of your money with the help of a financial security advisor.</p>
+              <h2>{ heading }</h2>
+              <div dangerouslySetInnerHTML={{ __html: markdownToHtml(text) }} />
             </div>
             <div className="column"><iframe title="Value of Advice Video" width="518" height="292" src="https://www.youtube.com/embed/hmpDOd7efO0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
           </div>
@@ -69,9 +68,16 @@ IndexPageTemplate.propTypes = {
 }
 
 const IndexPage = ({data}) => {
+  const { frontmatter: pageQuery } = data.allMarkdownRemark
   return (
     <Layout>
-      <IndexPageTemplate />
+      <IndexPageTemplate
+        title={pageQuery.title}
+        intro={pageQuery.intro}
+        heading={pageQuery.heading}
+        text={pageQuery.text}
+        data={data}
+      />
     </Layout>
   )
 }

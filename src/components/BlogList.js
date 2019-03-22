@@ -37,7 +37,7 @@ const StyledBlogList = styled.section`
 `
 
 const BlogList = (props) => {
-  const { mainQuery, grayscaleImageQuery } = props.blogListQuery
+  const { mainBlogQuery, grayscaleImageQuery } = props.blogListQuery
   const { edges: posts } = mainBlogQuery
   const { edges: grayScaleImages } = grayscaleImageQuery
   let columnClass = ""

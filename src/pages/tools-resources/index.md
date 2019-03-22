@@ -25,13 +25,15 @@ Enhanced healthcare plans can help protect you against these and other unexpecte
 
 Sonata Health™ is a health and dental benefit plan designed for individuals who are looking for insurance coverage for themselves and their families.
 
-**[_Get a quote_](#)**
+<a href="https://www.e-benefit.com/en/sonata/about_sonata.html?wl=&terms=1" target="_blank" class="button button-1">Get a Quote</a>
+<a href="https://www.e-benefit.com/fr/sonata/about_sonata.html?wl=&terms=1" target="_blank" class="button button-1">Obtenez une soumission</a>
 
 ### Plan Direct
 
 Enhanced coverage for individuals - PlanDirect can help fill the gap between your provincial plan coverage and what you pay.
 
-**[_Get a quote_](#)**
+<a href="https://www.e-benefit.com/en/plandirect/about_plandirect.html?wl=&terms=1" target="_blank" class="button button-1">Get a Quote</a>
+<a href="https://www.e-benefit.com/fr/plandirect/about_plandirect.html?wl=&terms=1" target="_blank" class="button button-1">Obtenez une soumission</a>
 
 ### Retirement Income Planning – Say hello to “Hello Life”! 
 

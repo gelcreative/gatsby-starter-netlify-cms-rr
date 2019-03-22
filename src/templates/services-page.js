@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
@@ -12,11 +13,13 @@ export const ServicesPageTemplate = ({
   intro,
   content,
   contentComponent,
+  helmet,
 }) => {
   const PageContent = contentComponent || Content
 
   return (
     <section className="section section--gradient">
+      { helmet || '' }
       <div className="container">
         <div className="section content">
           <div className="columns retirerite-page-intro">
@@ -45,6 +48,7 @@ ServicesPageTemplate.propTypes = {
   intro: PropTypes.string,
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
+  helmet: PropTypes.object,
 }
 
 const ServicesPage = ({ data }) => {
@@ -57,6 +61,14 @@ const ServicesPage = ({ data }) => {
         intro={page.frontmatter.intro}
         content={page.html}
         contentComponent={HTMLContent}
+        helmet={
+          <Helmet
+            titleTemplate="%s | RetireRite"
+          >
+            <title>{`${page.frontmatter.title}`}</title>
+            <meta name="description" content={page.frontmatter.intro} />
+          </Helmet>
+        }
       />
     </Layout>
   )

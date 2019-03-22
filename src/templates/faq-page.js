@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
@@ -50,9 +51,11 @@ const StyledFaqPage = styled.article`
 export const FaqPageTemplate = ({
   title,
   questions,
+  helmet,
 }) => {
   return (
     <StyledFaqPage className="section">
+      { helmet || ''}
       <div className="container">
         <section className="content">
           <div className="columns retirerite-page-intro">
@@ -91,6 +94,8 @@ export const FaqPageTemplate = ({
 
 FaqPageTemplate.propTypes = {
   title: PropTypes.string,
+  questions: PropTypes.array,
+  helmet: PropTypes.object,
 }
 
 const FaqPage = ({data}) => {
@@ -101,6 +106,13 @@ const FaqPage = ({data}) => {
       <FaqPageTemplate
         title={page.frontmatter.title}
         questions={page.frontmatter.questions}
+        helmet={
+          <Helmet
+            titleTemplate="%s | RetireRite"
+          >
+            <title>{`${page.frontmatter.title}`}</title>
+          </Helmet>
+        }
       />
     </Layout>
   )

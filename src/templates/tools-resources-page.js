@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
@@ -39,11 +40,13 @@ export const ToolsResourcesPageTemplate = ({
   intro,
   content,
   contentComponent,
+  helmet,
 }) => {
   const PageContent = contentComponent || Content
 
   return (
     <StyledToolsResourcesPage className="section section--gradient">
+    { helmet || '' }
       <div className="container">
         <div className="section content">
           <section className="columns retirerite-page-intro">
@@ -70,6 +73,7 @@ ToolsResourcesPageTemplate.propTypes = {
   intro: PropTypes.string,
   content: PropTypes.node,
   contentComponent: PropTypes.func,
+  helmet: PropTypes.object,
 }
 
 const ToolsResourcesPage = ({ data }) => {
@@ -82,6 +86,14 @@ const ToolsResourcesPage = ({ data }) => {
         intro={page.frontmatter.intro}
         content={page.html}
         contentComponent={HTMLContent}
+        helmet={
+          <Helmet
+            titleTemplate="%s | RetireRite"
+          >
+            <title>{`${page.frontmatter.title}`}</title>
+            <meta name="description" content={page.frontmatter.intro} />
+          </Helmet>
+        }
       />
     </Layout>
   )

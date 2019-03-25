@@ -21,7 +21,7 @@ const RetireRiteCta = () => (
     <h2>Have a question?</h2>
     <div className="columns">
       <div className="column is-three-quarters">
-        <p>Whether it's about personal insurance coverage, building a financial plan, or business insurance solutions, we can help.</p>
+        <p>Whether it's personal insurance and financial planning or group health benefits and retirement savings solutions, we can help.</p>
       </div>
       <div className="column is-one-quarter has-text-centered">
         <Link className="button button-1" to="/book-a-meeting/">Start a Conversation</Link>

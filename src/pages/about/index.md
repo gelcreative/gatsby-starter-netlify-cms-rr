@@ -18,6 +18,6 @@ intro: >-
   confidential, customized retirement investment plan and reviewing and
   monitoring the plan on an on-going basis.
 ---
-### Supported by a team of experts
+### Supported by a Team of Experts
 
-When specialized expertise is required, we have access to a team of professionals associated with Freedom 55 Financial. They specialize in tax, law, accounting, investments, insurance, group benefits, mortgages and financial security planning.
+When specialized expertise is required, you’re in good hands. We have a team of specialists associated with Freedom 55 Financial that we partner with on tax, law, accounting, investments, insurance, group benefits, mortgages and financial security planning.

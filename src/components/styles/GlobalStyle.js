@@ -106,6 +106,9 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${theme.lightBlue};
     margin: 0 0 1em 0;
     padding: 1em 2em;
+    p:last-child {
+      text-align: right; /* right-align last p, which should be the attribution */
+    }
   }
 
   .content table {

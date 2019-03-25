@@ -39,7 +39,7 @@ export const AboutPageTemplate = ({
                 <h1>
                   {title}
                 </h1>
-                <p dangerouslySetInnerHTML={{__html: markdownToHtml(intro)}} />
+                <div dangerouslySetInnerHTML={{__html: markdownToHtml(intro)}} />
               </div>
             </div>
           </div>

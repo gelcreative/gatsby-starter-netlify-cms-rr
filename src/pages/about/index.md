@@ -2,7 +2,7 @@
 templateKey: about-page
 title: About RetireRite
 intro: >-
-  RetireRite Financial Strategies Inc. was born in 1996, as way to fully
+  RetireRite Financial Strategies Inc. was born in 1996, as a way to fully
   separate my advisor practice from my management role. Building my business
   under RetireRite means the equity of my practice will be founded on the most
   trusted names in the financial services industry – London Life, Sun Life,

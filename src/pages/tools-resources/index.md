@@ -7,7 +7,7 @@ intro: >-
 ---
 ## FINANCIAL TOOLS
 
-### Health and dental insurance
+### Health and Dental Insurance
 
 As Canadians, we’re fortunate to have one of the best healthcare systems in the world, but government healthcare coverage may not provide all you need.
 
@@ -35,13 +35,13 @@ Enhanced coverage for individuals - PlanDirect can help fill the gap between you
 <a href="https://www.e-benefit.com/en/plandirect/about_plandirect.html?wl=&terms=1" target="_blank" class="button button-1">Get a Quote</a>
 <a href="https://www.e-benefit.com/fr/plandirect/about_plandirect.html?wl=&terms=1" target="_blank" class="button button-1">Obtenez une soumission</a>
 
-### Retirement Income Planning – Say hello to “Hello Life”! 
+### Retirement Income Planning – Say Hello to “Hello Life”! 
 
 HelloLife is a personalized retirement income planner designed to create a steady stream of income for as long as you need it, as well as flexible investment options to allow for portfolio growth.
 
 <a href="https://hellolife.londonlife.com/application/en/home/" target="_blank" class="button button-1">Start your HelloLife Plan</a>
 
-### What’s your Investment Personality?
+### What’s Your Investment Personality?
 
 Risk tolerance, investment goals and timelines make up your investment personality, which helps us customize your investment portfolio to suit your financial plan. Take our quiz to discover your Investment Personality.
 
@@ -66,7 +66,7 @@ Travel insurance protects you from unexpected medical expenses that occur while 
 * <a href="http://glc-amgroup.com/04-00_Individual_investors.html" target="_blank">GLC Asset Management Group</a>
 
 
-### Client access
+### Client Access
 
 * <a href="https://iiipclient.londonlife.com/selfcare/IiipClientSiteLoginSelfCare/" target="_blank">London Life Personal Investment Products</a>
 * <a href="https://www.investments.quadrus.londonlife.com/iconnect/u/login.page" target="_blank">Quadrus Investment Summary</a>

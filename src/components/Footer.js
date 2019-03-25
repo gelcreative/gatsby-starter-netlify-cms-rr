@@ -99,13 +99,13 @@ const Footer = () => (
             <div className="column retirerite-footer-address-column">
               <p>RetireRite Financial Strategies Inc.</p>
               <address>
-                Suite 307 - 126 Wellington Street West<br />
+                126 Wellington Street West, Suite 307<br />
                 Barrie, ON<br />
                 L4N 1K9
               </address>
-              <p><a href="tel:+17057285551">Office: (705) 728-5551</a></p>
-              <p>Fax: (705) 728-0012</p>
-              <p><a href="tel:+18002878844">Toll Free: 1-800-287-8844</a></p>
+              <p><a href="tel:+17057285551">Office: 705.728.5551</a></p>
+              <p><a href="tel:+18002878844">Toll Free: 1.800.287.8844</a></p>
+              <p>Fax: 705.728.0012</p>
             </div>
           </div>
         </div>

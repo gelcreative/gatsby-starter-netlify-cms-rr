@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'RetireRite Financial Strategies Inc.',
-    description: 'Tony Caron is a Financial Planner and Investment Representative with RetireRite Financial Strategies and Quadrus Investment Services Ltd. He offers information on insurance, investments, mutual funds, and financial planning.',
+    description: 'We provide transparency, value & the highest quality customer service while working with you to build a comprehensive financial plan. We serve clients in Simcoe County and the GTA.',
+    keywords: 'financial advisor,certified financial planner,mutual funds,segregated funds,life insurance,group benefits,employee benefits,group retirement,retirement savings,retirement income,critical illness insurance,disability insurance,mortgage,RRSP,TFSA,RESP,RRIF ,LIRA,LIF,Pension,Sunlife,Manulife,Great West Life,Estate Planning,Tax Planning,Business Insurance',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

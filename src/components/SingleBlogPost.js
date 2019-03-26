@@ -177,7 +177,7 @@ const SingleBlogPost = (props) => {
       <div className="single-blog-post-info">
         <h3 className="single-post-title">{props.title}</h3>
         <p className="single-post-date">Published: {props.date}</p>
-        <p className="single-post-excerpt">{props.description}</p>
+        <p className="single-post-excerpt">{props.excerpt}</p>
       </div>
       <Link to={props.slug} className="single-post-link"><span className="visually-hidden">Read blog post: {props.title}</span></Link>
     </StyledSingleBlogPost>

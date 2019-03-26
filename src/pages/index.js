@@ -104,7 +104,7 @@ query IndexQuery {
   ) {
     edges {
       node {
-        excerpt(pruneLength: 230)
+        excerpt(pruneLength: 150)
         id
         fields {
           slug

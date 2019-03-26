@@ -51,6 +51,7 @@ const GlobalStyle = createGlobalStyle`
 
       h1 {
         font-size: 3.2rem;
+        color: ${theme.blue};
       }
 
       h2 {
@@ -58,7 +59,7 @@ const GlobalStyle = createGlobalStyle`
       }
 
       h3 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
       }
 
       h4 {

@@ -165,6 +165,10 @@ const GlobalStyle = createGlobalStyle`
     width: 1px !important ;
     overflow: hidden;
   }
+
+  .leaflet-top, .leaflet-bottom {
+    z-index: 400 !important;
+  }
 `
 
 export { theme, GlobalStyle }

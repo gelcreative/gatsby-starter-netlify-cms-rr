@@ -130,44 +130,50 @@ const StyledSingleBlogPost = styled.article`
   }
 `
 
-const SingleBlogPost = (props) => (
-  <StyledSingleBlogPost>
-    {/* {console.log(typeof props.bannerImage)} */}
-    {
-      (props.bannerImage ? 
-        <>
-          <div 
-            className="single-post-bg-color"
-            style={{
-              backgroundImage: `url(${
-                !!props.bannerImage.childImageSharp 
-                ? props.bannerImage.childImageSharp.fluid.src 
-                : props.bannerImage
-              })`
-            }}
-          ></div>
-          <div 
-            className="single-post-bg-grayscale"
-            style={{
-              backgroundImage: `url(${
-                !!props.grayscaleBannerImage.childImageSharp 
-                ? props.grayscaleBannerImage.childImageSharp.fluid.src 
-                : props.grayscaleBannerImage
-              })`
-            }}
-          ></div>
-        </>
-        : 
-        <div className="single-post-bg-placeholder"></div>) 
-    }
-    <p className="single-post-tag"><Link to={`/tags/${props.tag}`}><span className="visually-hidden">Post Category:</span> {props.tag}</Link></p>
-    <div className="single-blog-post-info">
-      <h3 className="single-post-title">{props.title}</h3>
-      <p className="single-post-date">Published: {props.date}</p>
-      <p className="single-post-excerpt">{props.description}</p>
-    </div>
-    <Link to={props.slug} className="single-post-link"><span className="visually-hidden">Read blog post: {props.title}</span></Link>
-  </StyledSingleBlogPost>
-)
+const SingleBlogPost = (props) => {
+  const hasBannerImage = props.bannerImage
+  let postBannerImage
+
+  if(hasBannerImage) {
+    postBannerImage = 
+                    <>
+                      <div 
+                        className="single-post-bg-color"
+                        style={{
+                          backgroundImage: `url(${
+                            !!props.bannerImage.childImageSharp 
+                            ? props.bannerImage.childImageSharp.fluid.src 
+                            : props.bannerImage
+                          })`
+                        }}
+                      ></div>
+                      <div 
+                        className="single-post-bg-grayscale"
+                        style={{
+                          backgroundImage: `url(${
+                            !!props.grayscaleBannerImage.childImageSharp 
+                            ? props.grayscaleBannerImage.childImageSharp.fluid.src 
+                            : props.grayscaleBannerImage
+                          })`
+                        }}
+                      ></div>
+                    </>
+  } else {
+    postBannerImage = <div className="single-post-bg-placeholder"></div>
+  }
+  
+  return (  
+    <StyledSingleBlogPost>
+      { postBannerImage }
+      <p className="single-post-tag"><Link to={`/tags/${props.tag}`}><span className="visually-hidden">Post Category:</span> {props.tag}</Link></p>
+      <div className="single-blog-post-info">
+        <h3 className="single-post-title">{props.title}</h3>
+        <p className="single-post-date">Published: {props.date}</p>
+        <p className="single-post-excerpt">{props.description}</p>
+      </div>
+      <Link to={props.slug} className="single-post-link"><span className="visually-hidden">Read blog post: {props.title}</span></Link>
+    </StyledSingleBlogPost>
+  )
+}
 
 export default SingleBlogPost

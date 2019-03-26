@@ -133,7 +133,7 @@ const StyledSingleBlogPost = styled.article`
 const SingleBlogPost = (props) => (
   <StyledSingleBlogPost>
     {
-      (props.bannerImage ? 
+      (props.bannerImage !== null ? 
         <>
           <div 
             className="single-post-bg-color"

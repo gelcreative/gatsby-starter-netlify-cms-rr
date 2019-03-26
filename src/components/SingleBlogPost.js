@@ -134,7 +134,7 @@ const SingleBlogPost = (props) => {
   const hasBannerImage = props.bannerImage
   let postBannerImage
 
-  if(hasBannerImage) {
+  if(hasBannerImage !== null) {
     postBannerImage = 
                     <>
                       <div 
@@ -161,7 +161,7 @@ const SingleBlogPost = (props) => {
   } else {
     postBannerImage = <div className="single-post-bg-placeholder"></div>
   }
-  
+
   return (  
     <StyledSingleBlogPost>
       { postBannerImage }

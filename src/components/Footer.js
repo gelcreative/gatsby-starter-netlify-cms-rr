@@ -28,7 +28,7 @@ const StyledFooter = styled.footer`
   }
 
   .retirerite-footer-top {
-    padding: 0 5% 5em;
+    padding: 0 5% 3em;
   }
 
   .retirerite-footer-address-column img {

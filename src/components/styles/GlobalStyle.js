@@ -70,6 +70,10 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: inherit;
       }
 
+      ul {
+        margin-left: 3em;
+      }
+
       a {
         color: #434244;
         transition: 300ms;

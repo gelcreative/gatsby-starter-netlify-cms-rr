@@ -74,7 +74,7 @@ export const FaqPageTemplate = ({
                             <h2>{question.question}</h2>
                           </li>
                           <li>
-                            <p dangerouslySetInnerHTML={{ __html: markdownToHtml(question.answer) }} />
+                            <div dangerouslySetInnerHTML={{ __html: markdownToHtml(question.answer) }} />
                           </li>
                         </ul>
                       </li>

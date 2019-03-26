@@ -5,7 +5,7 @@ intro: >-
   On this page, you'll find tools and resources as well as useful links to
   information from other organizations.
 ---
-## FINANCIAL TOOLS
+## Financial Tools
 
 ### Health and Dental Insurance
 

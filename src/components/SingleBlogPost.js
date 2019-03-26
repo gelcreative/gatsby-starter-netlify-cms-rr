@@ -134,7 +134,7 @@ const SingleBlogPost = (props) => {
   const hasBannerImage = props.bannerImage
   let postBannerImage
   console.log(hasBannerImage)
-  if(hasBannerImage) {
+  if(hasBannerImage != null && hasBannerImage.childImageSharp) {
     postBannerImage = 
                     <>
                       <div 

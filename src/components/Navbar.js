@@ -7,6 +7,7 @@ import logo from '../img/retirerite-logo-hort.svg'
 const StyledHeader = styled.nav`
   .navbar-brand {
     padding: 2em 0;
+    transition: 300ms;
   }
 
   .navbar-brand img {
@@ -44,6 +45,23 @@ const StyledHeader = styled.nav`
 
   .retirerite-nav-social svg {
     height: 20px;
+  }
+
+  @media (max-width: 768px) {
+    &.scrolled {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background-color: #ffffff;
+      z-index: 1;
+
+      .navbar-brand {
+        padding: 1em 5%;
+        img {
+          width: 150px;
+        }
+      }
+    }
   }
 
   @media(max-width: 1087px) {
@@ -121,6 +139,9 @@ const StyledHeader = styled.nav`
 const Navbar = class extends React.Component {
 
   componentDidMount() {
+    // Call scrolling behaviour function
+    this.navScrollBehavior();
+
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
     // Check if there are any navbar burgers
@@ -143,10 +164,23 @@ const Navbar = class extends React.Component {
     }
   }
 
+  navScrollBehavior() {
+    const navBar = document.querySelector('.retirerite-main-nav');
+
+    window.addEventListener('scroll', () => {
+      let scrollFromTop = window.scrollY;
+      if(scrollFromTop >= 200) {
+        navBar.classList.add('scrolled');
+      } else {
+        navBar.classList.remove('scrolled');
+      }
+    })
+  }
+
   render() {
     return (
   
-    <StyledHeader className="is-transparent" role="navigation" aria-label="main-navigation">
+    <StyledHeader className="is-transparent retirerite-main-nav" role="navigation" aria-label="main-navigation">
       <div className="container">
         <div className="navbar-brand">
           <Link to="/" title="Logo">

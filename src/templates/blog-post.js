@@ -6,6 +6,7 @@ import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import placeholder from '../img/blog-post-banner-1.jpg'
 import RetireRiteCta from '../components/RetireRiteCta'
 
 const StyledBlogPost = styled.article`
@@ -61,13 +62,14 @@ export const BlogPostTemplate = ({
       {helmet || ''}
       <div 
         className="retirerite-blog-masthead"
-        style={{
+        style={bannerImage ? {
           backgroundImage: `url(${
             !!bannerImage.childImageSharp 
             ? bannerImage.childImageSharp.fluid.src 
             : bannerImage
           })`
-        }}
+        } : { backgroundImage: `url(${placeholder})` }
+      }
       ></div>
       <article className="container section content">
         <section className="columns retirerite-blog-heading-row">

@@ -83,6 +83,9 @@ const GlobalStyle = createGlobalStyle`
 
       a[href^="tel"] {
         text-decoration: none;
+        &:hover {
+          color: ${theme.red};
+        }
       }
 
       .button.button-1 {

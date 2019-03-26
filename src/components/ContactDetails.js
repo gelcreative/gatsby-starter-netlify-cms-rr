@@ -32,10 +32,9 @@ const ContactDetails = () => {
       <div className="column">
         <h2>Contact Us</h2>
         <ul className="retirerite-contact-details-list">
-          <li className="retirerite-team-contact-details retirerite-contact-bold"><a href="tel:+17057285551">Office: 705.728.5551</a></li>
-          <li className="retirerite-team-contact-details"><span className="retirerite-contact-bold">Tony Caron</span>: ext. 4230 <br /><a href="mailto:tony@retirerite.ca">tony@retirerite.ca</a></li>
-          <li className="retirerite-team-contact-details"><span className="retirerite-contact-bold">Elizabeth Farquharson</span>: ext. 4319 <br /><a href="mailto:tony@retirerite.ca">elizabeth@retirerite.ca</a></li>
-          <li className="retirerite-contact-bold"><a href="tel:+18002878844">Toll Free: 1.800.287.8844</a></li>
+          <li className="retirerite-team-contact-details retirerite-contact-bold">Office: <a href="tel:+17057285551">705.728.5551</a> ext. 4319 </li>
+          <li className="retirerite-team-contact-details"><span className="retirerite-contact-bold">Elizabeth Farquharson</span><br /><a href="mailto:tony@retirerite.ca">elizabeth@retirerite.ca</a></li>
+          <li className="retirerite-contact-bold">Toll Free: <a href="tel:+18002878844">1.800.287.8844</a></li>
           <li>Fax: 705.728.0012</li>
         </ul>
       </div>

@@ -12,6 +12,7 @@ const StyledHeader = styled.nav`
 
   .navbar-brand img {
     width: 250px;
+    transition: 300ms;
   }
 
   .retirerite-nav-bottom {

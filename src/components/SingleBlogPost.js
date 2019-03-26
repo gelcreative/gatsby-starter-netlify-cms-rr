@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
+import placeholder from '../img/bloglist-default.jpg'
+
 const StyledSingleBlogPost = styled.article`
   background: #ffffff;
   position: relative;
@@ -64,12 +66,12 @@ const StyledSingleBlogPost = styled.article`
   .single-blog-post-info {
     position: absolute;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.8);
     padding: 1em;
     transition: 500ms;
     z-index: 2;
     max-height: 80%;
     overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
     h3.single-post-title {
       margin-bottom: 0;
     }
@@ -125,7 +127,8 @@ const StyledSingleBlogPost = styled.article`
 
   @media(min-width: 770px) {
     .single-blog-post-info {
-      width: 60%;
+      width: 58%;
+      min-height: 9em;
     }
   }
 `
@@ -133,8 +136,7 @@ const StyledSingleBlogPost = styled.article`
 const SingleBlogPost = (props) => {
   const hasBannerImage = props.bannerImage
   let postBannerImage
-  console.log(hasBannerImage)
-  if(hasBannerImage != null && hasBannerImage.childImageSharp) {
+  if(hasBannerImage) {
     postBannerImage = 
                     <>
                       <div 
@@ -159,7 +161,13 @@ const SingleBlogPost = (props) => {
                       ></div>
                     </>
   } else {
-    postBannerImage = <div className="single-post-bg-placeholder"></div>
+    postBannerImage = <div 
+                        className="single-post-bg-placeholder"
+                        style={{
+                          backgroundImage: `url(${placeholder})`,
+                          border: '3px solid #262262'
+                        }}  
+                      ></div>
   }
 
   return (  

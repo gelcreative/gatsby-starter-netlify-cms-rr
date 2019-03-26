@@ -81,6 +81,10 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: underline;
       }
 
+      a[href^="tel"] {
+        text-decoration: none;
+      }
+
       .button.button-1 {
         background-color: ${theme.middleBlue};
         color: #ffffff;

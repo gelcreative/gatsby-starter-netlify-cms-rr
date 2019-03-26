@@ -8,9 +8,6 @@ const StyledContactDetails = styled.div`
   ul.retirerite-contact-details-list {
     list-style: none;
     margin-left: 0;
-    li {
-      margin-bottom: 1em;
-    }
   }
 
   .retirerite-contact-details-list .retirerite-team-contact-details:nth-child(-n+2) {

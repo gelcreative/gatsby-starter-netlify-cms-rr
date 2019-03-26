@@ -50,9 +50,9 @@ export const ToolsResourcesPageTemplate = ({
       <div className="container">
         <div className="section content">
           <section className="columns retirerite-page-intro">
-            <div className="column has-text-centered is-10 is-offset-1">
+            <div className="column is-10 is-offset-1">
               <div>
-                <h1>{title}</h1>
+                <h1 className="has-text-centered">{title}</h1>
                 <p>{intro}</p>
               </div>
             </div>

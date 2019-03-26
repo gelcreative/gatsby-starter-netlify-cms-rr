@@ -34,9 +34,9 @@ export const AboutPageTemplate = ({
       <section className="section content">
         <div className="container">
           <div className="columns retirerite-page-intro">
-            <div className="column is-10 is-offset-1 has-text-centered">
+            <div className="column is-10 is-offset-1">
               <div className="section">
-                <h1>
+                <h1 className="has-text-centered">
                   {title}
                 </h1>
                 <div dangerouslySetInnerHTML={{__html: markdownToHtml(intro)}} />

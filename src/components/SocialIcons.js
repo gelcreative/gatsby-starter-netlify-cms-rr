@@ -25,10 +25,11 @@ const StyledSocialIcons = styled.div`
 
   svg path {
     transition: fill 300ms;
+    fill: #363636;
   }
 
   a:hover svg path {
-      fill: ${props => props.theme.red};
+    fill: ${props => props.theme.red};
   }
 
   svg {

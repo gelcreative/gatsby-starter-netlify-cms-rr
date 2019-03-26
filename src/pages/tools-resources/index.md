@@ -57,7 +57,7 @@ Travel insurance protects you from unexpected medical expenses that occur while 
 
 <a href="https://www.securiglobe.com/en/?aff=WEB210" target="_blank" class="button button-1">More Information</a>
 
-## RESOURCES
+## Resources
 
 ### Links
 

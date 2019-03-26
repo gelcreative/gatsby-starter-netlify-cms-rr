@@ -16,7 +16,7 @@ const StyledSingleBlogPost = styled.article`
     }
 
     .single-post-bg-placeholder {
-      /* background-color: ${props => props.theme.darkGrey}; */
+      background-color: ${props => props.theme.lightGrey};
     }
 
     .single-blog-post-info {
@@ -132,8 +132,9 @@ const StyledSingleBlogPost = styled.article`
 
 const SingleBlogPost = (props) => (
   <StyledSingleBlogPost>
+    {/* {console.log(typeof props.bannerImage)} */}
     {
-      (props.bannerImage !== null ? 
+      (props.bannerImage ? 
         <>
           <div 
             className="single-post-bg-color"

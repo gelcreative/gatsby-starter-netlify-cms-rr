@@ -32,6 +32,13 @@ const StyledEmployee = styled.article`
         margin-top: 0.5em;
         padding-top: 0.25em;
       }
+
+      .retirerite-employee-email {
+        a {
+          font-size: 1.6rem;
+          color: ${props => props.theme.darkGrey};
+        }
+      } 
     }
   }
 
@@ -53,6 +60,7 @@ const EmployeeProfiles = () => (
               id
               name
               credentials
+              email
               profileImage {
                 image
                 alt
@@ -73,7 +81,7 @@ const EmployeeProfiles = () => (
                 <div className="retirerite-employee-image-container">
                   <img src={employee.profileImage.image} alt={employee.profileImage.alt} />
                 </div>
-                  <p className="retirerite-employee-name">{employee.name}<span className="visually-hidden">, </span><span className="retirerite-employee-credentials">{employee.credentials}</span></p>
+                  <p className="retirerite-employee-name">{employee.name}<span className="visually-hidden">, </span><span className="retirerite-employee-credentials">{employee.credentials}</span> <span className="visually-hidden">Email Address: </span><span className="retirerite-employee-email"><a href={`mailto:${employee.email}`}>{employee.email}</a></span></p>
               </div>
                 <div className="retirerite-employee-bio" dangerouslySetInnerHTML={{__html: markdownToHtml(employee.bio)}}/>
             </StyledEmployee>

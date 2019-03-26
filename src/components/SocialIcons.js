@@ -28,7 +28,7 @@ const StyledSocialIcons = styled.div`
   }
 
   a:hover svg path {
-      fill: #ef4136;
+      fill: ${props => props.theme.red};
   }
 
   svg {

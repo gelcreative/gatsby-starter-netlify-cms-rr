@@ -3,7 +3,7 @@ templateKey: services-page
 title: Services
 intro: "A sound financial plan is crucial to living the life you want, on your terms. Whether it’s for your business or your personal finances, together we can build the road map to success. And we’ll stay with you every step of the way. Through comprehensive analysis, in-depth market research and the support of a team of highly-qualified tax and product specialists, we can create a customized financial strategy that considers your immediate needs and your long-term goals and dreams.\n\nOur financial planning services include:\n\n* Personal life and health insurance\n* Business insurance\n* Retirement & estate planning\n* Group health benefits\n* Group retirement savings plans\n* Financial literacy education seminars\n\nWe follow a proven process\_which includes understanding clients’ goals and current financial position, reviewing their sources of income and savings, developing a confidential, customized retirement investment plan and reviewing and monitoring the plan on an on-going basis."
 ---
-<table>
+<table class="retirerite-services-table">
   <thead>
     <tr>
       <th></th>

@@ -139,6 +139,11 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: 3em !important;
   }
 
+
+.retirerite-services-table tbody tr:nth-child(even) {
+  background-color: ${theme.lightGrey};
+}
+
   .visually-hidden {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px);

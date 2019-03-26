@@ -54,7 +54,7 @@ const StyledHeader = styled.nav`
       width: 100%;
       top: 0;
       background-color: #ffffff;
-      z-index: 1;
+      z-index: 401;
 
       .navbar-brand {
         padding: 1em 5%;

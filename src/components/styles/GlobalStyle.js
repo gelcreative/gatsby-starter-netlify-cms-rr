@@ -9,7 +9,7 @@ const theme = {
   darkBlue: '#29303e',
   middleBlue: '#1d60a2',
   lightBlue: '#bbdbea',
-  lightGrey: '#f3f3f3',
+  lightGrey: '#f2f2f2',
   darkGrey: '#979aa1',
 }
 

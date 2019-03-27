@@ -1,7 +1,49 @@
 ---
 templateKey: services-page
 title: Services
-intro: "A sound financial plan is crucial to living the life you want, on your terms. Whether it’s for your business or your personal finances, together we can build the road map to success. And we’ll stay with you every step of the way. Through comprehensive analysis, in-depth market research and the support of a team of highly-qualified tax and product specialists, we can create a customized financial strategy that considers your immediate needs and your long-term goals and dreams.\n\nOur financial planning services include:\n\n* Personal life and health insurance\n* Business insurance\n* Retirement & estate planning\n* Group health benefits\n* Group retirement savings plans\n* Financial literacy education seminars\n\nWe follow a proven process\_which includes understanding clients’ goals and current financial position, reviewing their sources of income and savings, developing a confidential, customized retirement investment plan and reviewing and monitoring the plan on an on-going basis."
+intro: >-
+  A sound financial plan is crucial to living the life you want, on your terms.
+  Whether it’s for your personal finances or your business, together we can
+  build the road map to success and we’ll stay with you every step of the way.
+
+
+  Through comprehensive analysis, in-depth market research and the support of a
+  team of highly-qualified tax and product specialists, we create a customized
+  financial strategy that considers your immediate needs and your long-term
+  goals and dreams.
+
+
+  For individuals and families, we offer:
+
+
+  * Personal Life & Health Insurance
+
+  * Critical Illness & Disability Insurance
+
+  * Savings & Investments
+
+  * Retirement & Estate Planning
+
+
+  For business owners, we understand that having the right people working for
+  you is crucial to the success of your business. We can help you design a
+  compensation package that will attract and retain top talent through services
+  such as:
+
+
+  * Business & Key Person Insurance
+
+  * Group Health Benefits
+
+  * Group Retirement Savings Plans
+
+  * Financial Literacy education Seminars
+
+
+  We follow a proven process which includes understanding your goals and current
+  financial position, reviewing the sources of income and savings, developing a
+  confidential, customized retirement investment plan and reviewing and
+  monitoring the plan on an on-going basis.
 ---
 <table class="retirerite-services-table">
   <thead>

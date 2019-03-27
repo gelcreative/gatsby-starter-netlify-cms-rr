@@ -3,7 +3,7 @@ templateKey: blog-post
 title: ' Snowbirds'
 bannerImage:
   alt: Home office
-  image: /img/blog-post-banner-1.jpg
+  image: ''
 date: 2019-03-01T19:53:05.774Z
 description: >-
   If you are a Snowbird or travel abroad often or for extended periods, you

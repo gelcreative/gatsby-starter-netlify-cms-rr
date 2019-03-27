@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Mortgage vs Individual Insurance
 bannerImage:
   alt: home office
-  image: 
+  image: ''
 date: 2019-03-01T19:59:47.345Z
 description: >-
   Whether you’re a first-time homebuyer, or purchasing a vacation property, if

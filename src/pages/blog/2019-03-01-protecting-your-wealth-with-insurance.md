@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Protecting Your Wealth with Insurance
 bannerImage:
   alt: home office
-  image: 
+  image: ''
 date: 2019-03-01T19:57:57.984Z
 description: >-
   Your ability to earn income is a valuable asset, and just like you would

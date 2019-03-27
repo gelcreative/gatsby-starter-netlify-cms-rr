@@ -3,7 +3,7 @@ templateKey: blog-post
 title: What is a Financial Plan?
 bannerImage:
   alt: Home office
-  image: 
+  image: ''
 date: 2019-03-01T19:32:17.025Z
 description: >-
   A financial plan is like a roadmap to achieving the financial future you

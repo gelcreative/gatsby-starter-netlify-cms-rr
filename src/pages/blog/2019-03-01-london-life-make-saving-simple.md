@@ -3,7 +3,7 @@ templateKey: blog-post
 title: London Life - Make saving simple
 bannerImage:
   alt: Home office
-  image: 
+  image: ''
 date: 2019-03-01T19:36:08.224Z
 description: >-
   Starting early is a great way to reach your long-term investment goals with

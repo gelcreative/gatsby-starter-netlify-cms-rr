@@ -128,7 +128,7 @@ const StyledSingleBlogPost = styled.article`
   @media(min-width: 770px) {
     .single-blog-post-info {
       width: 58%;
-      min-height: 9em;
+      min-height: 10em;
     }
   }
 `

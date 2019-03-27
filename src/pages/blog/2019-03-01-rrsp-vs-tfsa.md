@@ -3,7 +3,7 @@ templateKey: blog-post
 title: RRSP vs TFSA
 bannerImage:
   alt: Home office
-  image: ''
+  image: 
 date: 2019-03-01T19:46:30.321Z
 description: >-
   With so many different options available to us, choosing where to invest your

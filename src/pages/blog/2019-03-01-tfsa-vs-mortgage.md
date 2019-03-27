@@ -3,7 +3,7 @@ templateKey: blog-post
 title: TFSA vs Mortgage
 bannerImage:
   alt: Home office
-  image: ''
+  image: 
 date: 2019-03-01T19:50:15.498Z
 description: >-
   The question of reducing debt or contributing to savings will continue to be

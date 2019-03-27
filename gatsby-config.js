@@ -88,6 +88,14 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-leaflet',
+    {
+      resolve: `remove-empty-fields`,
+      options: {
+        fieldsToRemove: [
+          'image',
+        ],
+      },
+    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }

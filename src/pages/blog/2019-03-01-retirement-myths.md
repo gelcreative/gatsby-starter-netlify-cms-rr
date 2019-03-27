@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Retirement Myths
 bannerImage:
   alt: home office
-  image: /img/blog-post-banner-1.jpg
+  image: ''
 date: 2019-03-01T19:53:35.012Z
 description: >-
   There are a lot of myths we have to be wary of if we want to ensure we have an

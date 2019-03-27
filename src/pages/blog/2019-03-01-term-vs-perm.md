@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Term vs Perm
 bannerImage:
   alt: home office
-  image: ''
+  image: /img/term-vs-perm-banner-opt-2000x571.jpg
 date: 2019-03-01T20:03:25.019Z
 description: >-
   When it comes to life insurance, there are many options available – so many,

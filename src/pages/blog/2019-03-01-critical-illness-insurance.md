@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Critical Illness Insurance
 bannerImage:
   alt: home office
-  image: /img/blog-post-banner-1.jpg
+  image: ''
 date: 2019-03-01T19:55:05.911Z
 description: >-
   More and more Canadians concerned about the financial costs of major disease

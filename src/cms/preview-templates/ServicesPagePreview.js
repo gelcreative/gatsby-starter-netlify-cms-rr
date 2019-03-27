@@ -7,7 +7,7 @@ const ServicesPagePreview = ({ entry, widgetFor }) => {
   return (
     <ServicesPageTemplate
       title={entry.getIn(['data', 'title'])}
-      description={entry.getIn(['data', 'description'])}
+      intro={entry.getIn(['data', 'intro'])}
       content={widgetFor('body')}
     />
   )

@@ -93,7 +93,7 @@ const GlobalStyle = createGlobalStyle`
       }
 
       .button.button-1 {
-        background-color: ${theme.middleBlue};
+        background-color: ${theme.red};
         color: #ffffff;
         padding-right: 10%;
         padding-left: 10%;
@@ -102,9 +102,9 @@ const GlobalStyle = createGlobalStyle`
       }
 
       .button.button-1:hover {
-        border: 1px solid ${theme.middleBlue};
+        border: 1px solid ${theme.red};
         background-color: #ffffff;
-        color: ${theme.middleBlue};
+        color: ${theme.red};
       }
 
     }

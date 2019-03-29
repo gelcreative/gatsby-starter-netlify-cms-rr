@@ -6,33 +6,30 @@ import Layout from '../../components/Layout'
 import BlogList from '../../components/BlogList'
 import RetireRiteCta from '../../components/RetireRiteCta'
 
-export default class BlogPage extends React.Component {
-
-  render() {
-    const blogListQuery = this.props.data
-
-    return (
-      <Layout>
-        <article className="section">
-          <div className="container">
-            <div className="section content">
-              <section className="columns retirerite-page-intro">
-                <div className="column has-text-centered">
-                  <div className="">
-                    <h1>Blog</h1>
-                  </div>
+const BlogPage = (props) => {
+  console.log(props)
+  const blogListQuery = props.data
+  return (
+    <Layout>
+      <article className="section">
+        <div className="container">
+          <div className="section content">
+            <section className="columns retirerite-page-intro">
+              <div className="column has-text-centered">
+                <div className="">
+                  <h1>Blog</h1>
                 </div>
-              </section>
-              <BlogList blogListQuery={blogListQuery} />
-            </div>
+              </div>
+            </section>
+            <BlogList blogListQuery={blogListQuery} />
           </div>
-          <section className="content">
-            <RetireRiteCta />
-          </section>
-        </article>
-      </Layout>
-    )
-  }
+        </div>
+        <section className="content">
+          <RetireRiteCta />
+        </section>
+      </article>
+    </Layout>
+  )
 }
 
 BlogPage.propTypes = {
@@ -43,9 +40,11 @@ BlogPage.propTypes = {
   }),
 }
 
+export default BlogPage
+
 export const blogPageQuery = graphql`
   query BlogPage {
-    mainQuery: allMarkdownRemark(
+    mainBlogQuery: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
       filter: { frontmatter: { templateKey: { eq: "blog-post" } }},
     ) {

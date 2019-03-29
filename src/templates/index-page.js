@@ -8,7 +8,6 @@ import BlogList from '../components/BlogList'
 import RetireRiteCta from '../components/RetireRiteCta'
 import markdownToHtml from '../util/markdownToHtml'
 import curves from '../img/blue-curves.svg'
-import { METHODS } from 'http';
 
 const StyledHomePage = styled.article`
   background: #ffffff;

@@ -33,6 +33,18 @@ const StyledHomePage = styled.article`
 
   .retirerite-home-intro-text-section {
     padding: 150px 0;
+    background-color: ${props => props.theme.blue};
+    color: #ffffff;
+  }
+
+  @media (min-width: 767px) {
+    .retirerite-home-intro-text-section {
+      transform: skew(-15deg) rotate(-5deg) translateX(-5%);
+      width: 110%;
+      > .container {
+        transform: skew(15deg) rotate(5deg) translateX(5%);
+      }
+    }
   }
 `
 
@@ -59,15 +71,19 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </section>
-      <div className="section">
-        <div className="container">
-          <section className="content retirerite-home-intro-text-section">
+      <section className="retirerite-home-intro-text-section">
+        <div className="content">
+          <div className="container">
             <div className="columns">
               <div className="column">
                 <div dangerouslySetInnerHTML={{ __html: markdownToHtml(intro) }} />
               </div>
             </div>
-          </section>
+          </div>
+        </div>
+      </section>
+      <div className="section">
+        <div className="container">
           <section className="content">
             <div className="columns">
               <div className="column">

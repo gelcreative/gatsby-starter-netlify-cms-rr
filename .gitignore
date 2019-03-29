@@ -9,4 +9,5 @@ static/admin/*.bundle.*
 yarn-error.log
 scratch.txt
 scratch.html
+scratch.js
 password.txt

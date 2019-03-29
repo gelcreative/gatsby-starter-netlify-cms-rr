@@ -8,19 +8,31 @@ import BlogList from '../components/BlogList'
 import RetireRiteCta from '../components/RetireRiteCta'
 import markdownToHtml from '../util/markdownToHtml'
 import curves from '../img/blue-curves.svg'
+import logo from '../img/retirerite-logo-hort.svg'
+import masthead from '../img/family-banner-2000x1008-v2.jpg'
 
 const StyledHomePage = styled.article`
   background: #ffffff;
   margin-top: -5rem;
   margin-bottom: 200px;
-  background: top no-repeat url(${curves});
-  background-size: contain;
-  &>.container {
-    margin-top: 5rem;
-  }
 
   iframe {
     height: 292px;
+  }
+
+  .retirerite-home-mastehead-section {
+    background: center no-repeat url(${masthead});
+    background-size: cover;
+    min-height: 400px;
+    padding: 150px 0;
+    img {
+      width: 300px;
+      max-width: 90%;
+    }
+  }
+
+  .retirerite-home-intro-text-section {
+    padding: 150px 0;
   }
 `
 
@@ -32,41 +44,48 @@ export const IndexPageTemplate = ({
   data,
 }) => {
   return (
-    <StyledHomePage className="section">
-      <div className="container">
-        <section className="content retirerite-home-mastehead-section">
-          <div className="columns">
-            <div className="column">
-              <h1 className="has-text-centered">{ title }</h1>
-              <div dangerouslySetInnerHTML={{ __html: markdownToHtml(intro) }} />
+    <StyledHomePage>
+      <section className="retirerite-home-mastehead-section">
+        <div className="content">
+          <div className="container">
+            <div className="columns">
+              <div className="column">
+              </div>
+              <div className="column has-text-centered">
+                <img src={logo} alt="RetireRite Logo" />
+                <h1 className="has-text-centered">{ title }</h1>
+                </div>
             </div>
           </div>
-        </section>
-        <section className="content retirerite-home-intro-text-section">
-          <div className="columns">
-            <div className="column">
-              <h1 className="has-text-centered">{ title }</h1>
-              <div dangerouslySetInnerHTML={{ __html: markdownToHtml(intro) }} />
+        </div>
+      </section>
+      <div className="section">
+        <div className="container">
+          <section className="content retirerite-home-intro-text-section">
+            <div className="columns">
+              <div className="column">
+                <div dangerouslySetInnerHTML={{ __html: markdownToHtml(intro) }} />
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+          <section className="content">
+            <div className="columns">
+              <div className="column">
+                <h2>{ heading }</h2>
+                <div dangerouslySetInnerHTML={{ __html: markdownToHtml(text) }} />
+              </div>
+              <div className="column"><iframe title="Value of Advice Video" width="518" height="292" src="https://www.youtube.com/embed/hmpDOd7efO0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
+            </div>
+          </section>
+          <section className="content">
+            <h2>Featured Blog Posts</h2>
+            <BlogList blogListQuery={data} />
+          </section>
+        </div>
         <section className="content">
-          <div className="columns">
-            <div className="column">
-              <h2>{ heading }</h2>
-              <div dangerouslySetInnerHTML={{ __html: markdownToHtml(text) }} />
-            </div>
-            <div className="column"><iframe title="Value of Advice Video" width="518" height="292" src="https://www.youtube.com/embed/hmpDOd7efO0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
-          </div>
-        </section>
-        <section className="content">
-          <h2>Featured Blog Posts</h2>
-          <BlogList blogListQuery={data} />
+          <RetireRiteCta />
         </section>
       </div>
-      <section className="content">
-        <RetireRiteCta />
-      </section>
     </StyledHomePage>
   )
 }

@@ -7,7 +7,6 @@ import BlogList from '../../components/BlogList'
 import RetireRiteCta from '../../components/RetireRiteCta'
 
 const BlogPage = (props) => {
-  console.log(props)
   const blogListQuery = props.data
   return (
     <Layout>

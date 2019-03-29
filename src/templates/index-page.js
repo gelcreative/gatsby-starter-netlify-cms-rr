@@ -34,6 +34,14 @@ export const IndexPageTemplate = ({
   return (
     <StyledHomePage className="section">
       <div className="container">
+        <section className="content retirerite-home-mastehead-section">
+          <div className="columns">
+            <div className="column">
+              <h1 className="has-text-centered">{ title }</h1>
+              <div dangerouslySetInnerHTML={{ __html: markdownToHtml(intro) }} />
+            </div>
+          </div>
+        </section>
         <section className="content">
           <div className="columns">
             <div className="column">

@@ -8,6 +8,7 @@ import BlogList from '../components/BlogList'
 import RetireRiteCta from '../components/RetireRiteCta'
 import markdownToHtml from '../util/markdownToHtml'
 import curves from '../img/blue-curves.svg'
+import { METHODS } from 'http';
 
 const StyledHomePage = styled.article`
   background: #ffffff;
@@ -64,7 +65,11 @@ export const IndexPageTemplate = ({
 }
 
 IndexPageTemplate.propTypes = {
-
+  title: PropTypes.string,
+  intro: PropTypes.string,
+  heading: PropTypes.string,
+  text: PropTypes.string,
+  data: PropTypes.object,
 }
 
 const IndexPage = ({data}) => {
@@ -93,66 +98,66 @@ IndexPage.propTypes = {
 export default IndexPage
 
 export const indexPageQuery = graphql`
-query IndexPage($id: String!) {
-  markdownRemark(id: { eq: $id}) {
-    frontmatter {
-      title
-      intro
-      heading
-      text
+  query IndexPage($id: String!) {
+    markdownRemark(id: { eq: $id}) {
+      frontmatter {
+        title
+        intro
+        heading
+        text
+      }
     }
-  }
-  mainBlogQuery: allMarkdownRemark(
-    sort: { order: DESC, fields: [frontmatter___date] },
-    filter: { frontmatter: { templateKey: { eq: "blog-post" } }},
-    limit: 3
-  ) {
-    edges {
-      node {
-        excerpt(pruneLength: 230)
-        id
-        fields {
-          slug
+    mainBlogQuery: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] },
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } }},
+      limit: 3
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 230)
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            templateKey
+            date(formatString: "MMMM DD, YYYY")
+            description
+            bannerImage {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 2048, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+            tags
+          }
         }
-        frontmatter {
-          title
-          templateKey
-          date(formatString: "MMMM DD, YYYY")
-          description
-          bannerImage {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 2048, quality: 100) {
-                  ...GatsbyImageSharpFluid
+      }
+    }
+    grayscaleImageQuery: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] },
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } }},
+      limit: 3
+    ) {
+      edges {
+        node {
+          frontmatter {
+            bannerImage {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 2048, quality: 100, grayscale: true) {
+                    ...GatsbyImageSharpFluid
+                  } 
                 }
               }
             }
           }
-          tags
         }
       }
     }
   }
-  grayscaleImageQuery: allMarkdownRemark(
-    sort: { order: DESC, fields: [frontmatter___date] },
-    filter: { frontmatter: { templateKey: { eq: "blog-post" } }},
-    limit: 3
-  ) {
-    edges {
-      node {
-        frontmatter {
-          bannerImage {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 2048, quality: 100, grayscale: true) {
-                  ...GatsbyImageSharpFluid
-                } 
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
 `

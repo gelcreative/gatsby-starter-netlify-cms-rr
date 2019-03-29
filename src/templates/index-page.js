@@ -42,7 +42,7 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </section>
-        <section className="content">
+        <section className="content retirerite-home-intro-text-section">
           <div className="columns">
             <div className="column">
               <h1 className="has-text-centered">{ title }</h1>

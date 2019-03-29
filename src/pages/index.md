@@ -1,4 +1,5 @@
 ---
+templateKey: index-page
 title: RetireRite Financial Strategies Inc.
 intro: >-
   Everyone’s needs and dreams are different. The time to start making them

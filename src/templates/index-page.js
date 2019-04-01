@@ -120,7 +120,7 @@ const StyledHomePage = styled.article`
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: rgba(151, 154, 161, 0.6);
+        background-color: rgba(255, 255, 255, 0.6);
     }
 
     .retirerite-home-masthead-section {

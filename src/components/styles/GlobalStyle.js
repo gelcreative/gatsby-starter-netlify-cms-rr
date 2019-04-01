@@ -94,6 +94,7 @@ const GlobalStyle = createGlobalStyle`
 
       .button.button-1 {
         background-color: ${theme.red};
+        border: 1px solid ${theme.red};
         color: #ffffff;
         padding-right: 10%;
         padding-left: 10%;
@@ -102,7 +103,6 @@ const GlobalStyle = createGlobalStyle`
       }
 
       .button.button-1:hover {
-        border: 1px solid ${theme.red};
         background-color: #ffffff;
         color: ${theme.red};
       }

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
@@ -30,6 +30,9 @@ const StyledHomePage = styled.article`
     }
     p {
       color: ${props => props.theme.blue};
+    }
+    h1, p {
+      margin-bottom: 4rem;
     }
   }
 
@@ -92,7 +95,8 @@ export const IndexPageTemplate = ({
               <div className="column has-text-centered">
                 <img src={logo} alt="RetireRite Logo" />
                 <h1 className="has-text-centered">{ title }</h1>
-                <div dangerouslySetInnerHTML={{ __html: markdownToHtml(masthead)}} />
+                <div dangerouslySetInnerHTML={{ __html: markdownToHtml(masthead)}} className="masthead-area-text" />
+                <Link className="button button-1" to="/book-a-meeting/">Start a Conversation</Link>
               </div>
             </div>
           </div>

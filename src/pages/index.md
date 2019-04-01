@@ -1,7 +1,12 @@
 ---
 templateKey: index-page
 title: RetireRite Financial Strategies Inc.
-intro: >-
+masthead: >-
+  At RetireRite, we believe in delivering the highest value with added service
+  and commitment to professionalism, ethics and education. We are personally
+  invested in providing transparency, value and the highest quality customer
+  service.
+sectionTwo: |-
   Everyone’s needs and dreams are different. The time to start making them
   happen is right now, and it all starts with having a financial plan. Studies
   show that Canadians backed by a comprehensive financial plan feel:
@@ -21,10 +26,12 @@ intro: >-
   advisor hold more assets, save at a higher rate, and report significantly
   higher levels of financial and emotional well-being than non-advised
   Canadians.
-heading: The Value of Financial Planning
-text: >-
-  Did you know that when it comes to your financial well-being, advice may be
-  the difference between achieving your financial goals and falling short? Make
-  the most of your money with the help of a financial security advisor.
+sectionThree:
+  heading: The Value of Financial Planning
+  text: >-
+    Did you know that when it comes to your financial well-being, advice may be
+
+    the difference between achieving your financial goals and falling short?
+    Make the most of your money with the help of a financial security advisor.
 ---
 

@@ -101,6 +101,9 @@ const StyledHomePage = styled.article`
 
     .retirerite-value-section {
       padding-top: 140px;
+      .text-column {
+        padding-right: 4em;
+      }
     }
   }
 
@@ -173,7 +176,7 @@ export const IndexPageTemplate = ({
         <div className="container">
           <section className="content retirerite-value-section">
             <div className="columns">
-              <div className="column">
+              <div className="column text-column" style={{ marginBottom: '3rem' }}>
                 <h2>{ sectionThree.heading }</h2>
                 <div dangerouslySetInnerHTML={{ __html: markdownToHtml(sectionThree.text) }} />
               </div>

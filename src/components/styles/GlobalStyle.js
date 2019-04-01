@@ -70,6 +70,10 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: inherit;
       }
 
+      p, li {
+        line-height: 1.5;
+      }
+
       ul {
         margin-left: 3em;
       }

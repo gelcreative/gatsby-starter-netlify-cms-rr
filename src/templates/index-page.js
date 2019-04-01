@@ -50,6 +50,7 @@ const StyledHomePage = styled.article`
     .larger-text {
       font-family: ${props => props.theme.serifFont};
       font-size: 3.2rem;
+      line-height: 1.1
     }
     ul {
       display: flex;

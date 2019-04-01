@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Key Person Insurance
 bannerImage:
   alt: home office
-  image: /img/key-person-insurance-banner-opt-2000x571.jpg
+  image: /img/key-person-v2-2000x571-opt.jpg
 date: 2019-03-01T20:01:00.036Z
 description: >-
   Key Person Insurance is a risk management tool that helps to cover the loss of

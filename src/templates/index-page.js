@@ -23,7 +23,7 @@ const StyledHomePage = styled.article`
   .retirerite-home-mastehead-section {
     background: center no-repeat url(${masthead});
     background-size: cover;
-    min-height: 400px;
+    min-height: 500px;
     padding: 150px 0;
     img {
       width: 300px;
@@ -39,11 +39,16 @@ const StyledHomePage = styled.article`
 
   @media (min-width: 767px) {
     .retirerite-home-intro-text-section {
-      transform: skew(-15deg) rotate(-5deg) translateX(-5%);
-      width: 110%;
-      > .container {
-        transform: skew(15deg) rotate(5deg) translateX(5%);
+      transform: skew(-3deg) rotate(-3deg);
+      margin-top: -75px;
+      > .section {
+        transform: skew(3deg) rotate(3deg);
       }
+    }
+
+
+    .retirerite-value-section {
+      padding-top: 140px;
     }
   }
 `
@@ -58,8 +63,8 @@ export const IndexPageTemplate = ({
   return (
     <StyledHomePage>
       <section className="retirerite-home-mastehead-section">
-        <div className="content">
-          <div className="container">
+        <div className="container">
+          <div className="content">
             <div className="columns">
               <div className="column">
               </div>
@@ -72,11 +77,13 @@ export const IndexPageTemplate = ({
         </div>
       </section>
       <section className="retirerite-home-intro-text-section">
-        <div className="content">
+        <div className="section">
           <div className="container">
-            <div className="columns">
-              <div className="column">
-                <div dangerouslySetInnerHTML={{ __html: markdownToHtml(intro) }} />
+            <div className="content">
+              <div className="columns">
+                <div className="column">
+                  <div dangerouslySetInnerHTML={{ __html: markdownToHtml(intro) }} />
+                </div>
               </div>
             </div>
           </div>
@@ -84,7 +91,7 @@ export const IndexPageTemplate = ({
       </section>
       <div className="section">
         <div className="container">
-          <section className="content">
+          <section className="content retirerite-value-section">
             <div className="columns">
               <div className="column">
                 <h2>{ heading }</h2>

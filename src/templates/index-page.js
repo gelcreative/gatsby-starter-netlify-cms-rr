@@ -131,16 +131,18 @@ export const IndexPageTemplate = ({
   return (
     <StyledHomePage>
       <section className="retirerite-home-masthead-section">
-        <div className="container">
-          <div className="content">
-            <div className="columns">
-              <div className="column">
-              </div>
-              <div className="column has-text-centered">
-                <img src={logo} alt="RetireRite Logo" />
-                <h1 className="has-text-centered">{ title }</h1>
-                <div dangerouslySetInnerHTML={{ __html: markdownToHtml(masthead)}} className="masthead-area-text" />
-                <Link className="button button-1" to="/book-a-meeting/">Start a Conversation</Link>
+        <div className="section">
+          <div className="container">
+            <div className="content">
+              <div className="columns">
+                <div className="column">
+                </div>
+                <div className="column has-text-centered">
+                  <img src={logo} alt="RetireRite Logo" />
+                  <h1 className="has-text-centered">{ title }</h1>
+                  <div dangerouslySetInnerHTML={{ __html: markdownToHtml(masthead)}} className="masthead-area-text" />
+                  <Link className="button button-1" to="/book-a-meeting/">Start a Conversation</Link>
+                </div>
               </div>
             </div>
           </div>

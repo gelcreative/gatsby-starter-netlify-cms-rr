@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Term vs Perm
 bannerImage:
   alt: Life preserver on ship deck
-  image: /img/home-banner-1-1080x308.jpg
+  image: ''
 date: 2019-03-01T20:03:25.019Z
 description: >-
   When it comes to life insurance, there are many options available – so many,

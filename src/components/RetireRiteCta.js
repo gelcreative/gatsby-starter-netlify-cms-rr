@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const StyledCta = styled.div`
   background-color: ${props => props.theme.lightGrey};
   padding: 2em;
-  box-shadow: 7px 7px ${props => props.theme.lightBlue};
+  box-shadow: 7px 7px #c3c1d3;
   margin-top: 4rem;
   
   @media(min-width: 1115px) {

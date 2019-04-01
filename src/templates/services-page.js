@@ -26,7 +26,7 @@ export const ServicesPageTemplate = ({
             <div className="column is-10 is-offset-1">
               <div className="">
                 <h1 className="has-text-centered">{title}</h1>
-                <p dangerouslySetInnerHTML={{__html: markdownToHtml(intro)}} />
+                <div dangerouslySetInnerHTML={{__html: markdownToHtml(intro)}} />
               </div>
             </div>
           </div>

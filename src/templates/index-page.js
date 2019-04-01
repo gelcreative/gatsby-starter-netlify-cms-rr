@@ -32,7 +32,7 @@ const StyledHomePage = styled.article`
   }
 
   .retirerite-home-intro-text-section {
-    padding: 150px 0;
+    padding: 110px 0;
     background-color: ${props => props.theme.blue};
     color: #ffffff;
   }
@@ -49,6 +49,22 @@ const StyledHomePage = styled.article`
 
     .retirerite-value-section {
       padding-top: 140px;
+    }
+  }
+
+  @media (max-width: 769px) {
+    .retirerite-home-mastehead-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(151, 154, 161, 0.6);
+    }
+
+    .retirerite-home-mastehead-section {
+        position: relative;
     }
   }
 `

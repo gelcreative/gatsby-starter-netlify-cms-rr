@@ -36,10 +36,31 @@ const StyledHomePage = styled.article`
     }
   }
 
+  .retirerite-home-intro-text-section 
+
+.retirerite-home-intro-text-section ul li {
+
+}
+
   .retirerite-home-intro-text-section {
     padding: 110px 0;
     background-color: ${props => props.theme.blue};
     color: #ffffff;
+    .larger-text {
+      font-family: ${props => props.theme.serifFont};
+      font-size: 3.2rem;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: stretch;
+      list-style-type: circle;
+      li {
+        flex: 1 1 300px;
+        min-width: 42%;
+        margin: 1rem 2%;
+      }
+    }
   }
 
   @media (min-width: 767px) {

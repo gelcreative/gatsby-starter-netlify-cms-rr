@@ -92,6 +92,10 @@ const GlobalStyle = createGlobalStyle`
         }
       }
 
+      strong {
+        color: inherit;
+      }
+
       .button.button-1 {
         background-color: ${theme.red};
         border: 1px solid ${theme.red};

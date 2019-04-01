@@ -167,9 +167,12 @@ export const indexPageQuery = graphql`
     markdownRemark(id: { eq: $id}) {
       frontmatter {
         title
-        intro
-        heading
-        text
+        masthead
+        sectionTwo
+        sectionThree {
+          heading
+          text
+        }
       }
     }
     mainBlogQuery: allMarkdownRemark(

@@ -104,6 +104,14 @@ const StyledHomePage = styled.article`
     }
   }
 
+  @media (max-width: 766px) {
+    .retirerite-home-masthead-section,
+    .retirerite-home-intro-text-section,
+    .retirerite-value-section {
+      padding: 50px 0;
+    }
+  }
+
   @media (max-width: 769px) {
     .retirerite-home-masthead-section::before {
         content: '';

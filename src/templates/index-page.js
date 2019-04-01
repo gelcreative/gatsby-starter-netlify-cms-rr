@@ -9,6 +9,7 @@ import RetireRiteCta from '../components/RetireRiteCta'
 import markdownToHtml from '../util/markdownToHtml'
 import logo from '../img/retirerite-logo-hort.svg'
 import masthead from '../img/family-banner-2000x1008-v2.jpg'
+import sails from '../img/dark-blue-sails.svg'
 
 const StyledHomePage = styled.article`
   background: #ffffff;
@@ -61,6 +62,27 @@ const StyledHomePage = styled.article`
         margin: 1rem 2%;
       }
     }
+  }
+
+  .retirerite-home-intro-text-section {
+    position: relative;
+    overflow: hidden;
+    .section {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .retirerite-home-intro-text-section::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -10%;
+    min-height: 400px;
+    width: 40%;
+    background: center no-repeat url(${sails});
+    background-size: contain;
+    z-index: 0;
   }
 
   @media (min-width: 767px) {

@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Dollar Cost Averaging
 bannerImage:
   alt: home office
-  image: /img/dollar-cost-averaging-banner-opt-200x571.jpg
+  image: /img/dollar-cost-averaging-v2-2000x571-opt.jpg
 date: 2019-03-01T20:01:55.891Z
 description: >
   DCA is intended to temper the volatility of your investment portfolio by

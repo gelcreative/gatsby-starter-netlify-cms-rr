@@ -7,7 +7,6 @@ import Layout from '../components/Layout'
 import BlogList from '../components/BlogList'
 import RetireRiteCta from '../components/RetireRiteCta'
 import markdownToHtml from '../util/markdownToHtml'
-import curves from '../img/blue-curves.svg'
 import logo from '../img/retirerite-logo-hort.svg'
 import masthead from '../img/family-banner-2000x1008-v2.jpg'
 
@@ -20,7 +19,7 @@ const StyledHomePage = styled.article`
     height: 292px;
   }
 
-  .retirerite-home-mastehead-section {
+  .retirerite-home-masthead-section {
     background: center no-repeat url(${masthead});
     background-size: cover;
     min-height: 500px;
@@ -28,6 +27,9 @@ const StyledHomePage = styled.article`
     img {
       width: 300px;
       max-width: 90%;
+    }
+    p {
+      color: ${props => props.theme.blue};
     }
   }
 
@@ -38,6 +40,10 @@ const StyledHomePage = styled.article`
   }
 
   @media (min-width: 767px) {
+    .retirerite-home-masthead-section {
+      padding-bottom: 240px;
+    }
+
     .retirerite-home-intro-text-section {
       transform: skew(-3deg) rotate(-3deg);
       margin-top: -75px;
@@ -46,14 +52,13 @@ const StyledHomePage = styled.article`
       }
     }
 
-
     .retirerite-value-section {
       padding-top: 140px;
     }
   }
 
   @media (max-width: 769px) {
-    .retirerite-home-mastehead-section::before {
+    .retirerite-home-masthead-section::before {
         content: '';
         position: absolute;
         top: 0;
@@ -63,7 +68,7 @@ const StyledHomePage = styled.article`
         background-color: rgba(151, 154, 161, 0.6);
     }
 
-    .retirerite-home-mastehead-section {
+    .retirerite-home-masthead-section {
         position: relative;
     }
   }
@@ -71,14 +76,14 @@ const StyledHomePage = styled.article`
 
 export const IndexPageTemplate = ({
   title,
-  intro,
-  heading,
-  text,
+  masthead,
+  sectionTwo,
+  sectionThree,
   data,
 }) => {
   return (
     <StyledHomePage>
-      <section className="retirerite-home-mastehead-section">
+      <section className="retirerite-home-masthead-section">
         <div className="container">
           <div className="content">
             <div className="columns">
@@ -87,7 +92,8 @@ export const IndexPageTemplate = ({
               <div className="column has-text-centered">
                 <img src={logo} alt="RetireRite Logo" />
                 <h1 className="has-text-centered">{ title }</h1>
-                </div>
+                <div dangerouslySetInnerHTML={{ __html: markdownToHtml(masthead)}} />
+              </div>
             </div>
           </div>
         </div>
@@ -98,7 +104,7 @@ export const IndexPageTemplate = ({
             <div className="content">
               <div className="columns">
                 <div className="column">
-                  <div dangerouslySetInnerHTML={{ __html: markdownToHtml(intro) }} />
+                  <div dangerouslySetInnerHTML={{ __html: markdownToHtml(sectionTwo) }} />
                 </div>
               </div>
             </div>
@@ -110,8 +116,8 @@ export const IndexPageTemplate = ({
           <section className="content retirerite-value-section">
             <div className="columns">
               <div className="column">
-                <h2>{ heading }</h2>
-                <div dangerouslySetInnerHTML={{ __html: markdownToHtml(text) }} />
+                <h2>{ sectionThree.heading }</h2>
+                <div dangerouslySetInnerHTML={{ __html: markdownToHtml(sectionThree.text) }} />
               </div>
               <div className="column"><iframe title="Value of Advice Video" width="518" height="292" src="https://www.youtube.com/embed/hmpDOd7efO0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
             </div>
@@ -131,9 +137,9 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   title: PropTypes.string,
-  intro: PropTypes.string,
-  heading: PropTypes.string,
-  text: PropTypes.string,
+  masthead: PropTypes.string,
+  sectionTwo: PropTypes.string,
+  sectionThree: PropTypes.object,
   data: PropTypes.object,
 }
 
@@ -143,9 +149,9 @@ const IndexPage = ({data}) => {
     <Layout>
       <IndexPageTemplate
         title={pageQuery.title}
-        intro={pageQuery.intro}
-        heading={pageQuery.heading}
-        text={pageQuery.text}
+        masthead={pageQuery.masthead}
+        sectionTwo={pageQuery.sectionTwo}
+        sectionThree={pageQuery.sectionThree}
         data={data}
       />
     </Layout>

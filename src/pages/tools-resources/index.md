@@ -45,7 +45,7 @@ HelloLife is a personalized retirement income planner designed to create a stead
 
 Risk tolerance, investment goals and timelines make up your investment personality, which helps us customize your investment portfolio to suit your financial plan. Take our quiz to discover your Investment Personality.
 
-<a href="https://hellolife.londonlife.com/application/en/home/" target="_blank" class="button button-1">Download PDF</a>
+<a href="/img/investment-voyager.pdf" target="_blank" class="button button-1">Download PDF</a>
 
 ### Long Term Care Insurance
 

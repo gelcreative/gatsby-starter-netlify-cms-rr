@@ -32,7 +32,7 @@ export const ServicesPageTemplate = ({
           </div>
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <div className="">
+              <div style={{ overflowY: 'hidden' }}>
                 <PageContent content={content} />
               </div>
             </div>

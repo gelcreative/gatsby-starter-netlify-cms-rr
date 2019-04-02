@@ -37,12 +37,6 @@ const StyledHomePage = styled.article`
     }
   }
 
-  .retirerite-home-intro-text-section 
-
-.retirerite-home-intro-text-section ul li {
-
-}
-
   .retirerite-home-intro-text-section {
     padding: 110px 0;
     background-color: ${props => props.theme.blue};
@@ -115,7 +109,7 @@ const StyledHomePage = styled.article`
     }
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 768px) {
     .retirerite-home-masthead-section::before {
         content: '';
         position: absolute;
@@ -128,6 +122,12 @@ const StyledHomePage = styled.article`
 
     .retirerite-home-masthead-section {
         position: relative;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1300px) {
+    .retirerite-home-masthead-section {
+      padding: 40px 0 150px;
     }
   }
 `

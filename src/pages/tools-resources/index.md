@@ -45,6 +45,8 @@ HelloLife is a personalized retirement income planner designed to create a stead
 
 Risk tolerance, investment goals and timelines make up your investment personality, which helps us customize your investment portfolio to suit your financial plan. Take our quiz to discover your Investment Personality.
 
+<a href="https://hellolife.londonlife.com/application/en/home/" target="_blank" class="button button-1">Download PDF</a>
+
 ### Long Term Care Insurance
 
  Long term care insurance can provide coverage if you become unable to care for yourself and need assistance to manage daily living activities. Long term care isn't just for seniors; it can also cover some of the costs of a care facility or a caregiver in your own home following an accident or illness. 
@@ -64,7 +66,6 @@ Travel insurance protects you from unexpected medical expenses that occur while 
 * <a href="http://www.cra-arc.gc.ca/esrvc-srvce/tx/ndvdls/myccnt/menu-eng.html" target="_blank">Canada Revenue Agency (CRA) My Account</a>
 * <a href="http://www.servicecanada.gc.ca/eng/online/index.shtml" target="_blank">Service Canada Online Services and Forms</a>
 * <a href="http://glc-amgroup.com/04-00_Individual_investors.html" target="_blank">GLC Asset Management Group</a>
-
 
 ### Client Access
 

@@ -5,6 +5,8 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+site_url: https://retirerite.netlify.com/
+
 collections:
   - name: "blog"
     label: "Blog"

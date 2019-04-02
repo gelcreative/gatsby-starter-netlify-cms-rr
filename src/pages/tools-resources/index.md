@@ -35,7 +35,7 @@ Enhanced coverage for individuals - PlanDirect can help fill the gap between you
 <a href="https://www.e-benefit.com/en/eb/plandirect/hl/458cb7f12145a847e68cc0c34a5b440da2c9a29d707592aaa958acd4a1b21651" target="_blank" class="button button-1">Get a Quote</a>
 <a href="https://www.e-benefit.com/fr/plandirect/about_plandirect.html?wl=" target="_blank" class="button button-1">Obtenez une soumission</a>
 
-### Retirement Income Planning – Say Hello to “Hello Life”! 
+### Retirement Income Planning – Say Hello to “Hello Life”!
 
 HelloLife is a personalized retirement income planner designed to create a steady stream of income for as long as you need it, as well as flexible investment options to allow for portfolio growth.
 
@@ -49,7 +49,7 @@ Risk tolerance, investment goals and timelines make up your investment personali
 
 ### Long Term Care Insurance
 
- Long term care insurance can provide coverage if you become unable to care for yourself and need assistance to manage daily living activities. Long term care isn't just for seniors; it can also cover some of the costs of a care facility or a caregiver in your own home following an accident or illness. 
+Long term care insurance can provide coverage if you become unable to care for yourself and need assistance to manage daily living activities. Long term care isn't just for seniors; it can also cover some of the costs of a care facility or a caregiver in your own home following an accident or illness. 
 
 <a href="/book-a-meeting/" target="_blank" class="button button-1">More Information</a>
 

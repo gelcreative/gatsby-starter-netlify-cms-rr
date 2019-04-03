@@ -70,7 +70,9 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: inherit;
       }
 
-      p, li {
+      p,
+      li,
+      small {
         line-height: 1.5;
       }
 

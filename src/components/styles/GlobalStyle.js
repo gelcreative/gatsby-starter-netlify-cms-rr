@@ -102,6 +102,10 @@ const GlobalStyle = createGlobalStyle`
         color: inherit;
       }
 
+    .button {
+      margin-bottom: 0.5rem;
+    }
+
       .button.button-1 {
         background-color: ${theme.red};
         border: 1px solid ${theme.red};

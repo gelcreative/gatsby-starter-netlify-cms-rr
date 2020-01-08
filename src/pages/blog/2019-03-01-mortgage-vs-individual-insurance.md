@@ -13,6 +13,6 @@ tags:
   - insurance
   - video
 ---
-But did you know that you can purchase an individual life insurance policy, often with lower premiums and greater death benefit options, instead? We can help you figure out how much insurance coverage you should have to provide the best protection for your family.
+But did you know that you can purchase an individual life insurance policy, often with lower premiums and greater death benefit options, instead? Individual insurance generally provides more control, options and benefits to you financially protect what matters most. And it's all about you: you own it, you choose the product and options that you want, and you decide who gets the insurance proceeds. 
 
-<iframe class="FlexEmbed-content" src="https://player.vimeo.com/video/210055392" allowfullscreen="" frameborder="0"></iframe>
+Insurance is about more than just your home: it's about protecting what's important in your life. We can help you figure out how much insurance coverage you should have to provide the best protection for your family.

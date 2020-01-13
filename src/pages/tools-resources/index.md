@@ -21,19 +21,23 @@ You may be left to pay for expenses such as:
 
 Enhanced healthcare plans can help protect you against these and other unexpected health and dental expenses
 
-### Sonata Health
+## Plan Direct 
 
-Sonata Health™ is a health and dental benefit plan designed for individuals who are looking for insurance coverage for themselves and their families.
+### Guaranteed Issue
+
+Our Guaranteed Issue plans offer enhanced coverage for individuals, and can help fill the gap between your provincial plan coverage and what you pay.
+
+<a href="https://www.e-benefit.com/en/eb/plandirect/hl/458cb7f12145a847e68cc0c34a5b440da2c9a29d707592aaa958acd4a1b21651" target="_blank" class="button button-1">Get a Quote</a>
+<a href="https://www.e-benefit.com/fr/plandirect/about_plandirect.html?wl=" target="_blank" class="button button-1">Obtenez une soumission</a>
+
+### Core, Core Plus and Elite
+
+Our Core, Core Plus and Elite health and dental benefit plans are underwritten for eligibility, and designed for individuals who are looking for insurance coverage for themselves and their families.
 
 <a href="https://www.e-benefit.com/en/eb/sonata/hl/458cb7f12145a847e68cc0c34a5b440da2c9a29d707592aaa958acd4a1b21651" target="_blank" class="button button-1">Get a Quote</a>
 <a href="https://www.e-benefit.com/fr/sonata/about_sonata.html?wl=" target="_blank" class="button button-1">Obtenez une soumission</a>
 
-### Plan Direct
-
-Enhanced coverage for individuals - PlanDirect can help fill the gap between your provincial plan coverage and what you pay.
-
-<a href="https://www.e-benefit.com/en/eb/plandirect/hl/458cb7f12145a847e68cc0c34a5b440da2c9a29d707592aaa958acd4a1b21651" target="_blank" class="button button-1">Get a Quote</a>
-<a href="https://www.e-benefit.com/fr/plandirect/about_plandirect.html?wl=" target="_blank" class="button button-1">Obtenez une soumission</a>
+### 
 
 ### Retirement Income Planning – Say Hello to “Hello Life”!
 

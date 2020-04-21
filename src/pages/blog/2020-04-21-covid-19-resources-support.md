@@ -72,7 +72,7 @@ To apply, go to: <https://www.csnpe-nslsc.canada.ca/en/what-is-new>\
 
 **Support for Businesses**
 
-The** Canada Emergency Business Account** provides interest-free loans of up to $40,000 to small businesses and not-for-profit organizations, so that they can manage their operating expenses while their revenue may be temporarily reduced. For more information or to apply, visit <https://ceba-cuec.ca/>
+The **Canada Emergency Business Account **provides interest-free loans of up to $40,000 to small businesses and not-for-profit organizations, so that they can manage their operating expenses while their revenue may be temporarily reduced. For more information or to apply, visit <https://ceba-cuec.ca/>
 
 The **Canada Emergency Wage Subsidy** can help subsidize up to 75% of a business' wages, for up to 12 weeks, so that employers can maintain their staff without having to lay anyone off. To learn more, or see if your business is eligible, visit <https://www.canada.ca/en/revenue-agency/services/subsidy/emergency-wage-subsidy.html>
 

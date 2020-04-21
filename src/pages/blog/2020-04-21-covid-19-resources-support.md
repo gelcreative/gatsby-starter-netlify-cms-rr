@@ -36,8 +36,8 @@ We understand COVID-19 has had a huge financial impact on people and their abili
 Life Insurance Claims**\
 Claims where cause of death is related to COVID-19 are fully covered as long as all questions within the application have been answered accurately, including questions related to recent travel history and current health, there is no exclusion on the policy and no change in insurability before policy delivery.
 
-**Disability Claims
-**You may be eligible for some benefits if you test positive for COVID-19 and your symptoms prevent you from working beyond your disability or overhead expense insurance policy’s waiting period. Any days spent in quarantine prior to the positive test (up to a maximum of 14 days) will be included in your waiting period. There are some disability benefits that aren’t eligible due to COVID-19. 
+**Disability Claims**\
+You may be eligible for some benefits if you test positive for COVID-19 and your symptoms prevent you from working beyond your disability or overhead expense insurance policy's waiting period. Any days spent in quarantine prior to the positive test (up to a maximum of 14 days) will be included in your waiting period. There are some disability benefits that aren't eligible due to COVID-19.
 
 **Critical illness insurance claims**\
 You’re provided a lump-sum payment for specific medical conditions as defined in your policy, such as cancer, heart attack and stroke. COVID-19 is not currently a covered condition and wouldn’t be eligible for a benefit payout. 
@@ -60,10 +60,7 @@ The Provincial and Federal Governments have announced numerous financial support
 The provincial will provide $200 for children under age 12, and $250 for special needs children under age 21. Visit: <https://www.ontario.ca/page/get-support-families> for more information or to apply.
 
 **Federal - Canada Child Benefit**\
-Eligible recipients will receive $300 more per child with their regular May CCB payment.
- If you have previously applied for the CCB, you do not need to re-apply.
- For more information on the Canada Child Benefit such as how to apply and eligibility requirements, call 1-800-387-1193
- or go to <https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview.html>
+Eligible recipients will receive $300 more per child with their regular May CCB payment. If you have previously applied for the CCB, you do not need to re-apply. For more information on the Canada Child Benefit such as how to apply and eligibility requirements, call 1-800-387-1193 or go to <https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview.html>
 
 **Canada Student Loans**\
 The Federal government announced the suspension of repayments of Canada Student Loans and Canada Apprentice Loans. No payments are required on student and apprentice loans during this time, pre-authorized debits will be stopped and no interest will accrue on student and apprentice loans. Visit <https://www.csnpe-nslsc.canada.ca/en/what-is-new> for more information.

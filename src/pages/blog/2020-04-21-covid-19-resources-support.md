@@ -36,7 +36,7 @@ We understand COVID-19 has had a huge financial impact on people and their abili
 Life Insurance Claims**\
 Claims where cause of death is related to COVID-19 are fully covered as long as all questions within the application have been answered accurately, including questions related to recent travel history and current health, there is no exclusion on the policy and no change in insurability before policy delivery.
 
-**Disability insurance claims
+**Disability Claims
 **You may be eligible for some benefits if you test positive for COVID-19 and your symptoms prevent you from working beyond your disability or overhead expense insurance policy’s waiting period. Any days spent in quarantine prior to the positive test (up to a maximum of 14 days) will be included in your waiting period. There are some disability benefits that aren’t eligible due to COVID-19. 
 
 **Critical illness insurance claims**\
@@ -56,32 +56,28 @@ The Provincial and Federal Governments have announced numerous financial support
 
 **Support for Individuals & Families**
 
-Ontario - Support for Families\
+**Ontario - Support for Families**\
 The provincial will provide $200 for children under age 12, and $250 for special needs children under age 21. Visit: <https://www.ontario.ca/page/get-support-families> for more information or to apply.
 
-Federal - Canada Child Benefit\
+**Federal - Canada Child Benefit**\
 Eligible recipients will receive $300 more per child with their regular May CCB payment.
  If you have previously applied for the CCB, you do not need to re-apply.
  For more information on the Canada Child Benefit such as how to apply and eligibility requirements, call 1-800-387-1193
  or go to <https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview.html>
 
-Canada Student Loans\
-The Federal government announced the suspension of repayments of Canada Student Loans and Canada Apprentice Loans
-. No payments are required on student and apprentice loans during this time
-, pre-authorized debits will be stopped
- and no interest will accrue on student and apprentice loans
-. Visit <https://www.csnpe-nslsc.canada.ca/en/what-is-new> for more information.
+**Canada Student Loans**\
+The Federal government announced the suspension of repayments of Canada Student Loans and Canada Apprentice Loans. No payments are required on student and apprentice loans during this time, pre-authorized debits will be stopped and no interest will accrue on student and apprentice loans. Visit <https://www.csnpe-nslsc.canada.ca/en/what-is-new> for more information.
 
-Canada Emergency Response Benefit (CERB)\
+**Canada Emergency Response Benefit (CERB)**\
 If you have stopped working because of COVID-19, you may be eligible for the CERB, which provides $500 a week for up to 16 weeks. \
 To apply, go to: <https://www.csnpe-nslsc.canada.ca/en/what-is-new>\
 *there is no income tax withheld from CERB payments, however the amount will be counted as income for the 2020 tax year. Contact us if you want to work out a plan to manage this future tax burden.
 
 **Support for Businesses**
 
-The Canada Emergency Business Account provides interest-free loans of up to $40,000 to small businesses and not-for-profit organizations, so that they can manage their operating expenses while their revenue may be temporarily reduced. For more information or to apply, visit <https://ceba-cuec.ca/>
+The** Canada Emergency Business Account** provides interest-free loans of up to $40,000 to small businesses and not-for-profit organizations, so that they can manage their operating expenses while their revenue may be temporarily reduced. For more information or to apply, visit <https://ceba-cuec.ca/>
 
-The Canada Emergency Wage Subsidy can help subsidize up to 75% of a business' wages, for up to 12 weeks, so that employers can maintain their staff without having to lay anyone off. To learn more, or see if your business is eligible, visit <https://www.canada.ca/en/revenue-agency/services/subsidy/emergency-wage-subsidy.html>
+The **Canada Emergency Wage Subsidy** can help subsidize up to 75% of a business' wages, for up to 12 weeks, so that employers can maintain their staff without having to lay anyone off. To learn more, or see if your business is eligible, visit <https://www.canada.ca/en/revenue-agency/services/subsidy/emergency-wage-subsidy.html>
 
 The current outbreak is scary and unpredictable, but if we stand together as a country, we will get through this. Remember that better days are coming.
 

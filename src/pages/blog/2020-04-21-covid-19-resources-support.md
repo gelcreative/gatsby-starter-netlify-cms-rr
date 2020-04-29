@@ -76,6 +76,17 @@ The **Canada Emergency Business Account** provides interest-free loans of up to 
 
 The **Canada Emergency Wage Subsidy** can help subsidize up to 75% of a business' wages, for up to 12 weeks, so that employers can maintain their staff without having to lay anyone off. To learn more, or see if your business is eligible, visit <https://www.canada.ca/en/revenue-agency/services/subsidy/emergency-wage-subsidy.html>
 
+The **Canada Emergency Commercial Rent Assistance** program proposes to lower commercial rent for small business by up to 75%. For more information on this program, visit <https://www.cmhc-schl.gc.ca/en/finance-and-investing/covid19-cecra-small-business>.
+
+The Federal Government has also extended all tax filing and payment deadlines. 
+
+For Individuals, personal income taxes must be filed by **June 1, 2020 **and payments will be due by **September 1, 2020.**
+
+For Self-employed individuals and their spouses, taxes must be filed by **June 15, 2020** and payments will be due by **September 1, 2020.**
+
+For Corporations, taxes must be filed by **June 1, 2020** and payments will be due by **September 1, 2020.**\
+For more information on tax filing dates visit <https://www.canada.ca/en/revenue-agency/campaigns/covid-19-update/covid-19-filing-payment-dates.html>
+
 The current outbreak is scary and unpredictable, but if we stand together as a country, we will get through this. Remember that better days are coming.
 
 Stay safe and healthy,

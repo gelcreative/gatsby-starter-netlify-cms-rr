@@ -7,7 +7,7 @@ intro: >-
 ---
 ## Financial Tools
 
-### Health and Dental Insurance
+### Health and Dental Insurance 
 
 As Canadians, we’re fortunate to have one of the best healthcare systems in the world, but government healthcare coverage may not provide all you need.
 
@@ -21,29 +21,31 @@ You may be left to pay for expenses such as:
 
 Enhanced healthcare plans can help protect you against these and other unexpected health and dental expenses
 
-## Plan Direct 
-
-### Guaranteed Issue
+### Plan Direct Guaranteed Issue
 
 Our Guaranteed Issue plans offer enhanced coverage for individuals, and can help fill the gap between your provincial plan coverage and what you pay.
 
 <a href="https://www.e-benefit.com/en/eb/plandirect/hl/458cb7f12145a847e68cc0c34a5b440da2c9a29d707592aaa958acd4a1b21651" target="_blank" class="button button-1">Get a Quote</a>
 <a href="https://www.e-benefit.com/fr/plandirect/about_plandirect.html?wl=" target="_blank" class="button button-1">Obtenez une soumission</a>
 
-### Core, Core Plus and Elite
+### Plan Direct Core, Core Plus and Elite
 
 Our Core, Core Plus and Elite health and dental benefit plans are underwritten for eligibility, and designed for individuals who are looking for insurance coverage for themselves and their families.
 
 <a href="https://www.e-benefit.com/en/eb/sonata/hl/458cb7f12145a847e68cc0c34a5b440da2c9a29d707592aaa958acd4a1b21651" target="_blank" class="button button-1">Get a Quote</a>
 <a href="https://www.e-benefit.com/fr/sonata/about_sonata.html?wl=" target="_blank" class="button button-1">Obtenez une soumission</a>
 
-### 
+### Mortgages
 
-### Retirement Income Planning – Say Hello to “Hello Life”!
+Canada Life offers competitive fixed and variable rate mortgages in a variety of terms, and an All In One secured line of credit account through Solutions Banking.
 
-HelloLife is a personalized retirement income planner designed to create a steady stream of income for as long as you need it, as well as flexible investment options to allow for portfolio growth.
+**Mortgage Rates** (as of April 24, 2020)
 
-<a href="https://hellolife.londonlife.com/application/en/home/" target="_blank" class="button button-1">Start your HelloLife Plan</a>
+![](/img/mortgage-rates.jpg)
+
+**All-in-One Rates** (as of April 16, 2020)
+
+![](/img/aio-rates.jpg)
 
 ### What’s Your Investment Personality?
 

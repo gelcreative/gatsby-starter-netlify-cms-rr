@@ -43,9 +43,9 @@ Canada Life offers competitive fixed and variable rate mortgages in a variety of
 
 ![](/img/mortgage-rates.jpg)
 
-**All-in-One Rates** (as of April 16, 2020)
+**All-in-One Rates** (as of May 13, 2020)
 
-![](/img/aio-rates.jpg)
+![](/img/solutions-banking-rates.jpg)
 
 ### What’s Your Investment Personality?
 

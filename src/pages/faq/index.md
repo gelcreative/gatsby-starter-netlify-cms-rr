@@ -28,15 +28,15 @@ questions:
       money as well. The CESG grants stop after your child turns 17.
     question: How much should I save for my child’s education?
   - answer: >-
-      As of 2019, the lifetime contribution limit to a Tax-Free Savings Account
-      (TFSA) is $63,500. The 2019 contribution limit is $6000. If you did not
+      As of 2020, the lifetime contribution limit to a Tax-Free Savings Account
+      (TFSA) is $69,500. The 2020 contribution limit is $6000. If you did not
       maximize your contributions, the contribution room carries over to the
       next year. Also, if you make a withdrawal from your TFSA, that amount is
       added back on to your contribution limit the following year.
 
 
-      Example – as of 2018, you had contributed $57,500 to your TFSA, and took a
-      withdrawal of $10,000. In 2019, you would be eligible to contribute the
+      Example – as of 2019, you had contributed $63,500 to your TFSA, and took a
+      withdrawal of $10,000. In 2020, you would be eligible to contribute the
       annual limit of $6000 plus $10,000 to make up for the withdrawal, for a
       total of $16,000.
 

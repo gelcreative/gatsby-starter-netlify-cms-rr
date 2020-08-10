@@ -39,13 +39,13 @@ Our Core, Core Plus and Elite health and dental benefit plans are underwritten f
 
 Canada Life offers competitive fixed and variable rate mortgages in a variety of terms, and an All In One secured line of credit account through Solutions Banking.
 
-**Mortgage Rates** (as of July 7, 2020)
+**Mortgage Rates** (as of August 4, 2020)
 
 ![mortgage rates](/img/mortgage-rates.jpg)
 
-**All-in-One Rates** (as of May 27, 2020)
+**All-in-One Rates** (as of July 23, 2020)
 
-![solutions banking rates](/img/solutions-banking-rates.jpg)
+![AIO rates](/img/solutions-banking-rates.jpg)
 
 ### What’s Your Investment Personality?
 

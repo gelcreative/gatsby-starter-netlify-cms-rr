@@ -87,5 +87,9 @@ questions:
     question: >-
       What is the difference between mortgage insurance and individual life
       insurance?
+  - answer: "We have been receiving questions about rumours circulating on social media regarding life insurance, disability insurance and the COVID vaccine. \r\n\nRest assured, getting a Covid-19 vaccine will NOT affect payment of your life insurance or disability benefits, or your ability to qualify for future coverage. \r\n\n\r\n\nThe Canadian Life and Health Insurance Associate has issued the following statement: \r\n\n“No one should be afraid and choose to not protect themselves from Covid-19 because they are worried about it affecting their benefits. All of Canada’s life and health insurers are supportive of Canadians receiving government approved vaccinations to protect themselves from serious illness and death.”\r\n\n\r\n\nYou can read the full post here: \r\n\nhttps://www.advisor.ca/insurance/life/clhia-shoots-down-online-rumours-about-covid-19-vaccines-and-insurance/"
+    question: >-
+      Will getting a Covid vaccine affect my life insurance or disability
+      insurance benefits, or my ability to get future coverage?
 ---
 

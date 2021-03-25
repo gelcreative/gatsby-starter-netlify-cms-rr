@@ -7,6 +7,14 @@ intro: >-
 ---
 ## Financial Tools
 
+### Financial Planning Tools 
+
+Visit [https://planningtools.ca/](https://planningtools.ca) and discover:
+
+* Needs Analysis calculators
+* Know Your Risk calculators
+* Budget Planning tools
+
 ### Health and Dental Insurance
 
 As Canadians, we’re fortunate to have one of the best healthcare systems in the world, but government healthcare coverage may not provide all you need.

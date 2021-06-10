@@ -7,7 +7,7 @@ intro: >-
 ---
 ## Financial Tools
 
-### Financial Planning Tools 
+### Financial Planning Tools
 
 Visit [https://planningtools.ca/](https://planningtools.ca) and discover:
 
@@ -47,16 +47,17 @@ Our Core, Core Plus and Elite health and dental benefit plans are underwritten f
 
 Canada Life offers competitive fixed and variable rate mortgages in a variety of terms, and an All In One secured line of credit account through Solutions Banking.
 
-**Mortgage Rates** (as of March 17th, 2021)
+**Mortgage Rates** (as of June 1st, 2021)
 
-![Mortgage rates](/img/mortgage-rates.jpg)
+![mortgage rates](/img/mortgage-rates.jpg)
 
-**All-in-One Rates** (as of March 25th, 2021)
-
+**All-in-One Rates** (as of June 1st, 2021)\
 National Bank Prime Rate: 2.45%\
 Revolving line of credit rate: Prime + 0.50% (2.95%)
 
-![Solutions Banking Rates](/img/solutions-banking-rates.jpg)
+![AIO rates](/img/solutions-banking-rates.jpg)
+
+
 
 ### What’s Your Investment Personality?
 

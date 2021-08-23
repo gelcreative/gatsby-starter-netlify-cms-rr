@@ -51,11 +51,11 @@ Canada Life offers competitive fixed and variable rate mortgages in a variety of
 
 ![mortgage rates](/img/canada-life-mortgage-rates.png "Canada Life Mortgage Rates")
 
-**All-in-One Rates** (as of June 1st, 2021)\
+**All-in-One Rates** (as of August 11th, 2021)\
 National Bank Prime Rate: 2.45%\
 Revolving line of credit rate: Prime + 0.50% (2.95%)
 
-![AIO rates](/img/solutions-banking-rates.jpg)
+![](/img/solutions-banking-rates.jpg)
 
 ### What’s Your Investment Personality?
 

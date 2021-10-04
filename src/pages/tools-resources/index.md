@@ -86,7 +86,5 @@ Travel insurance protects you from unexpected medical expenses that occur while 
 ### Client Access
 
 * <a href="https://quadrus.univeriscloud.com/landing/home">Canada Life Mutual Funds (Quadrus) and Segregated Funds - Online Investment Access </a>
-* <a href="https://my.canadalife.com/sign-in">My Canada Life at Work </a>
-* <a href="https://groupnet.greatwestlife.com/public/signin/login.public?brand=pm" target="_blank">Great West Life Groupnet</a>
-* <a href="https://ssl.grsaccess.com/information/english/logon/english_login.asp" target="_blank">Great West Life Group Retirement Services</a>
+* <a href="https://my.canadalife.com/climsMyLogin?startURL=%2Fidp%2Flogin%3Fapp%3D0sp16000000PBNI">My Canada Life at Work - Employee Benefits and Group Retirement Savings</a>
 * <a href="https://access.mackenziefinancial.com/investor/en/logon.do" target="_blank">Mackenzie Financial Investor Access</a>
